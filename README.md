@@ -9,11 +9,11 @@ Que tal refazer esse [projeto][1] do seu jeito?
 
 Faça o download do [PSD][2] e começe a codificar.
 
-Pra enviar basta enviar um `pull request`.
+Pra enviar basta abrir um `pull request`.
 
-Não vamos disponibilizar o fonte para não influenciar no desenvolvimento de cada um, assim damos total liberdade pra estrutura e método de desenvolvimento.
+Não vamos disponibilizar o source para não influenciar no desenvolvimento de cada um, assim damos total liberdade pra estrutura e método de desenvolvimento.
 
-É isso aí, manda ver e crie algo diferente,
+É isso aí, manda ver e crie algo interessante.
 
 
   [1]: http://vagas.dbr.ag/front/desafio
