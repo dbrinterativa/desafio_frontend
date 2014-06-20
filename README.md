@@ -16,5 +16,5 @@ Não vamos disponibilizar o source para não influenciar no desenvolvimento de c
 É isso aí, manda ver e crie algo interessante.
 
 
-  [1]: http://vagas.dbr.ag/front/desafio
+  [1]: http://vagas.dbr.ag/front
   [2]: http://vagas.dbr.ag/frontend/dbrag_desafio.zip
