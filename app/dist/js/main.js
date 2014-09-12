@@ -1,0 +1,1 @@
+$("a[href*=#]").on("click",function(event){var href=$(this).attr("href");if(/(#.*)/.test(href)){var hash=href.match(/(#.*)/)[0],path=href.match(/([^#]*)/)[0];(window.location.pathname==path||0==path.length)&&(event.preventDefault(),$("html,body").animate({scrollTop:$(this.hash).offset().top},1e3),window.location.hash=hash)}});
