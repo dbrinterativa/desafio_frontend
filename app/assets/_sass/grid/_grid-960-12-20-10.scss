@@ -1,0 +1,71 @@
+//	Grid com 960 pixels 12 Colunas gutter de 20px e margin width de 10px
+//	Nome: GRID-960-12-20-10
+//	WIDTH = 960px
+//	COLUINAS = 12
+//	GUTTER = 20px;
+//	MARGIN WIDTH = 10px
+
+$full-width: 960; // Tamanho do layout
+$coluna-width: 60; //Tamanho de uma coluna
+$gutter: 20 / 2; // Tamanho do espaçamento de cada lado de uma coluna
+$medium-width: 43em; // Tamanho médio para um Media Query
+$small-width: 320px; // Tamanho pequeno para um Media Query
+
+// Medindo o tamanho das colunas
+$coluna-1: $coluna-width;
+$coluna-2: $gutter * 2 + $coluna-1 * 2;
+$coluna-3: $gutter * 4 + $coluna-1 * 3;
+$coluna-4: $gutter * 6 + $coluna-1 * 4;
+$coluna-5: $gutter * 8 + $coluna-1 * 5;
+$coluna-6: $gutter * 10 + $coluna-1 * 6;
+$coluna-7: $gutter * 12 + $coluna-1 * 7;
+$coluna-8: $gutter * 14 + $coluna-1 * 8;
+$coluna-9: $gutter * 16 + $coluna-1 * 9;
+$coluna-10: $gutter * 18 + $coluna-1 * 10;
+$coluna-11: $gutter * 20 + $coluna-1 * 11;
+$coluna-12: $gutter * 22 + $coluna-1 * 12;
+
+// Medindo o tamanho de colunas em branco
+$offset-1: $coluna-1 + $gutter * 3;
+$offset-2: $coluna-2 + $gutter * 3;
+$offset-3: $coluna-3 + $gutter * 3;
+$offset-4: $coluna-4 + $gutter * 3;
+$offset-5: $coluna-5 + $gutter * 3;
+$offset-6: $coluna-6 + $gutter * 3;
+$offset-7: $coluna-7 + $gutter * 3;
+$offset-8: $coluna-8 + $gutter * 3;
+$offset-9: $coluna-9 + $gutter * 3;
+$offset-10: $coluna-10 + $gutter * 3;
+$offset-11: $coluna-11 + $gutter * 3;
+$offset-12: $coluna-12 + $gutter * 3;
+
+// Definindo o Width das colunas em porcentagem
+@mixin coluna-1 {width: $coluna-1 / $full-width * 100%;}
+@mixin coluna-2 {width: $coluna-2 / $full-width * 100%;}
+@mixin coluna-3 {width: $coluna-3 / $full-width * 100%;}
+@mixin coluna-4 {width: $coluna-4 / $full-width * 100%;}
+@mixin coluna-5 {width: $coluna-5 / $full-width * 100%;}
+@mixin coluna-6 {width: $coluna-6 / $full-width * 100%;}
+@mixin coluna-7 {width: $coluna-7 / $full-width * 100%;}
+@mixin coluna-8 {width: $coluna-8 / $full-width * 100%;}
+@mixin coluna-9 {width: $coluna-9 / $full-width * 100%;}
+@mixin coluna-10 {width: $coluna-10 / $full-width * 100%;}
+@mixin coluna-11 {width: $coluna-11 / $full-width * 100%;}
+@mixin coluna-12 {width: $coluna-12 / $full-width * 100%;}
+
+// Definindo o a largura das colunas em branco
+@mixin offset-left-1 {margin-left: $offset-1 / $full-width * 100%;} @mixin offset-right-1 {margin-right: $offset-1 / $full-width * 100%;}
+@mixin offset-left-2 {margin-left: $offset-2 / $full-width * 100%;} @mixin offset-right-2 {margin-right: $offset-2 / $full-width * 100%;}
+@mixin offset-left-3 {margin-left: $offset-3 / $full-width * 100%;} @mixin offset-right-3 {margin-right: $offset-3 / $full-width * 100%;}
+@mixin offset-left-4 {margin-left: $offset-4 / $full-width * 100%;} @mixin offset-right-4 {margin-right: $offset-4 / $full-width * 100%;}
+@mixin offset-left-5 {margin-left: $offset-5 / $full-width * 100%;} @mixin offset-right-5 {margin-right: $offset-5 / $full-width * 100%;} 
+@mixin offset-left-6 {margin-left: $offset-6 / $full-width * 100%;} @mixin offset-right-6 {margin-right: $offset-6 / $full-width * 100%;}
+@mixin offset-left-7 {margin-left: $offset-7 / $full-width * 100%;} @mixin offset-right-7 {margin-right: $offset-7 / $full-width * 100%;}
+@mixin offset-left-8 {margin-left: $offset-8 / $full-width * 100%;} @mixin offset-right-8 {margin-right: $offset-8 / $full-width * 100%;}
+@mixin offset-left-9 {margin-left: $offset-9 / $full-width * 100%;} @mixin offset-right-9 {margin-right: $offset-9 / $full-width * 100%;}
+@mixin offset-left-10 {margin-left: $offset-10 / $full-width * 100%;} @mixin offset-right-10 {margin-right: $offset-10 / $full-width * 100%;}
+@mixin offset-left-11 {margin-left: $offset-11 / $full-width * 100%;} @mixin offset-right-11 {margin-right: $offset-11 / $full-width * 100%;}
+@mixin offset-left-12 {margin-left: $offset-12 / $full-width * 100%;} @mixin offset-right-12 {margin-right: $offset-12 / $full-width * 100%;}
+
+// Definindo a margem das colunas
+@mixin gutter {margin-right: $gutter / $full-width * 100%; margin-left: $gutter / $full-width * 100%;}
