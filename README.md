@@ -1,20 +1,10 @@
-Desafio DBR.ag
-================
+#DESAFIO DBR
+![](http://vagas.dbr.ag/frontend/images/content/logo/dbr.png)
+##Desafiante: Diego Lopes (Dihgg)
+![alt text](http://dihgg.com/imagens/favicon.png "AWESOME!")
+###Email: [dihgg@dihgg.com](mailto:dihgg@dihgg.com)
+###Website: [dihgg.com](http://dihgg.com)
 
-Queremos saber como você trabalha na prática em um “real life project”.  
-
-Que tal refazer esse [projeto][1] do seu jeito?
-
-É isso mesmo!
-
-Faça o download do [PSD][2] e começe a codificar.
-
-Pra enviar basta abrir um `pull request`.
-
-Não vamos disponibilizar o source para não influenciar no desenvolvimento de cada um, assim damos total liberdade pra estrutura e método de desenvolvimento.
-
-É isso aí, manda ver e crie algo interessante.
-
-
-  [1]: http://vagas.dbr.ag/front
-  [2]: http://vagas.dbr.ag/frontend/dbrag_desafio.zip
+---
+#ATENÇÃO
+##Rodar num servidor (Xampp ou Wamp)
