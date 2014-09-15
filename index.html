@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<title>FRONT-END.teste</title>
+	
+	
+	<link rel="stylesheet" href="css/normalize.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">	
+	<link rel="author" href="https://plus.google.com/107766061849006545830"/>
+</head>
+<body class="simple-demo">
+
+	<div id="content-wrapper">
+
+	
+
+
+
+		<div id="examples-pin">
+
+
+			<div id="pin-frame-pin" class="pin-frame">
+				<img class="dbrag_logo" src="images/dbrag_logo.png">
+				<br>
+				<img class="dbrag_title" src="images/dbrag_title.png">
+			</div>
+
+
+
+			<div id="pin-frame-slide" class="pin-frame dbrag_tela2">				
+				<img src="images/dbrag_tela2_frase1.png" id="frase1"/>
+				<br>
+				<div class="tela2_icone">
+					<img src="images/dbrag_tela2_icone1.png" id="icone1" />
+					<img src="images/dbrag_tela2_icone2.png" id="icone2" />
+					<img src="images/dbrag_tela2_icone3.png" id="icone3" />
+				</div>
+				<img src="images/dbrag_tela2_frase2.png" id="frase2"/>				
+			</div>
+			
+
+
+			<div id="pin-frame-bounce" class="pin-frame dbrag_tela3">				
+				<img src="images/dbrag_tela3_img1.png" id="T3_img1"/>
+				<img src="images/dbrag_tela3_img2.png" id="T3_img2"/>
+			</div>
+
+
+
+			<div id="pin-frame-wipe" class="pin-frame dbrag_tela4">
+
+				<img src="images/dbrag_T4_title.png" id="T4_img1"/>
+				<img src="images/dbrag_T4_line.png" id="T4_img2"/>
+				<form>
+
+					<input type="text" placeholder="nome completo" id="formNome" />
+					<br>
+					<input type="text" placeholder="email" id="formEmail" />
+					<br>
+					<input type="text" placeholder="idade" id="formIdade"/>
+					<input type="text" placeholder="sexo" id="formSexo"/>
+					<input type="text" placeholder="pretensão salarial" id="formPret"/>
+					<br>
+					<input type="text" placeholder="telefone" id="formTel" />
+					<br>
+					<input type="text" placeholder="facebook.com/" id="formFace" />
+					<br>
+					<input type="text" placeholder="twitter.com/" id="formTwitter"/>
+					<br>
+					<input type="text" placeholder="github.com/" id="formGit"/>
+					<br>
+					<textarea rows="4" cols="50" placeholder="escreva mais" id="formFale"></textarea>
+					<br>
+					<button id="formEnviar">enviar</button>
+
+				</form>			
+				<img src="images/dbrag_T4_logo.png" id="T4_img3"/>
+			</div>
+	
+
+			<div id="pin-frame-unpin" class="pin-frame"><h2>Unpin It</h2></div>
+		</div>
+
+
+	</div>
+
+
+
+
+
+	
+	<script type="text/javascript" src="js/greensock/TweenMax.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  	<script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+  	<script src="js/jquery.lettering-0.6.1.min.js"></script>
+	<script src="js/jquery.superscrollorama.js"></script>
+	<script>
+		$(document).ready(function() {
+
+			var controller = $.superscrollorama();
+	
+
+			// set duration, in pixels scrolled, for pinned element
+			var pinDur = 10000;
+			// create animation timeline for pinned element
+			var pinAnimations = new TimelineLite();
+			pinAnimations
+
+				.append(TweenMax.from($('#pin-frame-pin .dbrag_logo'), .5, {css:{marginTop:0, opacity:1}, ease: Quad.easeInOut}))
+				.append(TweenMax.to($('#pin-frame-pin .dbrag_logo'), .5, {css:{marginTop:200, opacity:1}, ease: Quad.easeInOut}))
+				.append(TweenMax.from($('#pin-frame-pin .dbrag_title'), .5, {css:{opacity:0}, ease: Quad.easeInOut}))
+				.append(TweenMax.to($('#pin-frame-pin .dbrag_title'), .5, {css:{opacity:1}, ease: Quad.easeInOut}))
+
+				
+				.append([
+					TweenMax.to($('#pin-frame-pin'), 1.8, {css:{marginTop:'100%'}}),
+					TweenMax.to($('#pin-frame-slide'), 1, {css:{marginTop:0}}),			
+				])
+
+				.append([
+					TweenMax.from($('#frase1'), .1, {css:{opacity:0}}),
+					TweenMax.to($('#frase1'), .5, {css:{opacity:1}})
+				])
+				.append([
+					TweenMax.from($('#icone1'), .1, {css:{opacity:0}}),
+					TweenMax.to($('#icone1'), .5, {css:{opacity:1}})
+				])
+				.append([
+					TweenMax.from($('#icone2'), .1, {css:{opacity:0}}),
+					TweenMax.to($('#icone2'), .5, {css:{opacity:1}})
+				])
+				.append([
+					TweenMax.from($('#icone3'), .1, {css:{opacity:0}}),
+					TweenMax.to($('#icone3'), .5, {css:{opacity:1}})
+				])
+				.append([
+					TweenMax.from($('#frase2'), .1, {css:{opacity:0}}),
+					TweenMax.to($('#frase2'), 1, {css:{opacity:1}})
+				])
+				.append([
+					TweenMax.from($('#pin-frame-bounce'), 2, {css:{marginTop:'-100%'}, ease:Bounce.easeOut})
+				])
+				.append([
+					TweenMax.from($('#T3_img1'), .1, {css:{opacity:0}}),
+					TweenMax.to($('#T3_img1'), 1, {css:{opacity:1}})
+				])
+				.append([
+					TweenMax.from($('#T3_img2'), .1, {css:{opacity:0}}),
+					TweenMax.to($('#T3_img2'), 1, {css:{opacity:1}})
+				])
+				//---------------
+
+
+
+				.append([
+					TweenMax.to($('#pin-frame-wipe'), .5, {css:{top:0}}),
+					TweenMax.from($('#pin-frame-wipe h2'), .5, {css:{marginTop:'-600px'}})
+				], .5)
+
+				.append(TweenMax.to($('#pin-frame-unpin'), .5, {css:{top:'100px'}}));
+
+
+
+			controller.pin($('#examples-pin'), pinDur, {
+				anim:pinAnimations, 
+				onPin: function() {
+					$('#examples-pin').css('height','100%');
+				}, 
+				onUnpin: function() {
+					$('#examples-pin').css('height','600px');
+				}
+			});
+
+
+
+		});
+	</script>
+
+</body>
+</html>
