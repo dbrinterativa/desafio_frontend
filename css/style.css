@@ -1,0 +1,155 @@
+/*
+	COLORS
+	cinza 		#222438
+	
+*/
+
+body {
+	background: #222438;
+	font-family: Georgia, Times New Roman, Times, serif;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	visibility: hidden;
+}
+
+.simple-demo, .mobile-demo {
+	visibility: visible;
+}
+
+.simple-demo #content-wrapper {
+	height: 8000px;
+	padding-top: 400px;
+}
+
+
+
+
+
+#examples-pin {
+	position: relative; width: 100%; height: 600px;
+	overflow: hidden; margin-bottom: -200px; }
+
+
+.pin-frame { position: absolute; width: 100%; height: 100%; overflow: hidden; }
+.pin-frame h2 { margin-top: 120px; }
+
+
+
+#pin-frame-slide {
+	margin-top:100%;
+	 }
+
+
+#pin-frame-wipe  { top:100%; }
+
+
+
+#pin-frame-bounce  { padding-top: 80px; }
+#pin-frame-color  { background: #222438; }
+#pin-frame-unpin  { top:100%; }
+
+
+
+.dbrag_logo {
+	margin-top: 0px;
+}
+
+
+
+
+.dbrag_tela2 {
+	background-image: url('../images/dbrag_tela2_bg.png');
+	background-position: center;
+	padding-top: 100px;
+}
+
+.tela2_icone {
+	width: 900px;
+	margin: auto;
+}
+
+.tela2_icone img {
+	float: left;
+}
+
+
+
+
+.dbrag_tela3 {
+	background-image: url('../images/dbrag_tela3_bg.png');
+	background-position: center;
+}
+
+
+#T3_img1 {
+
+}
+
+#T3_img2 {
+
+}
+
+.dbrag_tela4 {
+	background-color: #cccbc4;
+	padding-top: 50px;
+	
+}
+
+#T4_img3 {
+	margin-top: 15px;
+}
+
+
+
+.roundCorners {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.dbrag_tela4 input {
+	font-size: 14px;
+	padding: 10px;
+	width: 500px;
+	margin-top: 15px;
+	border: none;
+
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+
+}
+
+
+#formIdade { width: 120px !important; margin-right: 10px; }
+#formSexo { width: 120px !important; margin-right: 10px; }
+#formPret { width: 120px !important; }
+
+#formFale {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border: none;
+	margin-top: 15px;
+	font-size: 14px;
+	padding: 10px;
+	width: 500px;
+}
+
+#formEnviar {
+	background-color: #8bdf9f;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	color: white;
+	font-weight: bold;
+	border: none;
+	margin-top: 15px;
+	margin-left: 380px;
+	font-size: 14px;
+	padding: 10px;
+	padding-left: 50px;
+	padding-right: 50px;
+	
+}
