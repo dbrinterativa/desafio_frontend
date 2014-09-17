@@ -1,0 +1,77 @@
+@import url("fonts.css");
+@import url("switchery.css");
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,figure,footer,header,hgroup,menu,nav,section,menu,time,mark,audio,video {margin:0;padding:0;border:0;outline:0;vertical-align:baseline; background:transparent;}
+
+body {font-family:Gotham,"Helvetica Neue",Helvetica,Arial,sans-serif;color:#fff;}
+h1, h2 { font-weight:100; margin-top:40px; font-size:54px; line-height:70px}
+
+section#slide-a, section#slide-b, section#slide-c {display: table; width: 100%;}
+
+.tela1, .tela2, .tela3, .tela4 {
+	margin: 0 auto;
+	max-height:1080px;
+	max-width:1050px;  position: relative; height:auto; 
+}
+
+.tela1, .tela2, .tela3 {min-height:1080px;}
+
+section#slide-a { background:#262626 url(../img/bg_slide-a.jpg) no-repeat center;}
+
+.tela1 {padding-top:80px; text-align:center;}
+.tela1 .container {margin-top: 250px;}
+.tela1 .logo { width:145px; }
+.tela1 .procura-se { font-weight:500; font-size:76px; } 
+.tela1 .presencial {color:#55e574;}
+
+.tela2 {color:#EBEBEB;text-align:center}
+.tela2 p {font-weight:100;margin:0;font-size:3.4375em}
+.tela2 p strong {font-weight:500;color:#BF305F}
+.tela2 .boxes {display:inline-block;vertical-align:top;margin:4em 0}
+.tela2 .boxes .box {float:left;max-width:222px;margin:0 2.1875em}
+.tela2 .boxes .box p {margin:0;margin-top:.8em;font-size:2.125em;line-height:1.14;text-transform:lowercase}
+
+
+section#slide-b {background:url(../img/bg_slide-b.jpg) no-repeat center; margin-top: -300px}
+
+.tela3 {background:url(../img/bg_tela3.png) no-repeat center 100px; }
+.tela3 .container { padding-top: 40px;}
+.tela3 h2 {margin-left: -20px}
+.tela3 .ilustra-conectores {font-size: 30px; font-weight: 100;}
+.tela3 .ilustra-conectores-item {position: absolute;}
+.tela3 .ilustra-conectores-item.conhecimento {top: 215px;left: 420px; vertical-align: top;}
+.tela3 .ilustra-conectores-item.conhecimento img {top: 115px;left: 420px;}
+.tela3 .ilustra-conectores-item.interesse {top: 280px;left: 35px;}
+.tela3 .ilustra-conectores-item.desafios {top: 435px;left: 395px;}
+.tela3 .ilustra-conectores-item.humor {top: 545px;left: 810px;}
+.tela3 .ilustra-conectores-item.musica {top: 670px;left: 125px;}
+.tela3 .ilustra-conectores-item.compartilhar {top: 845px;left: 345px;}
+
+
+section#slide-c{background-color:#cccbc4;color:#807c61;text-align:center;}
+
+.tela4 {padding-bottom: 150px;}
+.tela4 .divisao {display:block; margin:40px 0;height: 35px; width: 100%; background:url(../img/bg_divisao.png) no-repeat;}
+.tela4 .logo {display: block; margin-top: 40px;}
+
+form {width: 560px; margin: 0 auto; padding-bottom: 40px}
+form input {border-radius: 20px; background-color:#fff; width: 100%; height: 35px; border: 0; padding-left: 10px; font-size: 16px; color: #b8b8b8; font-style: italic; font-weight: 100; margin-bottom: 35px;}
+form textarea {border-radius: 20px; background-color:#fff; width: 530px; border: 0; padding: 15px 0 0 40px; font-size: 16px; color: #b8b8b8; font-style: italic; font-weight: 100; margin-bottom: 35px;}
+
+form input.idade {width:85px; float: left; margin-right: 10px;}
+form input.pretensao {width: 205px;position: absolute;margin-left: -130px;}
+
+form .sexo {height: 35px; border-radius: 20px; background-color: #fff; width: 235px; font-size: 16px; color: #b8b8b8; font-style: italic; margin-bottom: 35px; float: left; font-weight: 300; margin-right: 10px;}
+form .sexo span.masculino {float:left; padding: 10px 0 0 10px;}
+form .sexo span.feminino {float: right; padding: 10px 10px 0 0;}
+
+form input.facebook, form input.twitter, form input.github, form input.falemais {padding-left:40px; width: 530px;}
+
+form input.facebook {background: #fff url(../img/form-facebook.png) no-repeat 10px;}
+form input.twitter {background: #fff url(../img/form-twitter.png) no-repeat 10px;}
+form input.github {background: #fff url(../img/form-github.png) no-repeat 10px;}
+form textarea.falemais {background: #fff url(../img/form-falemais.png) no-repeat 10px 10px ; height: 140px;  }
+
+form button.enviar { height: 35px; border: 0; background-color: #8bdf9f; text-align: center; width: 180px; float: right; font-size: 21px; font-weight: 500; color: #fff; border-radius: 10px; cursor: pointer;}
+
+
+
