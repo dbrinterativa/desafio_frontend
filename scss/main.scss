@@ -1,0 +1,477 @@
+@font-face {
+    font-family: "Gotham-thin";
+    font-style: normal;
+    font-weight: 100;
+    src: url("fonts/Gotham-Thin/gotham-thin.eot?#iefix") format("embedded-opentype"), url("fonts/Gotham-Thin/gotham-thin.woff") format("woff"), url("fonts/Gotham-Thin/gotham-thin.ttf") format("truetype"), url("fonts/Gotham-Thin/gotham-thin.svg#Gotham") format("svg");
+}
+@font-face {
+    font-family: "Gotham-book";
+    font-style: normal;
+    font-weight: 300;
+    src: url("fonts/Gotham-Book/gotham-book.eot?#iefix") format("embedded-opentype"), url("fonts/Gotham-Book/gotham-book.woff") format("woff"), url("fonts/Gotham-Book/gotham-book.ttf") format("truetype"), url("fonts/Gotham-Book/gotham-book.svg#Gotham") format("svg");
+}
+@font-face {
+    font-family: "Gotham-bold";
+    font-style: normal;
+    font-weight: 500;
+    src: url("fonts/Gotham-Bold/gotham-bold.eot?#iefix") format("embedded-opentype"), url("fonts/Gotham-Bold/gotham-bold.woff") format("woff"), url("fonts/Gotham-Bold/gotham-bold.ttf") format("truetype"), url("fonts/Gotham-Bold/gotham-bold.svg#Gotham") format("svg");
+}
+@font-face {
+    font-family: "Gotham-black";
+    font-style: normal;
+    font-weight: 500;
+    src: url("fonts/Gotham-Black/gotham-black.eot?#iefix") format("embedded-opentype"), url("fonts/Gotham-Bold/gotham-black.woff") format("woff"), url("fonts/Gotham-Bold/gotham-black.ttf") format("truetype"), url("fonts/Gotham-Bold/gotham-black.svg#Gotham") format("svg");
+}
+
+body {
+	font-family: Gotham,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.top-header {
+	background: #262626;
+	height: 800px;
+}
+.content-top {
+    text-align: center;
+    margin-top: 200px;
+}
+.text-top {
+	font-family: "Gotham-thin";
+	font-style: normal;
+	font-size: 50px;
+	color: #fff;
+	line-weight: 1px;
+	line-height: 45px;
+}
+.text-destaq {
+	font-family: "Gotham-bold";
+    font-size: 62px;
+}
+.destaq-cor {
+	color: #55e574;
+}
+.bg-coffe {
+	background: url(../imgs/fundo-1.jpg)no-repeat center center fixed;
+	background-size: cover; /*Css padrão*/
+	-webkit-background-size: cover; /*Css safari e chrome*/
+	-moz-background-size: cover; /*Css firefox*/
+	-ms-background-size: cover; /*Css IE não use mer#^@%#*/
+	-o-background-size: cover; /*Css Opera*/
+	width: 100%;
+	height: 800px;
+}
+.bg-code {
+	background: url(../imgs/fundo-2.jpg)no-repeat center center fixed;
+	background-size: cover; /*Css padrão*/
+	-webkit-background-size: cover; /*Css safari e chrome*/
+	-moz-background-size: cover; /*Css firefox*/
+	-ms-background-size: cover; /*Css IE não use mer#^@%#*/
+	-o-background-size: cover; /*Css Opera*/
+	width: 100%;
+	height: 800px;
+}
+.content-coffe {
+	position: relative;
+    text-align: center;
+    top: 100px;
+}
+.text-icons {
+	color: #ffffff;
+    font-family: "Gotham-book";
+    font-size: 27px;
+    position: relative;
+    right: 35px;
+    top: 20px;
+    display: block;
+}
+.coffe {
+	margin-bottom: 71px;
+}
+.code {
+	position: relative;
+	top: 140px;
+	display: block;
+}
+.bottom {
+	margin-top: 107px;
+}
+.icon-curriculo {
+	background: url(../imgs/btn-curriculo.png);
+	width: 222px;
+	height: 223px;
+	display: block;
+}
+.icon-coffe {
+	background: url(../imgs/btn-coffe.png);
+	width: 222px;
+	height: 223px;
+	display: block;
+}
+.icon-facul {
+	background: url(../imgs/btn-facul.png);
+	width: 222px;
+	height: 223px;
+	display: block;
+}
+.destaq-text-coffe {
+	font-family: "Gotham-black";
+	color: #bf305f;
+	font-size: 50px;
+}
+
+.progress {
+	overflow: hidden;
+}
+.color-lines {
+	background: transparent;
+	border: none;
+	height: 8px;
+	width: 94%;
+}
+.color-lines .cor-linha {
+	background: none repeat scroll 0 0 #fff;
+    display: block;
+    height: 100%;
+    border-radius: 1px;
+}
+.linha-1 {
+	left: 76px;
+    position: relative;
+    top: 150px;
+}
+.linha-2 {
+	left: 22px;
+    position: relative;
+    top: 183px;
+    width: 14%;
+}
+.linha-3 {
+	left: 260px;
+    position: relative;
+    top: 163px;
+    width: 16%;
+}
+.linha-4 {
+	left: 324px;
+    position: relative;
+    top: 102px;
+    width: 7%;
+}
+.linha-5 {
+	left: 294px;
+    position: relative;
+    top: 217px;
+    width: 7%;
+}
+.linha-6 {
+	left: 303px;
+    position: relative;
+    top: 244px;
+    width: 7%;
+}
+.linha-7 {
+	left: 240px;
+    position: relative;
+    top: 273px;
+    width: 16%;
+}
+.linha-8 {
+	left: 304px;
+    position: relative;
+    top: 273px;
+    width: 45%;
+}
+.linha-9 {
+	left: 264px;
+    position: relative;
+    top: 348px;
+    width: 11%;
+}
+.linha-10 {
+	 left: 244px;
+    position: relative;
+    top: 355px;
+    width: 5%;
+}
+.linha-11 {
+	left: 500px;
+    position: relative;
+    top: 303px;
+    width: 18%;
+}
+.linha-12 {
+	left: 472px;
+    position: relative;
+    top: 373px;
+    width: 12%;
+}
+.linha-13 {
+	left: 436px;
+    position: relative;
+    top: 383px;
+    width: 6%;
+}
+.linha-14 {
+	left: 450px;
+    position: relative;
+    top: 389px;
+    width: 4%;
+}
+.bolinha {
+	background: none repeat scroll 0 0 white;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 15px;
+    left: 49px;
+    position: relative;
+    top: 60px;
+    width: 15px;
+}
+.l4 {
+	top: 29px;
+	left: 16px;
+}
+.l6 {
+	left: 57px;
+    top: -21px;
+}
+.l8 {
+	left: 399px;
+    top: -21px;
+}
+.l10 {
+	left: -43px;
+    top: -25px;
+}
+.l14 {
+	left: -28px;
+    top: -52px;
+}
+.content-linha-2 {
+	left: -11px;
+	position: relative;
+	top: 13px;
+	transform: rotate(90deg);
+	width: 99%;
+}
+.content-linha-5 {
+	left: -11px;
+    position: relative;
+    top: 13px;
+    transform: rotate(108deg);
+    width: 99%;
+}
+.content-linha-9 {
+	left: -59px;
+    position: relative;
+    top: -31px;
+    transform: rotate(174deg);
+    width: 99%;
+}
+.content-linha-10 {
+	left: -59px;
+    position: relative;
+    top: -31px;
+    transform: rotate(90deg);
+    width: 99%;
+}
+.content-linha-11 {
+	left: -59px;
+    position: relative;
+    top: -31px;
+    transform: rotate(90deg);
+    width: 99%;
+}
+.content-linha-13 {
+	left: -59px;
+    position: relative;
+    top: -31px;
+    transform: rotate(116deg);
+    width: 99%;
+}
+.content-linha-14 {
+	left: -59px;
+    position: relative;
+    top: -31px;
+    transform: rotate(0deg);
+    width: 99%;
+}
+.texto-bolinha {
+	width: 500px;
+	display: block;
+	color: white;
+	font-size: 18px;
+	padding-left: 25px;
+}
+.content-img {
+	left: 212px;
+    position: relative;
+    top: -63px;
+    width: 300px;
+}
+.bg-contato {
+	background: #cccbc4;
+	height: 900px;
+}
+.contato {
+	color: #807c61;
+    font-family: "gotham-thin";
+    font-size: 50px;
+    line-height: 61px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.form-contato {
+	margin-top: 280px;
+}
+.columns .input-contato {
+	padding-left: 17px;
+	border-radius: 25px;
+	color: #989595;
+}
+.lb-feminino {
+	padding-left: 40px !important;
+}
+.input-icon {
+	padding-left: 40px !important;
+}
+.icon-face {
+	background: url("../imgs/icon-contato.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    content: "";
+    display: block;
+    height: 26px;
+    left: 23px;
+    position: absolute;
+    top: 6px;
+    width: 26px;
+}
+.icon-twitter {
+	background: url("../imgs/icon-contato.png") no-repeat 0 -71px; 
+	content: "";
+    display: block;
+    height: 26px;
+    left: 23px;
+    position: absolute;
+    top: 6px;
+    width: 26px;
+}
+.icon-git {
+	background: url("../imgs/icon-contato.png") no-repeat 0 -141px;
+	content: "";
+    display: block;
+    height: 26px;
+    left: 23px;
+    position: absolute;
+    top: 6px;
+    width: 26px;
+}
+.icon-msg {
+	background: url("../imgs/icon-contato.png") no-repeat 0 -212px;
+	content: "";
+    display: block;
+    height: 26px;
+    left: 23px;
+    position: absolute;
+    top: 6px;
+    width: 26px;
+}
+.onoffswitch {
+    position: relative; 
+    width: 80px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.input-msg {
+	border-radius: 10px !important;
+	height: 50px;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.btn-submit {
+	background: none repeat scroll 0 0 #8bdf9f;
+    border-radius: 5px;
+    height: 42px;
+    line-height: 8px;
+    width: 178px;
+ 	font-family: "Gotham-bold";
+ 	font-size: 20px;
+ 	&:hover {
+ 		background: #82c692;
+ 	}
+}
+.logo-rodape {
+	position: relative;
+	top: 100px;
+	left: 250px;
+}
+.onoffswitch-label {
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+    display: block;
+    height: 35px;
+    left: 96px;
+    overflow: hidden;
+    position: absolute;
+    top: 1px;
+    width: 91px;
+    z-index: 9999;
+}
+
+.onoffswitch-inner {
+    display: block; 
+    width: 200%; 
+    margin-left: -100%;
+    -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; 
+    float: left; 
+    width: 50%; 
+    height: 36px; 
+    padding: 0; 
+    line-height: 30px;
+    font-size: 14px; 
+    color: white; 
+    font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+    content: "";
+    padding-left: 10px;
+    background-color: #39bde8; color: #FFFFFF;
+}
+
+.onoffswitch-inner:after {
+    content: "";
+    padding-right: 10px;
+    background-color: #e7217e; color: #999999;
+    text-align: right;
+}
+
+.onoffswitch-switch {
+    display: block; 
+    width: 32px; 
+    margin: -1px;
+    background: #FFFFFF;
+    border: 2px solid #FFFFFF; 
+    border-radius: 50%;
+    position: absolute; 
+    top: 0;
+    bottom: 0;
+    right: 56px;
+    -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; 
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
