@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="UTF-8"> 
+<title>Teste Front-End - Fabio.Freire</title>
+<meta name="viewport" content="width=device-width">
+
+<link rel="shortcut icon" href="http://vagas.dbr.ag/favicon.ico">
+<meta property="og:title" content="Vagas | DBR.ag"/>
+<meta property="og:description" content="Venha fazer parte desse time. Aqui na DBR tem um café champs e uma galera disposta a fazer acontecer!"/>
+<meta property="og:url" content="http://vagas.dbr.ag"/>
+<meta property="og:image" content="http://vagas.dbr.ag/dbr.jpg" />
+
+<link href="assets/styles/geral.css" rel="stylesheet">
+<link href="assets/styles/animate.css" rel="stylesheet">
+</head>
+<body>
+<div class="bg-inicial skrollable skrollable-between" data-0="background-position: 50% 150%"  data-600="background-position: 50% 100%"  >
+	<section id="abertura">
+   		<div  data-0="margin-top:320px;opacity:1" data-650="margin-top:600px;opacity:0"  class="skrollable skrollable-between" >
+        	<a href="http://dbr.ag/"><img src="assets/images/dbr-verde.png" alt="Agência DBR" /></a>
+            <h1>
+            	front-enders,
+                <strong>procura-se!</strong>
+                vaga <span class="verde">presencial</span>
+                <span class="local-job">São Paulo - Capital</span>
+            </h1>
+        </div>
+    </section>
+    <section id="questoes">
+    	<div data-600="margin-top:-100px;opacity:0" data-900="margin-top:200px;opacity:1"  class="skrollable skrollable-between" >
+    		<h2>Você, por acaso...</h2>
+            <ul class="lista_questoes">
+                <li id="curriculum"><i></i><span></span> tem um bom currículo?</li>
+                <li id="agencia"><i></i><span></span> já trabalhou em agência?</li>
+                <li id="formacao"><i></i><span></span> é formado na área?</li>
+            </ul>
+            <p>
+            	Sim? 
+                <strong class="rosa"> Isso não importa aqui!</strong>
+            </p>
+   		</div>		
+    </section>
+</div>
+<section id="importante" class="skrollable skrollable-between" data-1200="background-position: 50% 160%"  data-3240="background-position: 50% 30%" >
+	<div>
+        <h2>Sabe o que vale de verdade na DBR.ag?</h2>
+        <ul class="lista-valores">
+            <li id="conhecimento">Conhecimento em: <img src="assets/images/valores-tecnologias.png" alt="Tecnologias" /> </li>
+            <li id="aprendizado">Interesse em aprender</li>
+            <li id="desafios">Topar novos desafios</li>
+            <li id="humor">Ótimo humor</li>
+        	<li id="musica">Gostar de música</li>
+            <li id="compartilhar">Gostar de compartilhar conhecimento</li>
+        </ul>
+        
+	</div>
+</section>
+<section id="contato">
+	<form id="form-contato" method="post">
+    	<fieldset>
+            <legend>Preencha seus dados abaixo <br/>
+            e o próximo passo será um desafio DBR!</legend>
+            <span class="divisor-brain"><i></i></span>
+            <div id="form-contato-campos">
+                <div>
+                    <input placeholder="nome completo" name="nome" type="text" id="nome" class="campo-text" />
+                </div>
+                <div>
+                    <input type="text" placeholder="email" name="email" id="email" class="campo-text" /> 
+                </div>
+                <div class="multi-fields">
+                    <div class="idade-box">
+                      <input type="text" placeholder="idade" name="idade" id="idade" class="campo-text" />
+                    </div>
+                    <div class="sexo-box" title="sexo">
+                        <input type="hidden" name="sexo" id="sexo" value="0" class="campo-text" />
+                        <div class="seletor-sexo">
+                           <span class="opcao-esquerda">masculino</span>
+                           <div class="seletor-bg">
+                               <div class="seletor">
+                                  
+                               </div>
+                           </div>
+                           <span class="opcao-direita disabled">feminino</span>
+                        </div>
+                    </div>
+                    <div class="pretencao-box">
+                       <input type="text" placeholder="pretensão salarial" name="pretensao" id="pretensao" class="campo-text" />                
+                    </div>
+                </div>
+                <div>
+                    <input type="text" placeholder="telefone" name="telefone" id="telefone" class="campo-text" />
+                </div>
+                <div>
+                	<i class="facebook-icon"></i>
+                    <input type="text" placeholder="facebook.com/" name="facebook" id="facebook" class="campo-text campo-label-icon" />
+                </div>
+                <div>   
+                	<i class="twitter-icon"></i>          
+                    <input type="text" placeholder="twitter.com/" name="profile_twitter" id="twitter" class="campo-text campo-label-icon" />                
+                </div>
+                <div>
+                	<i class="github-icon"></i>               
+                    <input type="text" placeholder="github.com/" name="github" id="github" class="campo-text campo-label-icon" />                
+               </div>
+                <div class="mensagem-box">  
+                	<i class="msg-icon"></i>         
+                    <textarea  placeholder="fale um pouco sobre você..." name="mensagem" id="mensagem" class="campo-text campo-label-icon" ></textarea>
+                </div>
+                <div>
+                  <button type="submit">enviar</button>
+                </div>
+            </div>
+		</fieldset>
+	</form>
+    <footer>
+    	<a href="http://dbr.ag/" rel="nofollow"><img src="assets/images/dbr-azul.png"  alt="Agência DBR" /></a>
+    </footer>
+</section>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="assets/scripts/plugins/jquery.queryloader2.min.js"></script>
+<script src="assets/scripts/plugins/jquery.viewportchecker.js"></script>
+<script src="assets/scripts/plugins/smoothscroll.js"></script>
+<script src="assets/scripts/plugins/skrollr.min.js"></script>
+<script src="assets/scripts/plugins/jquery.maskedinput-1.3.1.min.js"></script>
+<script src="assets/scripts/plugins/jquery.maskMoney.min.js"></script>
+<script src="assets/scripts/plugins/jquery.validate.js"></script>
+<script src="assets/scripts/my_scripts.js"></script>
+</body>
+</html>
