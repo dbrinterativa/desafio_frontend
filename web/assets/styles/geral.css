@@ -1,0 +1,171 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Fonts */
+@font-face {
+    font-family: Gotham;
+    font-weight: 300;
+    font-style: normal;
+    src: url(../fonts/Gotham-Thin/gotham-thin.eot);
+    src: url(../fonts/Gotham-Thin/gotham-thin.eot?#iefix) format("embedded-opentype"), url(../fonts/Gotham-Thin/gotham-thin.woff) format("woff"), url(../fonts/Gotham-Thin/gotham-thin.ttf) format("truetype"), url(../fonts/Gotham-Thin/gotham-thin.svg#Gotham) format("svg");
+}
+@font-face {
+    font-family: Gotham;
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/Gotham-Book/gotham-book.eot);
+    src: url(../fonts/Gotham-Book/gotham-book.eot?#iefix) format("embedded-opentype"), url(../fonts/Gotham-Book/gotham-book.woff) format("woff"), url(../fonts/Gotham-Book/gotham-book.ttf) format("truetype"), url(../fonts/Gotham-Book/gotham-book.svg#Gotham) format("svg");
+}
+@font-face {
+    font-family: Gotham;
+    font-weight: 700;
+    font-style: normal;
+    src: url(../fonts/Gotham-Bold/gotham-bold.eot);
+    src: url(../fonts/Gotham-Bold/gotham-bold.eot?#iefix) format("embedded-opentype"), url(../fonts/Gotham-Bold/gotham-bold.woff) format("woff"), url(../fonts/Gotham-Bold/gotham-bold.ttf) format("truetype"), url(../fonts/Gotham-Bold/gotham-bold.svg#Gotham) format("svg");
+}
+/* Fonts End */
+
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1; 
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Reset End */
+
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+::-moz-selection { background: #C7D63F; color: #000; text-shadow: none; }
+::selection { background: #C7D63F; color: #000; text-shadow: none; }
+
+body{ font-family: Gotham; color:#FFF; font-size:55px; font-weight:300; letter-spacing:-0.005em; } 
+strong{ font-weight:700 }
+.verde{ color:#55E574 } 
+.rosa{ color:#BF305F }
+
+body  section{ padding-top:1px; padding-bottom:1px }
+.bg-inicial{ min-height:2160px; background: url(../images/bg-cafe.jpg) center 404px no-repeat #262626; }
+
+/*Section Abertura*/
+#abertura{ min-height:1080px; position:relative; text-align:center; }
+#abertura > div{ height:400px; margin-top:320px; display:inline-block; opacity: 0; filter: alpha(opacity=0); }
+#abertura h1{ margin-top:29px; line-height: 0.95em }
+#abertura h1 strong{ font-size:75px; letter-spacing:-0.05em; margin:12px auto 25px auto; display:block  }
+.local-job{ display:block; margin-top:18px }
+
+/*Section Questoes*/
+#questoes > div{ max-width:1124px; min-height:870px; margin:210px auto 0px auto; text-align:center }
+#questoes .lista_questoes{ overflow:hidden; font-size:35px; line-height:1.1em; font-weight:400; margin:75px auto 50px auto; }
+#questoes .lista_questoes li{ display:inline-block; width:225px; height:340px; overflow:hidden; padding-top:255px; position:relative }
+#questoes .lista_questoes li i{ display:block; width:131px; height:131px; position:absolute; top:52px; left:47px; z-index:1 }
+#questoes .lista_questoes li span{ display:block; width:225px; height:225px; position:absolute; top:5px; left:0px; background:url(../images/questoes.png) center center no-repeat; z-index:2; background-size:100% 100%; transition: background-size 0.18s linear; -moz-transition: background-size 0.18s linear; -ms-transition: background-size 0.18s linear; -o-transition: background-size 0.18s linear; -webkit-transition: background-size 0.18s linear; }
+#questoes .lista_questoes li:hover span{ background-size:90% 90%; }
+#curriculum i{ background:url(../images/questoes-icons.png) center top no-repeat; }
+#agencia i{ background:url(../images/questoes-icons.png) center center no-repeat; }
+#formacao i{ background:url(../images/questoes-icons.png) center bottom no-repeat; }
+#questoes p strong{ display:block; margin-top:14px; }
+.lista_questoes li#agencia{ margin:0px 57px }
+
+/*Section Valores*/
+#importante{ min-height:1080px; background:url(../images/bg-code.jpg) center center no-repeat; }
+#importante > div{ max-width: 1124px; margin:0px auto 0px auto; }
+#importante h2{ text-align:right; padding-right:74px; margin-top:190px }
+.lista-valores{ background:url(../images/conexoes.png) center top no-repeat; background-size:100%; padding-top: 75%; max-width: 1043px; margin:-30px auto 150px auto; position:relative; }
+.lista-valores li{ font-size:25px; font-weight:400; opacity: 5; filter: alpha(opacity=5); position:absolute; left:0px; top:0px; opacity: 0; filter: alpha(opacity=0);  }
+#conhecimento{ left: 40.5%; top:14.2%; right:0%; }
+#conhecimento img{ width:45%; margin-left:5%; vertical-align:text-top; }
+#aprendizado{ left: 3.5%; top:21.9%; }
+#desafios{ left: 38%; top:40%; }
+#humor{ left:78%; top:53.5% }
+#musica{ left:12.5%; top:68.3% }
+#compartilhar{ left:33.5%; top:89% }
+
+/*Section Cotanto*/
+#contato{ min-height:1182px; background:#CCCBC4; color:#807C61; position:relative }
+#form-contato{ max-width: 1124px; margin:0px auto 0px auto; padding-bottom:150px }
+#form-contato fieldset{  margin:75px auto 75px auto; }
+#form-contato legend{ text-align:center; display:block }
+.divisor-brain{ max-width:1028px; display:block; height:60px; background:url(../images/brain-linha.png) left center repeat-x; margin:40px auto 40px auto; text-align:center }
+.divisor-brain i{ width:88px; height:60px; display:inline-block; background:url(../images/brain-icon.png) center center no-repeat #CCCBC4; }
+#form-contato-campos{ max-width:580px; min-width:320px; margin:0px auto 0px auto; padding:0px 20px 0px 20px }
+#form-contato-campos  > div{ font-size:15px; margin-bottom:35px; position:relative  }
+.multi-fields{ height:37px; display:block  }
+.multi-fields > div{ position:relative }
+.idade-box , .sexo-box , .pretencao-box{ float:left; display:block }
+.idade-box{ width:15% }
+.sexo-box{ width:49.5%; margin:0 2% 0 2%; position:relative }
+.sexo-box .opcao-esquerda{ float:left; display:block; width:36%; text-align:center; }
+.sexo-box .opcao-direita{ float:right; display:block; width:30%; text-align:center; }
+.sexo-box .disabled{ color:#DDD !important }
+.pretencao-box{ width:31.5%; float:right }
+.seletor-bg{ width:70px; height:33px; background:url(../images/sexo-icons.png) center center no-repeat #3bc4f1; position:absolute; left:50%; top:2px; margin:0 auto auto -10%; -webkit-border-radius: 18px; -moz-border-radius: 18px; border-radius: 18px; -moz-transition: background-color 0.3s ease-in; -webkit-transition: background-color 0.3s ease-in; -o-transition: background-color 0.3s ease-in; transition: background-color 0.3s ease-in; -ms-transition: background-color 0.3s ease-in; cursor:pointer; } 
+.seletor{ background: #FFF; width: 35px; height: 35px; position: absolute; top: -2px; left:35px; border:1px solid #EEE; box-shadow:0 2px 3px #888; -webkit-border-radius:18px; -moz-border-radius:18px; border-radius:18px; -moz-transition:left 0.1s ease-in; -webkit-transition:left 0.1s ease-in; -o-transition:left 0.1s ease-in; transition:left 0.1s ease-in; -ms-transition:left 0.1s ease-in;}
+.seletor-bg.feminino{ background-color:#FF4397; }
+.seletor-bg.feminino .seletor{ left: 0px;  }
+#form-contato-campos .campo-text , .seletor-sexo{ width:100%; height:37px; padding:10px 15px; border:1px solid #D6D5D0; -webkit-border-radius: 18px; -moz-border-radius: 18px; border-radius: 18px; vertical-align:top; color:#B8B8B8; font-style:italic; font-family: Gotham; font-weight: 400; background-color:#FFF;  font-size:15px;  }
+#form-contato-campos .campo-label-icon{ padding-left:40px; }
+#form-contato-campos .campo-text:focus{ outline:none; border: 1px solid #B1AE99;  }
+#form-contato-campos .campo-text#idade{ text-align:center }
+#form-contato-campos  > div.mensagem-box{ margin-bottom:17px; }
+#form-contato-campos textarea{ min-height:50px; min-width:100%; max-width:100%; }
+#form-contato-campos button{ background-color:#8BDF9F; float:right; width:182px; height:39px; line-height:39px; text-align:center;  border:none; color:#FFF; font-weight:700; font-size:20px; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; -moz-transition: background-color 0.3s linear; -webkit-transition: background-color 0.3s linear; -o-transition: background-color 0.3s linear; transition: background-color 0.3s linear; -ms-transition: background-color 0.3s linear; cursor:pointer }  
+#form-contato-campos button:hover{ background-color:#77CD8B; }
+#form-contato-campos button:active{ outline:none; background-color:#5ABA71 }
+
+/*Label Icones*/
+#form-contato-campos i{ display:block; width:37px; height:37px; position:absolute;  left:0px; top:0px; z-index:1 }
+.facebook-icon{ background:url(../images/fields-icons.png) left top no-repeat; }
+.twitter-icon{ background:url(../images/fields-icons.png) left -37px no-repeat; }
+.github-icon{ background:url(../images/fields-icons.png) left -74px no-repeat; }
+.msg-icon{ background:url(../images/fields-icons.png) left bottom no-repeat; }
+
+/*Validação*/
+input[type=text].error , textarea.error{ border:1px solid #FFB5C6 !important; background-color:#FFF4F6 !important; }
+span.error{ position:absolute; left:17px; top:47px; font-weight:400; font-size:13px; white-space:nowrap; }
+.pretencao-box .error{ right:17px; left:auto }
+
+/*Footer*/
+footer{ text-align:center; position:absolute; bottom:88px; left:0px; right:0px; }
+footer a{ display:inline-block; height:39px; }
