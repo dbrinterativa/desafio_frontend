@@ -1,0 +1,636 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+@import url(vendor/fullPage.css);
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+a {
+  background-color: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  width: 100%;
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+pre {
+  overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"], input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'DIN';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/DIN/DINNextLTPro-Regular.otf);
+  /*src: local('DIN Next LT Pro Regular'), url(../fonts/DINNextLTPro-Regular.otf);*/
+}
+
+@font-face {
+  font-family: 'DIN';
+  font-style: italic;
+  font-weight: 400;
+  src: url(../fonts/DIN/DINNextLTPro-Italic.otf);
+}
+
+@font-face {
+  font-family: 'DIN Condensed';
+  src: url("../fonts/DIN/DINNextLTPro-HeavyCondensed.eot?#iefix") format("embedded-opentype"), url("../fonts/DIN/DINNextLTPro-HeavyCondensed.otf") format("opentype"), url("../fonts/DIN/DINNextLTPro-HeavyCondensed.woff") format("woff"), url("../fonts/DIN/DINNextLTPro-HeavyCondensed.ttf") format("truetype"), url("../fonts/DIN/DINNextLTPro-HeavyCondensed.svg#GothamRounded-Light") format("svg");
+}
+
+@font-face {
+  font-family: 'DIN Light';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/DIN/DINNextLTPro-Light.otf);
+}
+
+@font-face {
+  font-family: 'DIN Light';
+  font-style: italic;
+  font-weight: 400;
+  src: url(../fonts/DIN/DINNextLTPro-LightItalic.otf);
+}
+
+@font-face {
+  font-family: 'DIN UltraLight';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/DIN/DINNextLTPro-UltraLight.otf);
+}
+
+@font-face {
+  font-family: 'DIN UltraLight';
+  font-style: italic;
+  font-weight: 400;
+  src: url(../fonts/DINNextLTPro-UltraLightIt.otf);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  word-wrap: break-word;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  line-height: 1.3;
+  color: #969595;
+  font-family: "Source Sans Pro", "Trebuchet MS", sans-serif;
+  font-size: 14px;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: none;
+}
+
+/*******************************
+             Headers
+*******************************/
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'DIN Condensed';
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+h1 {
+  min-height: 1rem;
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.714rem;
+}
+
+h3 {
+  font-size: 1.28rem;
+}
+
+h4 {
+  font-size: 1.071rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child {
+  margin-top: 0em;
+}
+
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child {
+  margin-bottom: 0em;
+}
+
+/*******************************
+             Text
+*******************************/
+p {
+  line-height: 1.5;
+  font-size: 1.2em;
+  font-weight: 100;
+  color: #7A7E87;
+}
+
+p:first-child {
+  margin-top: 0em;
+}
+
+p:last-child {
+  margin-bottom: 0em;
+}
+
+/*-------------------
+        Links
+--------------------*/
+a {
+  color: #009fda;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00b2f3;
+}
+
+strong {
+  font-family: "DIN", sans-serif;
+  color: #bebebe;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.main-title {
+  font-size: 3.5em;
+  color: #FFF;
+}
+
+.main-title span {
+  margin-right: .2em;
+}
+
+.highlighted {
+  color: #fff;
+  background: #EF273E;
+  padding: .2em;
+  line-height: 1;
+  display: inline-block;
+}
+
+.has-hidden {
+  visibility: hidden;
+}
+
+.site-main {
+  position: relative;
+  height: 100%;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  margin-top: 10em;
+  background-image: url("../images/logo.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 3;
+}
+
+.content {
+  width: auto;
+  max-width: 1160px;
+  float: none;
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 3em;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+
+.background, .background--transparent {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  color: #333;
+}
+
+.background--transparent, .background--transparent--transparent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.background:nth-child(1) {
+  background-color: #3398db;
+}
+
+.background:nth-child(3) {
+  background-color: #1A4D6E;
+}
+
+.background:nth-child(5) {
+  background-color: #EF273E;
+}
+
+.background:nth-child(2n+1) {
+  color: #fff;
+}
+
+.background:nth-child(2n+1) p {
+  color: #fff;
+}
+
+.background:not(:nth-child(1)) {
+  text-align: center;
+}
+
+.background:not(:nth-child(1)) h1 {
+  font-size: 2.5em;
+}
+
+.background:not(:nth-child(1)) p {
+  font-size: 1.5em;
+}
+
+.video-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.video-bg > video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* 1. No object-fit support: */
+@media (min-aspect-ratio: 16/9) {
+  .video-bg > video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .video-bg > video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+/* 2. If supporting object-fit, overriding (1): */
+@supports (object-fit: cover) {
+  .video-bg > video {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.arrow-down {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 3em;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/arrow-down.svg);
+  background-size: contain;
+  cursor: pointer;
+  animation: bounce 2s infinite;
+  z-index: 2;
+}
+
+form {
+  margin-top: 2em;
+}
+
+.input, textarea, button {
+  width: 50%;
+  padding: 1em 0;
+  margin-bottom: 1em;
+  border: none;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.input, textarea {
+  background: transparent;
+  border-bottom: solid 2px #fff;
+}
+
+.button {
+  background-color: #1A4D6E;
+}
+
+::-webkit-input-placeholder {
+  color: #fff;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  visibility: visible;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(0);
+    opacity: 0.0;
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  80% {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    -webkit-transform: scale(0);
+    opacity: 0.0;
+  }
+  60% {
+    -webkit-transform: scale(1.1);
+  }
+  80% {
+    -webkit-transform: scale(0.9);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,219 @@
+@import "base/_normalize.scss";
+@import "base/_typography.scss";
+@import "base/_site.scss";
+@import "vendor/fullPage.css";
+
+.site-main {
+  position: relative;
+  height: 100%;
+
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  margin-top: 10em;
+  background-image: url("../images/logo.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 3;
+
+}
+
+.content {
+  width: auto;
+  max-width: 1160px;
+  float: none;
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 3em;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+
+.background , .background--transparent {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  color: #333;
+
+  // Mascará que sobrepõe o video
+  &--transparent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+
+  }
+
+}
+
+// background <section>
+.background:nth-child(1) {
+  background-color: #3398db;
+}
+
+.background:nth-child(3) {
+  background-color: #1A4D6E;
+}
+
+.background:nth-child(5) {
+  background-color: #EF273E;
+}
+
+.background:nth-child(2n+1) {
+  color: #fff;
+  p{ color: #fff; }
+}
+
+// Mágica(:not()) todos os elementos <section> com exceção do primeiros
+.background:not(:nth-child(1)) {
+  text-align: center;
+  h1 {
+    font-size: 2.5em;
+  }
+
+  p{
+    font-size: 1.5em;
+  }
+
+}
+
+// Background video support
+.video-bg {
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  overflow: hidden;
+}
+
+.video-bg > video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* 1. No object-fit support: */
+@media (min-aspect-ratio: 16/9) {
+  .video-bg > video { height: 300%; top: -100%; }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .video-bg > video { width: 300%; left: -100%; }
+}
+
+/* 2. If supporting object-fit, overriding (1): */
+@supports (object-fit: cover) {
+  .video-bg > video {
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+  }
+}
+
+.arrow-down {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 3em;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/arrow-down.svg);
+  background-size: contain;
+  cursor: pointer;
+  animation: bounce 2s infinite;
+  z-index: 2;
+}
+
+// Formulario
+form {
+  margin-top: 2em;
+}
+
+.input, textarea, button {
+  width: 50%;
+  padding: 1em 0;
+  margin-bottom: 1em;
+  border: none;
+  text-transform: uppercase;
+  outline: none;
+
+}
+
+.input, textarea {
+  background: transparent;
+  border-bottom: solid 2px #fff;
+}
+
+.button {
+  background-color: #1A4D6E;;
+}
+
+::-webkit-input-placeholder {
+   color: #fff;
+}
+
+
+// Animations
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+.fadeIn{
+  -webkit-animation-name:fadeIn;
+          animation-name:fadeIn;
+
+  -webkit-animation-duration:1.5s;
+          animation-duration:1.5s;
+
+  -webkit-animation-timing-function:ease-in-out;
+          animation-timing-function:ease-in-out;
+
+  visibility:visible;
+
+}
+
+@keyframes fadeIn{
+  0%{transform:scale(0);opacity:0.0;}
+  60%{transform:scale(1.1);}
+  80%{transform:scale(0.9);opacity:1;}
+  100%{transform:scale(1);opacity:1;}
+
+}
+
+@-webkit-keyframes fadeIn{
+  0%{-webkit-transform:scale(0);opacity:0.0;}
+  60%{-webkit-transform:scale(1.1);}
+  80%{-webkit-transform:scale(0.9);opacity:1;}
+  100%{-webkit-transform:scale(1);opacity:1;}
+
+}
+

@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'DIN';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/DIN/DINNextLTPro-Regular.otf);/*src: local('DIN Next LT Pro Regular'), url(../fonts/DINNextLTPro-Regular.otf);*/
+}
+
+@font-face {
+  font-family: 'DIN';
+  font-style: italic;
+  font-weight: 400;
+  src: url(../fonts/DIN/DINNextLTPro-Italic.otf);
+}
+
+@font-face {
+  font-family: 'DIN Condensed';
+  src: url('../fonts/DIN/DINNextLTPro-HeavyCondensed.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/DIN/DINNextLTPro-HeavyCondensed.otf')  format('opentype'),
+       url('../fonts/DIN/DINNextLTPro-HeavyCondensed.woff') format('woff'),
+       url('../fonts/DIN/DINNextLTPro-HeavyCondensed.ttf')  format('truetype'),
+       url('../fonts/DIN/DINNextLTPro-HeavyCondensed.svg#GothamRounded-Light') format('svg');
+}
+
+@font-face {
+  font-family: 'DIN Light';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/DIN/DINNextLTPro-Light.otf);
+}
+
+@font-face {
+  font-family: 'DIN Light';
+  font-style: italic;
+  font-weight: 400;
+  src: url(../fonts/DIN/DINNextLTPro-LightItalic.otf);
+}
+
+@font-face {
+  font-family: 'DIN UltraLight';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/DIN/DINNextLTPro-UltraLight.otf);
+}
+
+@font-face {
+  font-family: 'DIN UltraLight';
+  font-style: italic;
+  font-weight: 400;
+  src: url(../fonts/DINNextLTPro-UltraLightIt.otf);
+}
