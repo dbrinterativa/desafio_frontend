@@ -1,0 +1,317 @@
+@font-face {
+    font-family: "Lithos";
+    src: url("../font/LithosPro-Regular.otf");
+}
+@font-face {
+    font-family: "Showcard";
+    src: url("../font/SHOWG.TTF");
+}
+body{
+    font-family: "Lithos","verdana";
+    color: #FFFFFF;
+    font-size: 22pt;
+}
+
+.bg01{
+    background-image: url("../img/bg01.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.bg02{
+    background-image: url("../img/bg02.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.bg03{
+    background-image: url("../img/bg03.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+}
+.bg04{
+    background-image: url("../img/bg04.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+}
+
+p{
+    margin-top: 30px;
+}
+p.text{
+    margin-top: 50px;
+}
+
+p.destaque{
+    font-family: "Showcard","verdana";
+    color: #e2942f;
+    font-size:50pt;
+    margin-top: 50px;
+}
+
+.logo{
+    width: 80%;
+    height: 80%;
+}
+.vcenter{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.hcenter{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.topo{
+    margin-top: 50px;
+}
+
+.procura{
+    width: 75%;
+    height: 75%;
+    position: relative;
+    top: 50%;
+    transform: translateY(25%);
+}
+
+.backicons{
+    background-color: #000020;
+    height: 140px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+figure.effect{
+    margin-right: 33px;
+    position: relative;
+    width: 140px;
+    margin-bottom: 15px;
+    float: left;
+}
+figure.teck{
+    padding: 10px;
+}
+
+figure.effect figcaption{
+    margin-right: 33px;
+    opacity: 0;
+    position: absolute;
+    top:0px;
+    background-color: rgba(255,255,255,0.9);
+    transition: 1s;
+    width: 140px;
+    height: 100px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16pt;
+    float: left;
+    color: #222222;
+    line-height: 30px;
+    padding-top: 40px;
+}
+figure.effect:hover figcaption{
+    opacity: 1;
+}
+figure.effect.tech figcaption{
+    width: 300px;
+    height: 110px;
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+.backtext{
+    height: 140px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.icons_tech{
+    max-height: 120px;
+    padding: 10px 38px;
+}
+.icons{
+    max-height: 90px;
+    padding: 25px;
+}
+.icon_text{
+    font-size: 45px;
+    opacity: 1;
+}
+.icon_text.left{
+    text-align: left;
+}
+.icon_text.right{
+    text-align: right;
+}
+input,textarea{
+    font-family: 'Verdana', sans-serif;
+    height: 30px;
+    width: 100%;
+    float: left;
+    opacity: 0.7;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding-top: 3px;
+    padding-left: 6px;
+    z-index: 0;
+
+}
+input:focus, textarea:focus{
+    opacity: 1;
+    border-color: #00ff00;
+    border-radius: 5px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+input[type="submit"] {
+    float: right;
+    width: 150px;
+    font-weight: bold;
+    padding: 4px 8px;
+    background: #3b5998;
+    color:#fff;
+    margin-right: -10px;
+}
+textarea{
+    padding-top: 15px;
+    height: 100px;
+}
+.ico_input{
+    padding-left: 33px;
+    width:593px;
+}
+.ico_form{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 175px;
+    padding-top: 8px;
+    z-index: 1;
+}
+
+/* ##### efeito switchON/OFF ####*/
+.onoffswitch {
+    position: relative; width: 300px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 1px solid #999999; border-radius: 5px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 35px; padding: 0; line-height: 35px;
+    font-size: 15px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "Feminino";
+    padding-left: 0px;
+    background-color: #ED00F5; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    text-align: right;
+    content: "Masculino";
+    padding-right: 110px;
+    background-color: #34A7C1; color: #FFFFFF;
+}
+.onoffswitch-switch {
+    display: block; width: 22px; margin: 6px;
+    background: #838383;
+    border: 2px solid #dddddd; border-radius: 15px;
+    position: absolute; top: 0; bottom: 0; right: 261px;
+    -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+}
+/* ##### FIM - efeito switchON/OFF ####*/
+
+
+/* ##### MODAL ####*/
+
+
+.modalDialog {
+    position: fixed;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalDialog > div {
+    width: 700px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 5px 25px 35px;
+    border-radius: 5px;
+    border: 1px solid #222222;
+    background: #fff;
+    top: 150px;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+}
+.closemodal {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    height: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+
+}
+.closemodal:hover {
+    background: #00d9ff;
+}
+
+/* ##### FIM - MODAL ####*/
+
