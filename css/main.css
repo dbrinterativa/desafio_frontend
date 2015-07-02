@@ -1,0 +1,887 @@
+/* ==========================================================================
+   Author's custom styles - seu.nome@planb.com.br
+   ========================================================================== */
+/* normalize.css v2.1.2 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+/* line 22, ../scss/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+/* line 32, ../scss/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 41, ../scss/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 50, ../scss/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 64, ../scss/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 74, ../scss/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 86, ../scss/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 95, ../scss/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 108, ../scss/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 117, ../scss/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 126, ../scss/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 134, ../scss/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 142, ../scss/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 152, ../scss/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+/* line 164, ../scss/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+/* line 173, ../scss/_normalize.scss */
+pre {
+  white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+/* line 181, ../scss/_normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 189, ../scss/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 198, ../scss/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 205, ../scss/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 209, ../scss/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+/* line 221, ../scss/_normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 229, ../scss/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 241, ../scss/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 253, ../scss/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 264, ../scss/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 278, ../scss/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 290, ../scss/_normalize.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 302, ../scss/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 317, ../scss/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 327, ../scss/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+/* line 337, ../scss/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 348, ../scss/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 361, ../scss/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 370, ../scss/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+/* line 380, ../scss/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 393, ../scss/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?-bjt50w");
+  src: url("../fonts/icomoon.eot?#iefix-bjt50w") format("embedded-opentype"), url("../fonts/icomoon.ttf?-bjt50w") format("truetype"), url("../fonts/icomoon.woff?-bjt50w") format("woff"), url("../fonts/icomoon.svg?-bjt50w#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 12, ../scss/_fonts.scss */
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 26, ../scss/_fonts.scss */
+.icon-hat:before {
+  content: "\e600";
+}
+
+/* line 29, ../scss/_fonts.scss */
+.icon-doc:before {
+  content: "\e601";
+}
+
+/* line 32, ../scss/_fonts.scss */
+.icon-mug:before {
+  content: "\e602";
+}
+
+/**** Gotham *****/
+@font-face {
+  font-family: Gotham;
+  font-weight: 300;
+  font-style: normal;
+  src: url(../fonts/Gotham-Thin/gotham-thin.eot);
+  src: url(../fonts/Gotham-Thin/gotham-thin.eot?#iefix) format("embedded-opentype"), url(../fonts/Gotham-Thin/gotham-thin.woff) format("woff"), url(../fonts/Gotham-Thin/gotham-thin.ttf) format("truetype"), url(../fonts/Gotham-Thin/gotham-thin.svg#Gotham) format("svg");
+}
+
+@font-face {
+  font-family: Gotham;
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/Gotham-Book/gotham-book.eot);
+  src: url(../fonts/Gotham-Book/gotham-book.eot?#iefix) format("embedded-opentype"), url(../fonts/Gotham-Book/gotham-book.woff) format("woff"), url(../fonts/Gotham-Book/gotham-book.ttf) format("truetype"), url(../fonts/Gotham-Book/gotham-book.svg#Gotham) format("svg");
+}
+
+@font-face {
+  font-family: Gotham;
+  font-weight: 700;
+  font-style: normal;
+  src: url(../fonts/Gotham-Bold/gotham-bold.eot);
+  src: url(../fonts/Gotham-Bold/gotham-bold.eot?#iefix) format("embedded-opentype"), url(../fonts/Gotham-Bold/gotham-bold.woff) format("woff"), url(../fonts/Gotham-Bold/gotham-bold.ttf) format("truetype"), url(../fonts/Gotham-Bold/gotham-bold.svg#Gotham) format("svg");
+}
+
+/* line 9, ../scss/main.scss */
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 13, ../scss/main.scss */
+* {
+  color: #fff;
+  font-family: Gotham;
+  margin: 0;
+  outline: none;
+  padding: 0;
+}
+
+/* line 21, ../scss/main.scss */
+.tela-1 {
+  background: url(../images/bg-tela1.jpg) bottom center no-repeat;
+  background-color: #262626;
+  background-size: cover;
+  display: block;
+  height: 750px;
+  padding: 328px 0 0 0;
+}
+/* line 28, ../scss/main.scss */
+.tela-1 h1 {
+  margin: 0;
+}
+/* line 30, ../scss/main.scss */
+.tela-1 h1 a {
+  background: url(../images/logo-dbr.png);
+  display: block;
+  height: 38px;
+  text-indent: -999999px;
+  margin: 0 auto;
+  width: 144px;
+}
+/* line 39, ../scss/main.scss */
+.tela-1 p {
+  display: block;
+  font-size: 55px;
+  font-weight: 300;
+  padding: 40px 0 0 0;
+  text-align: center;
+}
+/* line 45, ../scss/main.scss */
+.tela-1 p strong {
+  font-size: 75px;
+  font-weight: 700;
+}
+/* line 49, ../scss/main.scss */
+.tela-1 p span {
+  color: #55e574;
+}
+
+/* line 54, ../scss/main.scss */
+.tela-2 {
+  background: url(../images/bg-tela2.jpg) top center no-repeat;
+  background-size: cover;
+  padding: 200px 0 234px 0;
+}
+/* line 58, ../scss/main.scss */
+.tela-2 p {
+  font-size: 55px;
+  font-weight: 300;
+  text-align: center;
+}
+/* line 62, ../scss/main.scss */
+.tela-2 p strong {
+  color: #bf305f;
+}
+/* line 66, ../scss/main.scss */
+.tela-2 ul {
+  display: block;
+  margin: 60px auto;
+  width: 868px;
+}
+/* line 70, ../scss/main.scss */
+.tela-2 ul li {
+  display: inline-block;
+  margin: 0 30px;
+}
+/* line 73, ../scss/main.scss */
+.tela-2 ul li span {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: block;
+  font-size: 100px;
+  height: 222px;
+  line-height: 210px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 222px;
+}
+/* line 89, ../scss/main.scss */
+.tela-2 ul li span:hover:after {
+  transform: scale(1, 1);
+}
+/* line 92, ../scss/main.scss */
+.tela-2 ul li span:hover:before {
+  color: #000;
+}
+/* line 96, ../scss/main.scss */
+.tela-2 ul li span:before {
+  left: 0;
+  position: absolute;
+  transition: all 0.5s;
+  width: 100%;
+  z-index: 20;
+}
+/* line 103, ../scss/main.scss */
+.tela-2 ul li span:after {
+  content: "";
+  background: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: block;
+  height: 222px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  transition: all 0.5s;
+  transform: scale(0, 0);
+  width: 222px;
+  z-index: 10;
+}
+/* line 121, ../scss/main.scss */
+.tela-2 ul li p {
+  font-size: 30px;
+  font-weight: 400;
+  padding: 30px 0 0 0;
+}
+
+/* line 129, ../scss/main.scss */
+.tela-3 {
+  background: url(../images/bg-tela3.jpg) no-repeat top center;
+  background-size: cover;
+  padding: 196px 0 94px 0;
+  text-align: center;
+}
+/* line 134, ../scss/main.scss */
+.tela-3 h2 {
+  font-size: 55px;
+  font-weight: 300;
+}
+
+/* line 139, ../scss/main.scss */
+.form {
+  background: #cccbc4;
+  padding: 73px 0 0 0;
+  /* sexo */
+}
+/* line 142, ../scss/main.scss */
+.form p {
+  color: #807c61;
+  font-size: 55px;
+  font-weight: 300;
+  text-align: center;
+}
+/* line 148, ../scss/main.scss */
+.form .brain {
+  background: #807c61;
+  display: block;
+  height: 1px;
+  margin: 92px auto;
+  position: relative;
+  width: 80%;
+}
+/* line 155, ../scss/main.scss */
+.form .brain:after {
+  content: "";
+  background: url(../images/ico-brain.png) no-repeat center center;
+  background-color: #cccbc4;
+  display: block;
+  height: 34px;
+  left: 50%;
+  margin-left: -45px;
+  position: absolute;
+  top: -17px;
+  width: 90px;
+}
+/* line 169, ../scss/main.scss */
+.form input,
+.form textarea {
+  background: #fff;
+  border: none;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -o-border-radius: 20px;
+  color: #b8b8b8;
+  display: block;
+  height: 25px;
+  font-style: italic;
+  font-size: 14px;
+  margin: 0 auto 35px auto;
+  padding: 1% 2%;
+  width: 98%;
+}
+/* line 185, ../scss/main.scss */
+.form textarea {
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  height: 72px;
+  padding: 10px 0 0 36px;
+  width: 100%;
+}
+/* line 194, ../scss/main.scss */
+.form .msg-icon {
+  background: url(../images/sprite-form.png) no-repeat;
+  background-position: 0 -112px;
+  display: block;
+  height: 32px;
+  left: 0;
+  position: absolute;
+  width: 32px;
+}
+/* line 206, ../scss/main.scss */
+.form .campos-multiplos,
+.form .campo01,
+.form .campo-mensagem,
+.form .btn-enviar {
+  position: relative;
+  margin: 0 auto;
+  width: 46%;
+}
+/* line 212, ../scss/main.scss */
+.form .btn-enviar a {
+  background-color: #8BDF9F;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  color: #FFF;
+  float: right;
+  font-weight: 700;
+  font-size: 20px;
+  height: 39px;
+  line-height: 39px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s;
+  width: 182px;
+}
+/* line 228, ../scss/main.scss */
+.form .btn-enviar a:hover {
+  background-color: #000;
+  transition: all 0.5s;
+}
+/* line 235, ../scss/main.scss */
+.form .campo02 input {
+  float: left;
+  width: 80px;
+}
+/* line 241, ../scss/main.scss */
+.form .campo04 input {
+  float: left;
+  width: 184px;
+}
+/* line 246, ../scss/main.scss */
+.form .campo-icon {
+  position: relative;
+}
+/* line 248, ../scss/main.scss */
+.form .campo-icon input {
+  padding-left: 6%;
+  width: 96%;
+}
+/* line 252, ../scss/main.scss */
+.form .campo-icon i {
+  background: url(../images/sprite-form.png) no-repeat;
+  display: block;
+  height: 32px;
+  left: 0;
+  position: absolute;
+  width: 32px;
+}
+/* line 259, ../scss/main.scss */
+.form .campo-icon i.twitter-icon {
+  background-position: 0 -37px;
+}
+/* line 262, ../scss/main.scss */
+.form .campo-icon i.github-icon {
+  background-position: 0 -75px;
+}
+/* line 267, ../scss/main.scss */
+.form .input-sexo {
+  background: #fff;
+  border: none;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -o-border-radius: 20px;
+  display: block;
+  float: left;
+  margin: 0 10px;
+  width: 250px;
+}
+/* line 279, ../scss/main.scss */
+.form .input-sexo .item-sexo {
+  color: #b8b8b8;
+  display: inline-block;
+  float: left;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 39px;
+  margin: 0 12px;
+}
+/* line 290, ../scss/main.scss */
+.form .onoffswitch {
+  position: relative;
+  width: 68px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  float: left;
+  margin: 2px 0 0 0;
+}
+/* line 296, ../scss/main.scss */
+.form .onoffswitch-checkbox {
+  display: none;
+}
+/* line 299, ../scss/main.scss */
+.form .onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #fff;
+  border-radius: 20px;
+}
+/* line 303, ../scss/main.scss */
+.form .onoffswitch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  -moz-transition: margin 0.3s ease-in 0s;
+  -webkit-transition: margin 0.3s ease-in 0s;
+  -o-transition: margin 0.3s ease-in 0s;
+  transition: margin 0.3s ease-in 0s;
+}
+/* line 308, ../scss/main.scss */
+.form .onoffswitch-inner:before, .form .onoffswitch-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 30px;
+  padding: 0;
+  line-height: 30px;
+  font-size: 14px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 313, ../scss/main.scss */
+.form .onoffswitch-inner:before {
+  content: "";
+  padding-left: 10px;
+  background-color: #34A7C1;
+  color: #FFFFFF;
+}
+/* line 318, ../scss/main.scss */
+.form .onoffswitch-inner:after {
+  content: "";
+  padding-right: 10px;
+  background-color: #BF305F;
+  color: #FFFFFF;
+  text-align: right;
+}
+/* line 324, ../scss/main.scss */
+.form .onoffswitch-switch {
+  display: block;
+  width: 18px;
+  margin: 6px;
+  background: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 34px;
+  -moz-transition: all 0.3s ease-in 0s;
+  -webkit-transition: all 0.3s ease-in 0s;
+  -o-transition: all 0.3s ease-in 0s;
+  transition: all 0.3s ease-in 0s;
+}
+/* line 332, ../scss/main.scss */
+.form .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+/* line 335, ../scss/main.scss */
+.form .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px;
+}
+
+/* line 340, ../scss/main.scss */
+.logo-footer {
+  background: url(../images/logo-footer.png) no-repeat;
+  display: block;
+  height: 39px;
+  text-indent: -999999px;
+  margin: 60px auto 0 auto;
+  padding-bottom: 60px;
+  width: 145px;
+}

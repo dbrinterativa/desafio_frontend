@@ -1,0 +1,349 @@
+/* ==========================================================================
+   Author's custom styles - seu.nome@planb.com.br
+   ========================================================================== */
+
+@import "normalize";
+@import "fonts";
+
+body,
+html{
+	margin: 0;
+	padding: 0;
+}
+*{
+	color: #fff;
+	font-family: Gotham;
+	margin: 0;
+	outline: none;
+	padding: 0;
+}
+
+.tela-1{
+	background: url(../images/bg-tela1.jpg) bottom center no-repeat;
+	background-color: #262626;
+	background-size: cover;
+	display: block;
+	height: 750px;
+	padding: 328px 0 0 0;
+	h1{
+		margin: 0;
+		a{
+			background: url(../images/logo-dbr.png);
+			display: block;
+			height: 38px;
+			text-indent: -999999px;
+			margin: 0 auto;
+			width: 144px;
+		}
+	}
+	p{
+		display: block;
+		font-size: 55px;
+		font-weight: 300;
+		padding: 40px 0 0 0;
+		text-align: center;
+		strong{
+			font-size: 75px;
+			font-weight: 700;
+		}
+		span{
+			color: #55e574;
+		}
+	}
+}
+.tela-2{
+	background: url(../images/bg-tela2.jpg) top center no-repeat;
+	background-size: cover;
+	padding: 200px 0 234px 0;
+	p{
+		font-size: 55px;
+		font-weight: 300;
+		text-align: center;
+		strong{
+			color: #bf305f;
+		}
+	}
+	ul{
+		display: block;
+		margin: 60px auto;
+		width: 868px;
+		li{
+			display: inline-block;
+			margin: 0 30px;
+			span{
+				border: 1px solid #fff;
+				border-radius: 50%;
+				-webkit-border-radius: 50%;
+				-moz-border-radius: 50%;
+				-o-border-radius: 50%;
+				display: block;
+				font-size: 100px;
+				height: 222px;
+				line-height: 210px;
+				overflow: hidden;
+				position: relative;
+				text-align: center;
+				width: 222px;
+				&:hover{
+
+					&:after{
+						transform:scale(1,1);
+					}
+					&:before{
+						color: #000;
+					}
+				}
+				&:before{
+					left:0;
+					position: absolute;
+					transition: all 0.5s;
+					width: 100%;
+					z-index: 20;
+				}
+				&:after{
+					content:"";
+					background: #fff;
+					border-radius: 50%;
+					-webkit-border-radius: 50%;
+					-moz-border-radius: 50%;
+					-o-border-radius: 50%;
+					display: block;
+					height: 222px;
+					overflow: hidden;
+					position: relative;
+					text-align: center;
+					transition: all 0.5s;
+					transform:scale(0,0);
+					width: 222px;
+					z-index: 10;
+				}
+			}
+			p{
+				font-size: 30px;
+				font-weight: 400;
+				padding: 30px 0 0 0;
+			}
+		}
+	}
+}
+.tela-3{
+	background: url(../images/bg-tela3.jpg) no-repeat top center;
+	background-size: cover;
+	padding: 196px 0 94px 0;
+	text-align: center;
+	h2{
+		font-size: 55px;
+		font-weight: 300;
+	}
+}
+.form{
+	background: #cccbc4;
+	padding: 73px 0 0 0;
+	p{
+		color: #807c61;
+		font-size: 55px;
+		font-weight: 300;
+		text-align: center;
+	}
+	.brain{
+		background: #807c61;
+		display: block;
+		height: 1px;
+		margin: 92px auto;
+		position: relative;
+		width: 80%;
+		&:after{
+			content: "";
+			background: url(../images/ico-brain.png) no-repeat center center;
+			background-color: #cccbc4;
+			display: block;
+			height: 34px;
+			left: 50%;
+			margin-left: -45px;
+			position: absolute;
+			top: -17px;
+			width: 90px;
+		}
+	}
+	input,
+	textarea{
+		background: #fff;
+		border:none;
+		border-radius: 20px;
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		-o-border-radius: 20px;
+		color: #b8b8b8;
+		display: block;
+		height: 25px;
+		font-style: italic;
+		font-size: 14px;
+		margin: 0 auto 35px auto;
+		padding:1% 2%;
+		width:98%;
+	}
+	textarea{
+		border-radius: 10px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		-o-border-radius: 10px;
+		height: 72px;
+		padding: 10px 0 0 36px;
+		width: 100%;
+	}
+	.msg-icon{
+		background: url(../images/sprite-form.png) no-repeat;
+		background-position: 0 -112px;
+		display: block;
+		height: 32px;
+		left: 0;
+		position: absolute;
+		width: 32px;
+	}
+	.campos-multiplos,
+	.campo01,
+	.campo-mensagem,
+	.btn-enviar{
+		position: relative;
+		margin: 0 auto;
+		width: 46%;
+	}
+	.btn-enviar{
+		a{
+			background-color: #8BDF9F;
+			border-radius: 10px;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			-o-border-radius: 10px;
+			color: #FFF;
+			float: right;
+			font-weight: 700;
+			font-size: 20px;
+			height: 39px;
+			line-height: 39px;
+			text-align: center;
+			text-decoration: none;
+			transition: all 0.5s;
+			width: 182px;
+			&:hover{
+				background-color: #000;
+				transition: all 0.5s;
+			}
+		}
+	}
+	.campo02{
+		input{
+			float: left;
+			width: 80px;
+		}
+	}
+	.campo04{
+		input{
+			float: left;
+			width: 184px;
+		}
+	}
+	.campo-icon{
+		position: relative;
+		input{
+			padding-left: 6%;
+			width: 96%;
+		}
+		i{
+			background: url(../images/sprite-form.png) no-repeat;
+			display: block;
+			height: 32px;
+			left: 0;
+			position: absolute;
+			width: 32px;
+			&.twitter-icon{
+				background-position: 0 -37px;
+			}
+			&.github-icon{
+				background-position: 0 -75px;
+			}
+		}
+	}
+	.input-sexo{
+		
+		background: #fff;
+		border:none;
+		border-radius: 20px;
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		-o-border-radius: 20px;
+		display: block;
+		float: left;
+		margin:0 10px;
+		width: 250px;
+		.item-sexo{
+			color: #b8b8b8;
+			display: inline-block;
+			float: left;
+			font-style: italic;
+			font-size: 14px;
+			line-height: 39px;
+			margin: 0 12px;
+		}
+	}
+	/* sexo */
+	.onoffswitch {
+	    position: relative; width: 68px;
+	    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+	    float: left;
+	    margin: 2px 0 0 0;
+	}
+	.onoffswitch-checkbox {
+	    display: none;
+	}
+	.onoffswitch-label {
+	    display: block; overflow: hidden; cursor: pointer;
+	    border: 2px solid #fff; border-radius: 20px;
+	}
+	.onoffswitch-inner {
+	    display: block; width: 200%; margin-left: -100%;
+	    -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+	    -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+	}
+	.onoffswitch-inner:before, .onoffswitch-inner:after {
+	    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+	    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+	    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+	}
+	.onoffswitch-inner:before {
+	    content: "";
+	    padding-left: 10px;
+	    background-color: #34A7C1; color: #FFFFFF;
+	}
+	.onoffswitch-inner:after {
+	    content: "";
+	    padding-right: 10px;
+	    background-color: #BF305F; color: #FFFFFF;
+	    text-align: right;
+	}
+	.onoffswitch-switch {
+	    display: block; width: 18px; margin: 6px;
+	    background: #FFFFFF;
+	    border: 2px solid #FFFFFF; border-radius: 20px;
+	    position: absolute; top: 0; bottom: 0; right: 34px;
+	    -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+	    -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; 
+	}
+	.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+	    margin-left: 0;
+	}
+	.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+	    right: 0px; 
+	}
+}
+
+.logo-footer{
+	background: url(../images/logo-footer.png) no-repeat;
+	display: block;
+	height: 39px;
+	text-indent: -999999px;
+	margin: 60px auto 0 auto;
+	padding-bottom: 60px;
+	width: 145px;
+}
+
