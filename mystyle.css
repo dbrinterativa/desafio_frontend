@@ -1,0 +1,382 @@
+/*
+= General
+======================================================*/
+.screenConfig{
+	height:auto;
+	min-height:1080px;
+	width:100%;
+	display:table;
+	text-align:center;
+	table-layout:fixed;
+}
+
+body{
+	padding:0;
+	margin:0;
+	text-align:-webkit-center;
+}
+
+.listStyle{
+	list-style:none;
+	padding:0px;
+	height:360px;
+}
+
+.listStyle li{
+	width:218px;
+	height:350px;
+	display:inline;
+}
+
+.telas{
+	background-image:url(Images/telas_bg.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+@font-face {
+    font-family: gotham-thin;
+    src: url(Fonts/gotham-thin.ttf);
+}
+@font-face{
+    font-family: gotham-bold;
+    src: url(Fonts/gotham-bold.otf);
+}
+@font-face{
+    font-family: gotham-normal;
+    src: url(Fonts/gotham.ttf);
+}
+@font-face{
+    font-family: avenir-light-oblique;
+    src: url(Fonts/avenir-light-oblique.otf);
+}
+
+/*
+= Tela1
+======================================================*/
+
+.contentTela1{
+	margin:auto;
+	width:494px;
+	text-align:center;
+	display:table-cell;
+	vertical-align:middle;
+}
+
+.font-gotham-thin{
+	font-family:gotham-thin;
+	font-size:54px;
+	color:#FFF;
+	line-height: 70px;
+}
+
+.font-gotham-bold{
+	font-family:gotham-bold;
+	font-size:72px;
+	color:#FFF;
+	line-height: 70px;
+}
+
+.font-green{
+	color:#55e574;
+}
+
+/*
+= Tela2
+======================================================*/
+
+.contentTela2{
+	width:780px;
+	text-align:center;
+	display:table-cell;
+	vertical-align:middle;
+	table-layout: fixed;
+}
+
+.tela2block{
+	text-align:center;
+	width:250px;
+	margin:auto;
+	height:350px;
+	display:inline-block;
+}
+
+.limitWidth{
+	width:654px;
+}
+
+.font-ghotam-normal{
+	font-family:gotham-normal;
+	font-size:34px;
+	color:#FFF;
+	line-height: 36px;
+}
+
+.imgPadding{
+	padding-bottom:26px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.textPadding{
+	padding-bottom:36px;
+}
+
+.font-color-purple{
+	color:#bf305f;
+	font-size:56px;
+}
+
+
+/*
+= Tela3
+======================================================*/
+
+.tela3{
+	height:auto;
+	min-height:1080px;
+	width:100%;
+	display:table;
+	text-align:center;
+	table-layout:fixed;
+	background-image:url(Images/tela3_bg.jpg);
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+.text-container{
+	width:1100px;
+	height:850px;
+	margin:auto;
+	display:block;
+	position:relative;
+	margin-top:200px;
+}
+
+.text-title{
+	position:absolute;
+	margin:auto;
+	left:30px;
+}
+
+.texts-resize{
+	font-size:26px;
+}
+
+.text-1{
+	position:absolute;
+	margin:auto;
+	left:500px;
+	top:125px;
+}
+.text-2{
+	position:absolute;
+	margin:auto;
+	left:110px;
+	top:190px;
+}
+.text-3{
+	position:absolute;
+	margin:auto;
+	left:470px;
+	top:344px;
+}
+.text-4{
+	position:absolute;
+	margin:auto;
+	left:890px;
+	top:455px;
+}
+.text-5{
+	position:absolute;
+	margin:auto;
+	left:205px;
+	top:582px;
+}
+.text-6{
+	position:absolute;
+	margin:auto;
+	left:420px;
+	top:756px;
+}
+
+/*
+= Tela4
+======================================================*/
+
+.tela4{
+	height:auto;
+	min-height:1080px;
+	width:100%;
+	display:table;
+	text-align:center;
+	table-layout:fixed;
+	background-color:#cccbc4;
+}
+
+.font-color-brown{
+	color:#807c61;
+	width:1040;
+	display:block;
+	text-align:center;
+	margin:auto;
+	padding-top:50px;
+	padding-bottom:20px;
+}
+
+.brainConfig{
+	padding-bottom:40px;
+}
+
+.form-text-field{
+	width:565px;
+	border:none;
+	height:36px;
+	border-radius: 20px;
+	padding-left:20px;
+	font-family:avenir-light-oblique;
+	font-size:16px;
+	color:#b8b8b8;
+	margin-bottom:35px;
+}
+
+.formWidth{
+	width:565px;
+	margin:auto;
+}
+
+.idadeWidth{
+	width:85px;
+}
+
+.salarioWidth{
+	width:205px;
+}
+
+.form-sexo{
+	width:251px;
+	height:36px;
+	background-color:#FFF;
+	border-radius: 20px;
+	display:inline-block;
+	margin-bottom:35px;
+	vertical-align:top;
+	margin-left:6px;
+	margin-right:6px;
+}
+
+.form-font{
+	font-family:avenir-light-oblique;
+	font-size:16px;
+	color:#b8b8b8;
+	line-height:36px;
+	margin:auto;
+}
+
+.form-facebook{
+	background-image:url(Images/form_icon_fb.png);
+	background-position: 5px;
+	background-repeat:no-repeat;
+	padding-left:35px;
+}
+
+.form-twitter{
+	background-image:url(Images/form_icon_twitter.png);
+	background-position: 5px;
+	background-repeat:no-repeat;
+	padding-left:35px;
+}
+.form-git{
+	background-image:url(Images/form_icon_git.png);
+	background-position: 5px;
+	background-repeat:no-repeat;
+	padding-left:35px;
+}
+.form-falemais{
+	background-image:url(Images/form_icon_fale.png);
+	background-position: 5px 5px;
+	background-repeat:no-repeat;
+	padding-left:35px;
+	padding-top:7px;
+	padding-right:7px;
+	height:auto;
+}
+
+.form-enviar{
+	background-color:#8bdf9f;
+	width:182px;
+	height:40px;
+	float:right;
+	font-family:gotham-bold;
+	color:#FFF;
+	font-size:20px;
+	border-style:none;
+	border-radius:10px;
+	cursor:pointer; cursor:hand;
+}
+
+.dbr-logo{
+	padding-top:100px;
+	margin:auto;
+	text-align:center;
+	display:block;
+	margin-bottom:40px;
+	float:right;
+}
+
+.form-float{
+	float:left;
+	padding-left:14px;
+	padding-right:12px;
+}
+
+
+/*
+= Test Formswitch
+======================================================*/
+
+.onoffswitch {
+    width: 60px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+	float:left;
+	position:relative;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 36px; padding: 0; line-height: 36px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "";
+    background-color: #eb3bf1; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "";
+    background-color: #34A7C1; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 30px; margin: 2px; height:30px;
+    background: #FFFFFF;
+    border: 1px solid #818181; border-radius: 20px;
+    position: absolute; top: 0; bottom: 0; right: 24px;
+    -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
