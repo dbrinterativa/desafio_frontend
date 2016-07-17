@@ -1,19 +1,17 @@
 # Desafio Front-end DBR
 # Wessek 17/07/2016
 
-Olá pessoal!
-
 # IMPORTANTE
+
 Apos rodar o gulp go, quando aparecer "Connected to BrowserSync", às vezes é necessario dar um refresh na página por causa do Angular.
 
-Informações sobre a build:
+# Informações sobre a build:
 
-Precisa do gulp-cli
-Precisa rodar npm install
-Precisa rodar bower install
-
-Tem angular
-Tem bootstrap
+** Precisa do gulp-cli **
+Precisa rodar npm install **
+Precisa rodar bower install **
+Tem angular **
+Tem bootstrap **
 
 - Features:
 
