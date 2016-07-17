@@ -20,7 +20,7 @@ Tem bootstrap **
 * ngAnimations Ready (não vi necessidade de animar nada com eventos na página)
 * ng-scroll-animations funcionais (preciso mandar uma issue deste cara, para que o logo da footer faça o bounce bonitinho que eu quero - se der f5 vc consegue ver a animation, mas o defaultstate dele está sendo no estado :after).
 
-- Implementação backend (supondo que será um PDO email send):
+# Implementação backend (supondo que será um PDO email send):
 
 * Validação de campos pendente (posso fazer no front).
 * Precisa puxar o true-false boolean da checkbox do gênero e traduzir para nomenclaturas.
@@ -48,7 +48,7 @@ Tem bootstrap **
 
 * Cheers!
 
-* <- Original File -> *
+# <- Original File ->
 
 Desafio DBR.ag
 ================
