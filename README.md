@@ -27,12 +27,12 @@ Tem bootstrap **
 
 - Diretórios:
 
-*/app -> dev, sempre fazer alterações aqui.
-*/dist -> build pronta para o webserver.
+* /app -> dev, sempre fazer alterações aqui.
+* /dist -> build pronta para o webserver.
 
 - Para subir o webserver, rode "gulp go" a partir deste diretório.
 
-### O GULP GO: ###
+# O GULP GO:
 
 * Pega o sass e transforma em css;
 * Minifica o css e o js em arquivos únicos (com os frameworks inclusive) na pasta dist. Esse processo demora uns 15s na minha máquina - be patient;
@@ -42,12 +42,12 @@ Tem bootstrap **
 * Atualiza a página, minifica, copia e tals dinâmicamente nos browsers que estiverem com a página aberta, quando há alteração nos arquivos da pasta /app.
 * Para novos arquivos de imagem/template/fontes, precisa fechar e rodar de novo. Provavelmente.
 
-- Porta 3000 app, porta 3001 admin panel.
+* - Porta 3000 app, porta 3001 admin panel.
 
-OBRIGADO pelo incentivo, e pela oportunidade de participar do processo seletivo.
+* OBRIGADO pelo incentivo, e pela oportunidade de participar do processo seletivo.
 
-Cheers!
-
+* Cheers!
+<-->
 Desafio DBR.ag
 ================
 
