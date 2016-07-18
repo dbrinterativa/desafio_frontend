@@ -1,0 +1,275 @@
+/* FONTS */
+@font-face {
+  font-family: 'Proxima Regular';
+  src: url("../fonts/proximanova-regular/proximanova-regular-webfont.ttf") format("truetype"), url("../fonts/proximanova-regular/proximanova-regular-webfont.svg") format("svg"), url("../fonts/proximanova-regular/proximanova-regular-webfont.eot") format("eot"), url("../fonts/proximanova-regular/proximanova-regular-webfont.woff") format("woff");
+}
+
+/* MAIN */
+body {
+  background-color: #292956;
+  line-height: 100%;
+  font-family: 'Proxima Regular';
+  color: #f2f2f2;
+}
+
+a, a:active, a:focus, button, button:focus, button:active, .btn, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn.active.focus {
+  outline: none;
+  outline: 0;
+}
+
+h1, h2, h3, h4 {
+  line-height: 100%;
+  margin: 20px 0;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+}
+
+section {
+  padding: 80px 0 80px 0;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+.inner-break {
+  padding-bottom: 20px;
+}
+
+.bottom-row {
+  width: 100%;
+  position: absolute;
+  bottom: 30px;
+}
+
+.not-visible {
+  visibility: hidden;
+}
+
+/* SECTIONS */
+
+#main {
+  height: 100%;
+}
+
+#main {
+  background-color: #262626;
+}
+
+  #main h1 {
+    font-size: 3em;
+  }
+
+  #main h2 {
+    font-size: 5em;
+    font-weight: bold;
+  }
+
+  #main h3 {
+    font-size: 3em;
+    font-weight: 100;
+    display: inline;
+    padding: 0 10px;
+  }
+
+  #main h4, #columns h1, #lists h1 {
+    font-size: 4em;
+    font-weight: bold;
+  }
+
+
+#columns, #lists {
+  background-size: fit;
+  background-position: center;
+  background-attachment: fixed; 
+}
+
+#columns {
+  background-image: url('../images/geracao-y.jpg');
+}
+
+
+  #columns p {
+    height: 100px;
+    width: 100%;  
+    font-size: 1.5em;
+    line-height: 150%;
+  }
+
+  #columns h1 {
+    padding: 60px 0;
+  }
+
+  .bigicon {
+    padding: 40px 0;
+    width: 100%;
+  }
+
+#lists {
+  background-image: url('../images/valores.jpg');
+}
+
+  #lists p {
+    text-shadow: 2px 2px 0px rgba(50, 50, 50, 1);
+    padding: 20px 0 0 0;
+    font-size: 2em;
+    line-height: 200%;
+    font-weight: bold;
+  }
+
+#form {
+  height: 1000px;  
+}
+
+  #form h1 {
+    font-size: 3em;
+    padding: 0 0 20px 0;
+  } 
+
+.footer {
+  background-color: #cccccc;
+  padding: 30px 0 30px 0;
+}
+
+/* FORM + INPUTS */
+
+.form {
+  width: 80%;
+  margin: 20px auto;
+  display: block;
+}
+
+input[type="text"], input[type="socialdata"], input[type="shortdata"], input[type="longdata"], .switch, textarea {
+  margin-top: 20px;
+  font-weight: bold;
+  border: 2px solid #f2f2f2;
+  background-color: #FFF;
+  border-radius: 1em;
+  color: #292956;
+  font-style: italic;
+  font-size: 1em;  
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: .5em 1em;
+}
+
+.formgroup {
+  width: 100%;
+  clear: both;
+}
+
+.switch {
+  width: 46%;
+  margin-left: 11px;
+  height: 34px; 
+  padding: 0 2.5em;
+}
+
+.switch span {
+    display: inline-block;
+    height: 35px;
+    padding: 0 5px;
+    vertical-align: middle;
+    color: gray;
+}
+
+.switch input {
+    display: none;
+}
+
+.switch i {
+    display: inline-block;
+    cursor: pointer;
+    padding-right: 20px;
+    transition: all ease 0.2s;
+    -webkit-transition: all ease 0.2s;
+    border-radius: 20px;
+    box-shadow: inset 0 0 1px rgba(0,0,0,.5), inset 0 0 40px rgba(255,102,153,.5);
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,.5), inset 0 0 40px rgba(255,102,153,.5);
+}
+
+.switch i:before {
+    display: block;
+    content: '';
+    width: 32px;
+    height: 30px; 
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 1px 2px rgba(0,0,0,.5);
+}
+
+.switch :checked + i {
+    padding-right: 0;
+    padding-left: 20px;
+    box-shadow: inset 0 0 1px rgba(0,0,0,.5), inset 0 0 40px lightblue;
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,.5), inset 0 0 40px lightblue;
+}
+
+input[type="shortdata"] {
+  width: 15%;
+  float: left;
+  padding: .5em 1em;
+}
+
+input[type="longdata"] {
+  float: right;
+  width: 35%;
+  padding: .5em 1em;
+}
+
+textarea, .bgface, .bgtwitter, .bggithub {
+  width: 100%;
+  padding: .5em 2.2em;
+}
+
+.bgface {
+  background: white url('../images/icons/form-facebook.png') no-repeat 2px 2px; 
+}
+
+.bgtwitter {
+  background: white url('../images/icons/form-twitter.png') no-repeat 2px 2px; 
+}
+
+.bggithub {
+  background: white url('../images/icons/form-github.png') no-repeat 2px 2px; 
+}
+
+textarea {
+  resize: none;
+  height: 200px;
+  background: white url('../images/icons/form-fale.png') no-repeat 1px 1px;
+}
+
+input[type="submit"] { 
+  padding: 5px 30px;
+  margin-top: 20px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 991px) {
+
+  #form {
+    height: 1200px;
+  }
+
+  .formgroup {
+    display: block;
+
+  }
+
+  input[type="shortdata"], input[type="longdata"], .switch {
+    width: 100%;
+  }
+
+  .switch {
+    margin-left: 0;
+    padding: 0 0.7em;   
+  }
+
+}
