@@ -30,7 +30,7 @@ Tem bootstrap **
 * Validação de campos pendente (posso fazer no front).
 * Precisa puxar o true-false boolean da checkbox do gênero e traduzir para nomenclaturas.
 
-- Para subir o webserver, rode "gulp go" a partir deste diretório.
+* Para subir o webserver, rode "gulp go" a partir deste diretório.
 
 # O GULP GO:
 
@@ -42,7 +42,7 @@ Tem bootstrap **
 * Atualiza a página, minifica, copia e tals dinâmicamente nos browsers que estiverem com a página aberta, quando há alteração nos arquivos da pasta /app.
 * Para novos arquivos de imagem/template/fontes, precisa fechar e rodar de novo. Provavelmente.
 
-* - Porta 3000 app, porta 3001 admin panel.
+* Porta 3000 app, porta 3001 admin panel.
 
 # <--- Original File --->
 
