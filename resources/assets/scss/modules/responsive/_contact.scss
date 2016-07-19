@@ -1,0 +1,53 @@
+@media all and (max-width: $break-desktop) {
+	.contact {
+		&__title {
+			font-size: $font-size-large * 1.8;
+		}
+	}
+}
+
+@media all and (max-width: $break-tablet) {
+	.contact {
+		&__title {
+			font-size: $font-size-large * 1.4;
+			text-align: center;
+			max-width: 1024px;
+			margin: .5em;
+		}
+
+		&__form-group {
+			display: block;
+
+			&--age {
+				width: 20%;
+			}
+
+			&--gender {
+				width: 85%;
+			}
+
+			&--salary {
+				width: 50%;
+			}
+		}
+	}
+}
+
+@media all and (max-width: $break-phone) {
+	.contact {
+		&__title {
+			font-size: $font-size-large;
+			margin-top: 1em;
+		}
+
+		label {
+			font-size: $font-size-medium * 1.2;
+		}
+
+		&__gender--field {
+			> label {
+				line-height: 1.6;
+			}
+		}
+	}
+}

@@ -1,0 +1,84 @@
+.values {
+	background-image: url('../img/bg-section-3.jpg');
+
+	&__container {
+		margin: 2.5em 0;
+
+		h1 {
+			font-size: $font-size-large * 2.3;
+			font-weight: $font-weight-thin;
+			text-align: center;
+		}
+	}
+
+	&__content {
+		margin: 0 1em;;
+		position: relative;
+
+		&--bg {
+			margin: 1em 0;
+		}
+
+		&--items {
+			font-size: $font-size-large;
+			font-weight: $font-weight-base;
+		}
+
+		&--learn,
+		&--knowledge,
+		&--challenge,
+		&--humor,
+		&--music,
+		&--share {
+			position: absolute;
+		}
+
+		&--learn {
+			top: 24.7%;
+			left: 3.5%;
+		}
+
+		&--knowledge {
+			top: 16.7%;
+			left: 40.5%;
+
+			&-full {
+				position: absolute;
+				max-width: none;
+				top: -50%;
+				left: 110%;
+			}
+
+			&-mini {
+				display: none;
+			}
+		}
+
+		&--challenge {
+			top: 43.4%;
+			left: 38%;
+		}
+
+		&--humor {
+			top: 57.3%;
+			left: 78%;
+		}
+
+		&--music {
+			top: 72.8%;
+			left: 12%;
+		}
+
+		&--share {
+			top: 94.2%;
+			left: 33%;
+		}
+	}
+
+	&__items {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+	}
+}

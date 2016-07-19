@@ -1,0 +1,79 @@
+.contact {
+	background: $color-contact-bg;
+	color: darken($color-contact-text, 20%);
+
+	&__title {
+		font-size: $font-size-large * 2.2;
+		text-align: center;
+		max-width: 1024px;
+		margin: .5em;
+	}
+
+	&__separator {
+		background: url('../img/separator.png') no-repeat center center;
+		height: 40px;
+		margin: 1em 0;
+	}
+
+	&__logo {
+		background: url('../img/dbr-logo.png') no-repeat;
+		@include sprite(144px, 39px, -154px, 0);
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 3em;
+
+		&--link {
+			display: block;
+			width: 144px;
+			height: 39px;
+		}
+	}
+
+	&__form-group {
+		display: flex;
+		align-items: flex-end;
+
+		&--age {
+			width: 15%;
+		}
+
+		&--gender {
+			width: 50%;
+		}
+
+		&--salary {
+			width: 35%;
+		}
+	}
+
+	&__gender--field {
+		display: inline-block;
+
+		> input[type='radio'] {
+			display: none;
+
+			&:checked + label {
+				transition: all .3s;
+				background: darken($color-contact-bg, 20%);
+				color: $color-base-light;
+				position: relative;
+
+				&:after {
+					content: '\2714';
+					position: absolute;
+					right: 10px;
+				}
+			}
+		}
+
+		> label {
+			background: #fff;
+			padding: 0 1.6em 0 .5em;
+			line-height: 1.5;
+			display: block;
+			margin-bottom: .5em !important;
+			border-radius: 6px;
+			cursor: pointer;
+		}
+	}
+}

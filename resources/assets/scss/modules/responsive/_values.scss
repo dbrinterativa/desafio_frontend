@@ -1,0 +1,111 @@
+@media all and (max-width: $break-desktop) {
+	.values {
+		&__container {
+			h1 {
+				font-size: $font-size-large * 1.8;
+			}
+		}
+
+		&__content {
+			&--knowledge {
+				&-full {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media all and (max-width: $break-tablet) {
+	.values {
+		&__container {
+			margin: 2em 0;
+
+			h1 {
+				width: 100%;
+				font-size: $font-size-large * 1.5;
+			}
+		}
+
+		&__content {
+			&--learn {
+				> span {
+					display: block;
+				}
+			}
+
+			&--knowledge {
+				&-full {
+					display: none;
+				}
+
+				&-mini {
+					display: block;
+					margin: .5em 0;
+				}
+			}
+		}
+	}
+}
+
+@media all and (max-width: 640px) {
+	.values {
+		&__container {
+			h1 {
+				font-size: $font-size-large;
+			}
+		}
+	}
+}
+
+@media all and (max-width: $break-phone) {
+	.values {
+		&__container {
+			h1 {
+				font-size: $font-size-large * 1.5;
+				margin-bottom: .5em;
+			}
+		}
+
+		&__content {
+			&--bg {
+				display: none;
+			}
+
+			&--learn,
+			&--knowledge,
+			&--challenge,
+			&--humor,
+			&--music,
+			&--share {
+				position: static;
+				margin-bottom: .5em;
+			}
+
+			&--learn {
+				> span {
+					display: inline-block;
+				}
+			}
+
+			&--knowledge {
+				&-mini {
+					width: 75%;
+					margin-bottom: 1em;
+				}
+			}
+
+			&--items {
+				font-size: $font-size-large;
+				margin-top: 2em;
+				margin-left: 1.2em;
+				position: relative;
+				list-style: initial;
+			}
+		}
+
+		&__items {
+			position: static;
+		}
+	}
+}
