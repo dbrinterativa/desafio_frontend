@@ -6,6 +6,32 @@
 @import '_mixins';
 @import '_font';
 
-/*
-    Your code here
- */
+
+.preload {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: #262626;
+
+    .preload-loader {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 144px;
+        height: 39px;
+        margin: -20px 0 0 -72px;
+        background: url('../img/logo-dbr.png') no-repeat top left;
+    }
+
+    .preload-mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;    
+        background: url('../img/logo-dbr2.png') no-repeat top left;
+    }
+}
