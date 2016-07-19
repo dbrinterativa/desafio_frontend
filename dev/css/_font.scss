@@ -3,8 +3,22 @@
  */
 
 @font-face {
-  font-family: 'My Font';
-  font-path: '/my/font/file';
+  font-family: 'gotham-book';
+  font-path: '../font/gotham-book';
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gotham-bold';
+  font-path: '../font/gotham-bold';
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gotham-thin';
+  font-path: '../font/gotham-thin';
   font-weight: normal;
   font-style: normal;
 }

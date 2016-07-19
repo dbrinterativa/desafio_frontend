@@ -10,16 +10,18 @@ const   gulp         = require('gulp'),
 
 
 const   paths = [
-    'dev/assets/**/*.*',
-    'dev/fonts/**/*.*',
-    'dev/img/**/*.*',
+    'dev/assets','dev/assets/**/*.*',
+    'dev/assets/videos','dev/assets/videos/**/*.*',
+    'dev/font','dev/font/**/*.*',
+    'dev/img','dev/img/**/*.*',
     'dev/scripts/vendor/', 'dev/scripts/vendor/*.*',
-    'dev/*.html'
+    'dev/','dev/*.html'
 ];
+
 
 const   watch_paths = [
     'dev/assets/**/*.*',
-    'dev/fonts/**/*.*',
+    'dev/font/**/*.*',
     'dev/img/**/*.*',
     'dev/*.html',
     'dev/css/**/*.*',
@@ -46,8 +48,8 @@ gulp.task('copy', () => {
 });
 
 gulp.task('css', () => {
-    return gulp.src('dev/css/main.scss')
-            .pipe(sass.sync().on('error', sass.logError))
+    return gulp.src('./dev/css/main.scss')
+            .pipe(sass().on('error', sass.logError))
             .pipe(rucksack({'fallbacks': true}))
             .pipe(autoprefixer(AUTOPREFIXER_BROWSERS))
             .pipe(rename('main.min.css'))
@@ -59,7 +61,7 @@ gulp.task('js', () => {
             .pipe(gulp.dest('build/scripts/'));
 });
 
-gulp.task('serve', ['dev'], () => {
+gulp.task('serve:dev', ['dev'], () => {
     browserSync({
         notify: true,
         logPrefix: 'WSK',
