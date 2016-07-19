@@ -1,0 +1,40 @@
+{
+    "main": {
+		"lang": "pt-br",
+        "title": "Vagas | DBR.ag",
+        "search": "Procura-se:",
+		"job": "Desenvolvedor Front-End",
+		"type": "Presencial",
+		"location": "Lapa, São Paulo - SP"
+    },
+	"second": {
+		"title": "Você, por acaso...",
+		"q1": "Tem um bom currículo?",
+		"q2": "Já trabalhou em agência?",
+		"q3": "É formado na área?",
+		"answer": "Sim?",
+		"conclusion": "Isso não importa aqui!"
+	},
+	"third": {
+		"title": "Sabe o que vale de verdade na DBR.ag?",
+		"p1": "Conhecimentos em: ",
+		"p2": "Interesse em aprender",
+		"p3": "Topar novos desafios",
+		"p4": "Ótimo humor",
+		"p5": "Gostar de música",
+		"p6": "Gostar de compartilhar conhecimento"
+	},
+	"fourth": {
+		"title": "Preencha seus dados abaixo. O próximo passo será um desafio DBR!",
+		"name": "Nome completo",
+		"email": "Email",
+		"age": "Idade",
+		"sex": "Gênero",
+		"male": "Masculino",
+		"female": "Feminino",
+		"pay": "Pretensão salarial",
+		"phone": "Telefone",
+		"about": "Nos fale um pouco sobre você...",
+		"send": "Enviar"
+	}
+}

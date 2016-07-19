@@ -1,0 +1,130 @@
+extends ../layout
+
+block content
+	div.main
+		div.page.first
+			div.center
+				h1
+					a(href="http://dbr.ag/"): img(src="img/logo-2.svg" alt="Logotipo DBR")
+				p
+					b=main.search
+					br
+					=main.job
+					br
+					a(href="https://www.google.com.br/maps/place/R.+Albion,+320+-+Lapa,+São+Paulo+-+SP,+05077-130/" target="_blank")
+						=main.location
+					br
+					i=main.type
+			if (main.lang === "pt-br")
+				a.lang(href="/en") English
+			else
+				a.lang(href="/") Português
+
+
+		div.page.second
+			div.bg
+			div.info
+				h2=second.title
+				p
+					span.txt-anim=second.q1
+					span.icon-anim
+						i.fa.fa-file-text-o
+
+				p
+					span.txt-anim=second.q2
+					span.icon-anim
+						i.fa.fa-coffee
+
+				p
+					span.txt-anim=second.q3
+					span.icon-anim
+						i.fa.fa-graduation-cap
+
+
+				p
+					span.txt-anim=second.answer
+					span.icon-anim
+						i.fa.fa-thumbs-up
+				p
+					span.txt-anim: b=second.conclusion
+					span.icon-anim
+						i.fa.fa-smile-o
+
+
+		div.page.third
+			video(poster="img/coding.jpg" id="bgvid")
+				source(src="img/coding.webm" type="video/webm")
+				source(src="img/coding.mp4" type="video/mp4")
+
+			div.center
+				h2=third.title
+				ul
+					li.one
+						span.txt=third.p1
+						br
+						- codeLogoArr = ['html-5', 'css-3', 'javascript', 'git-icon', 'compass', 'sass', 'less', 'angular-icon', 'grunt', 'bower', 'yeoman', 'gulp']
+						each val, index in codeLogoArr
+							- val = "/img/code_logos/" + val + ".svg"
+							if (index < 3)
+								img.main(src=val alt=val)
+							else if (index == 3)
+								br
+								img(src=val alt=val)
+							else
+								img(src=val alt=val)
+
+
+					li.two=third.p2
+					li.three=third.p3
+					li.four=third.p4
+					li.five=third.p5
+					li.six=third.p6
+
+		div.page.fourth
+			div.bg
+			div.center
+				h2=fourth.title
+				form
+					div
+						span.icon
+							i.fa.fa-user
+						input(type="text" placeholder=fourth.name)
+					div
+						span.icon
+							i.fa.fa-envelope
+						input(type="email" placeholder=fourth.email)
+					div
+						span.icon
+							i.fa.fa-calendar
+						input(type="number" placeholder=fourth.age)
+					div.sex
+						span.icon
+							i.fa.fa-transgender
+						button#male=fourth.male
+						button#female=fourth.female
+					div
+						span.icon
+							i.fa.fa-money
+						input(type="text" placeholder=fourth.pay)
+					div
+						span.icon
+							i.fa.fa-phone
+						input(type="text" placeholder=fourth.phone)
+					div
+						span.icon
+							i.fa.fa-facebook
+						input(type="text" placeholder="facebook.com/")
+					div
+						span.icon
+							i.fa.fa-twitter
+						input(type="text" placeholder="twitter.com/")
+					div
+						span.icon
+							i.fa.fa-github
+						input(type="text" placeholder="github.com/")
+					div
+						span.icon
+							i.fa.fa-question
+						textarea(placeholder=fourth.about)
+					div
+						button#send(type="submit")=fourth.send

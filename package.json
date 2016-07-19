@@ -1,0 +1,41 @@
+{
+  "name": "dbg_front",
+  "version": "0.0.1",
+  "private": true,
+  "author": {
+    "name": "Rodrigo Lima Batista",
+    "email": "rodrigobr92@gmail.com"
+  },
+  "scripts": {
+    "start": "DEBUG=dbg_front:* node bin/www",
+    "dev": "nodemon ./bin/www",
+    "css": "stylus -u rupture -u jeet -u autoprefixer-stylus ./app/_client/styles/css -o ./app/public/css -w -c",
+    "js": "watchify app/_client/scripts/main.js -o 'uglifyjs -cm > app/public/js/main.js'",
+    "db": "mongod --dbpath ./.data",
+    "mongo": "mongo local",
+    "sync": "browser-sync start -p 'localhost:8080' -f './app/**/*.pug, ./app/**/*.css, ./app/**/*.js, ./locales/*.json' --reload-delay '1000' --no-open"
+  },
+  "dependencies": {
+    "angular": "^1.5.7",
+    "angular-messages": "^1.5.7",
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "debug": "^2.2.0",
+    "express": "^4.14.0",
+    "method-override": "^2.3.6",
+    "mongoose": "^4.5.2",
+    "morgan": "^1.7.0",
+    "passport": "^0.3.2",
+    "pug": "^2.0.0-beta3"
+  },
+  "devDependencies": {
+    "autoprefixer-stylus": "^0.9.4",
+    "browser-sync": "^2.13.0",
+    "browserify": "^13.0.1",
+    "jeet": "~6.0.0",
+    "rupture": "^0.6.1",
+    "stylus": "^0.54.5",
+    "uglify-js": "^2.6.4",
+    "watchify": "^3.7.0"
+  }
+}
