@@ -1,0 +1,330 @@
+div.page
+	height: 100vh
+	width: 100%
+
+	&.first
+		background-color: midnightblue
+		font-weight: 100
+		color: white
+		a.lang
+			position: absolute;
+			top: 5px
+			right: 5px
+			color: white
+			font-size: 2rem
+
+		.center
+			align(both)
+
+			+below(800px)
+				width: 100%
+
+			h1, p
+				text-align: center
+				font-size: 3rem
+				+below(800px)
+					font-size: 1.5rem
+
+			h1
+				a
+					img
+						width: 30%
+						padding: 0 10px
+						background-color: white
+						border-radius: 10%
+
+					&:hover
+						img
+							background-color: emerald
+
+			p
+				a
+					font-weight: normal
+					color: emerald
+					&:hover
+						text-decoration: underline
+
+	&.second
+		background-image:url('../img/bg-desk.jpg')
+		background-position: center center
+		background-size: cover
+		background-repeat: no-repeat
+		position: relative
+		z-index: 0
+
+		.bg
+			background-color: greensea
+			opacity: .9
+			width: 100%
+			height: 100vh
+			z-index: 1
+
+		.info
+			align(both)
+			width: 95%
+			color: white
+			z-index: 2
+			h2
+				font-size: 4rem
+				font-weight: 100
+				color: sunflower
+				margin-bottom: 20px
+				+below(800px)
+					font-size: 2rem
+
+			p
+				font-size: 2rem
+				position: relative
+				+below(800px)
+					font-size: 1rem
+
+				span.icon-anim
+					position: relative
+					display: inline-block
+					left: 150%;
+					width: 100px
+					height: 100px
+					border-radius: 50%
+					background-color: white
+					//transition: transform 600ms ease-in-out 2s
+
+					+below(800px)
+						width: 50px
+						height: 50px
+
+					&.animate
+						animation: rollMe 1.5s ease-in-out 0s 1 normal forwards
+						//transform: translate(100px, 100px) rotate(360deg)
+
+					i
+						color: greensea
+						position: absolute
+						transform-style: preserve-3d
+						top: 50%
+						left: 50%
+						transform: translate(-50%,-50%)
+						font-size: 3rem
+
+						+below(800px)
+							font-size: 1em
+
+				span.txt-anim
+					position: absolute
+					margin-left: 130px
+					transform-style: preserve-3d
+					top: 50%
+					transform: translate(0%,-50%)
+					opacity: 0
+					+below(800px)
+						margin-left: 60px
+					b
+						color: midnightblue
+					&.animate
+						animation: showMe 1.5s ease-in-out 1.5s 1 normal forwards
+						//transform: translate(100px, 100px) rotate(360deg)
+	&.third
+		overflow: hidden
+		video
+			min-width: 100%
+			min-height: 100%
+		div.center
+			align(both)
+			height: 90%
+			width: 90%
+			color: white
+
+			h2
+				text-align: center
+				font-weight: lighter
+				font-size: 3rem
+				+below(800px)
+					font-size: 1.2rem
+
+			ul
+				li
+					position: absolute;
+					font-size: 2rem
+
+					+below(800px)
+						font-size: 0.8rem
+
+					&.one
+						top: 100px
+						left: 50px
+						text-align: center
+						+below(800px)
+							top: 50px
+							left: 25px
+						img
+							width: 30px
+							height: 30px
+							margin: 5px
+							+below(800px)
+								width: 20px
+								height: 20px
+								margin: 1px
+
+							&.main
+								width: 100px
+								height: 100px
+								+below(800px)
+									width: 45px
+									height: 45px
+
+					&.two
+						top: 200px
+						right: 20px
+						+below(800px)
+							top: 200px
+
+					&.three
+						top: 350px
+						left: 300px
+						+below(800px)
+							top: 250px
+							left: 100px
+
+
+					&.four
+						top: 400px
+						right: 200px
+						+below(800px)
+							top: 300px
+
+					&.five
+						top: 500px
+						left: 100px
+						+below(800px)
+							top: 350px
+							left: auto
+							right: 50px
+
+					&.six
+						top: 600px
+						right: 50px
+						+below(800px)
+							top: 400px
+
+	&.fourth
+		background-image:url('../img/bg-team.jpg')
+		background-position: center center
+		background-size: cover
+		background-repeat: no-repeat
+		position: relative
+		z-index: 0
+
+		.bg
+			background-color: black
+			opacity: .9
+			width: 100%
+			height: 100vh
+			z-index: 1
+
+		div.center
+			align(both)
+			width: 80%
+
+			+below(800px)
+				top: 0%
+				left: 0%
+				transform: translate(0%,0%)
+				margin: 20px
+
+			h2
+				color: white
+				margin-bottom: 20px
+				text-align: center
+				font-size: 2rem
+				font-weight: lighter
+
+				+below(800px)
+					font-size: 1rem
+
+			div
+				cf()
+				margin-bottom: 15px
+				+below(800px)
+					margin-bottom: 10px
+
+				span.icon
+					position: relative
+					display: inline-block
+					width: 8%
+					height: 40px
+					border-top-left-radius: 20px
+					border-bottom-left-radius: 20px
+					background-color: white
+					float: left
+					+below(800px)
+						height: 25px
+
+					i.fa
+						color: belizehole
+						position: absolute
+						transform-style: preserve-3d
+						top: 50%
+						left: 50%
+						transform: translate(-40%,-50%)
+						font-size: 1.5rem
+						+below(800px)
+							font-size: 0.8rem
+
+				input, textarea
+					border: 0
+					border-bottom: 1px solid white
+					float: left
+					min-width: 92%
+					padding: 0 2%
+					height: 40px
+					font-size: 1rem
+					color: white
+
+					+below(800px)
+						font-size: 0.8rem
+						height: 25px
+
+					&:focus
+						background-color: white
+						color: black
+
+
+			div.sex
+				font-size: 1rem
+				color: gray
+				+below(800px)
+					font-size: 0.8em
+
+				button
+					font-size: 1rem
+					color: gray
+					display: inline-block
+					padding: 0 2%
+					height: 40px
+					border: 1px solid white
+					cursor: pointer
+					+below(800px)
+						font-size: 0.8rem
+						height: 25px
+
+					&#male
+						&:hover
+							background-color: belizehole
+							color: white
+					&#female
+						&:hover
+							background-color: pomegranate
+							color: white
+
+			#send
+				background-color: belizehole
+				color: white
+				border-radius: 10px
+				width: auto
+				padding: 1% 3%
+				border: 1px solid white
+				cursor: pointer
+				font-size: 1rem
+				float: right
+
+				&:hover
+					background-color: nephritis

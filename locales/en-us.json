@@ -1,0 +1,40 @@
+{
+    "main": {
+		"lang": "en-us",
+        "title": "Jobs | DBR.ag",
+        "search": "Looking for:",
+		"job": "Front-End Developer",
+		"type": "On site",
+		"location": "Lapa, São Paulo - SP"
+    },
+	"second": {
+		"title": "You, by any chance...",
+		"q1": "Got a good resume?",
+		"q2": "Worked on an agency before?",
+		"q3": "Are you graduated on the subject?",
+		"answer": "Yes?",
+		"conclusion": "That doesn't matter here!"
+	},
+	"third": {
+		"title": "You know what counts here in DBR.ag?",
+		"p1": "Knowledge in: ",
+		"p2": "Keep learning",
+		"p3": "Face new challenges",
+		"p4": "Great sense of humor",
+		"p5": "Love music",
+		"p6": "Like to share knowledge"
+	},
+	"fourth": {
+		"title": "Fill your data below. The next step will be a DBR challenge!",
+		"name": "Full name",
+		"email": "Email",
+		"age": "Age",
+		"sex": "Gender",
+		"male": "Male",
+		"female": "Female",
+		"pay": "Wage claim",
+		"phone": "Phone",
+		"about": "Tell us a little about yourself...",
+		"send": "Send"
+	}
+}
