@@ -1,0 +1,39 @@
+body {
+	font-family: $font-family-base;
+	font-size: $font-size-base;
+	font-weight: $font-weight-thin;
+	color: $color-base-light;
+
+	background-image: url('../img/bg-section-2.jpg');
+	background-size: auto 150vh;
+	background-position: center 0;
+}
+
+.hidden {
+	font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+.text-highlight {
+	color: $color-highlight;
+	font-weight: $font-weight-bold;
+}
+
+.text-important {
+	color: $color-important;
+	font-size: $font-size-large * 3;
+	text-align: center;
+}
+
+.looking-for,
+.questions,
+.values,
+.contact,
+.questions__group {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

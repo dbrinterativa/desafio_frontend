@@ -1,0 +1,33 @@
+.looking-for {
+	background: rgba(#000, .5);
+	min-height: 100vh;
+
+	&__logo {
+		background: url('../img/dbr-logo.png') no-repeat;
+		@include sprite(144px, 39px, 0, 0);
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 1em;
+
+		&--link {
+			display: block;
+			width: 144px;
+			height: 39px;
+		}
+	}
+
+	&__content {
+		font-size: $font-size-large * 3.5;
+		font-weight: $font-weight-thin;
+		text-align: center;
+
+		mark {
+			color: $color-highlight;
+			font-size: $font-size-large;
+			font-weight: $font-weight-bold;
+			text-transform: uppercase;
+			display: block;
+			background: transparent;
+		}
+	}
+}

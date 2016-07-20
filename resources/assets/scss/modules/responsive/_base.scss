@@ -1,0 +1,17 @@
+@media all and (max-width: $break-desktop) {
+	.text-important {
+		font-size: $font-size-large * 2.4;
+	}
+}
+
+@media all and (max-width: $break-tablet) {
+	.text-important {
+		font-size: $font-size-large * 2;
+	}
+}
+
+@media all and (max-width: $break-phone) {
+	.text-important {
+		font-size: $font-size-large * 1.5;
+	}
+}

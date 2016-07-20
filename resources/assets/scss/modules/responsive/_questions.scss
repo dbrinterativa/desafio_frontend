@@ -1,0 +1,49 @@
+@media all and (max-width: $break-desktop) {
+	.questions {
+		&__container {
+			p {
+				font-size: $font-size-large * 2.5;
+			}
+		}
+
+		&__group {
+			margin: 3em 0;
+
+			h1 {
+				font-size: $font-size-large * 1.2;
+				margin-top: 1em;
+			}
+		}
+	}
+}
+
+@media all and (max-width: $break-tablet) {
+	.questions {
+		img {
+			width: 80%;
+		}
+
+		&__container {
+			margin: 3em auto;
+
+			p {
+				font-size: $font-size-large * 2;
+			}
+		}
+
+		&__group {
+			flex-direction: column;
+
+			h1 {
+				font-size: $font-size-large * 1.2;
+				margin-top: .3em;
+			}
+		}
+
+		&__curriculum,
+		&__agency,
+		&__graduation {
+			margin-bottom: 3em;
+		}
+	}
+}

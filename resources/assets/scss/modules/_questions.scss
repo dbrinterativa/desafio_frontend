@@ -1,0 +1,30 @@
+.questions {
+	min-height: 110vh;
+
+	&__container {
+		width: 100%;
+		text-align: center;
+
+		p {
+			font-size: $font-size-large * 3.5;
+			font-weight: $font-weight-thin;
+		}
+	}
+
+	&__group {
+		margin: 5em 0;
+
+		h1 {
+			font-size: $font-size-large * 1.5;
+			font-weight: $font-weight-thin;
+			margin-top: 1em;
+		}
+	}
+
+	&__curriculum,
+	&__agency,
+	&__graduation {
+		max-width: 222px;
+		margin: 0 2em;
+	}
+}

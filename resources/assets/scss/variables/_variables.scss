@@ -1,0 +1,71 @@
+/**
+ * Colors
+ */
+$color-base:				#222 !default;
+$color-base-light: 			#eee !default;
+$color-contact-bg: 			#cccbc4 !default;
+$color-contact-text: 		#807c61 !default;
+$color-highlight: 			seagreen !default;
+$color-important: 			#bf305f !default;
+
+
+/**
+ * System colors
+ */
+$brand-default: 			darken(#428bca, 6.5%) !default;
+$brand-success: 			darken(#5cb85c, 10%) !default;
+$brand-info: 				darken(#5bc0de, 15%) !default;
+$brand-warning: 			#f0ad4e !default;
+$brand-danger: 				#d9534f !default;
+
+
+/**
+ * Button style
+ */
+$button-default-color:              #eee !default;
+$button-default-bg:                 $brand-default !default;
+$button-default-border:             darken($button-default-bg, 5%) !default;
+
+$button-success-color:              #eee !default;
+$button-success-bg:                 $brand-success !default;
+$button-success-border:             darken($button-success-bg, 5%) !default;
+
+$button-info-color:                 #eee !default;
+$button-info-bg:                    $brand-info !default;
+$button-info-border:                darken($button-info-bg, 5%) !default;
+
+$button-warning-color:              #eee !default;
+$button-warning-bg:                 $brand-warning !default;
+$button-warning-border:             darken($button-warning-bg, 5%) !default;
+
+$button-danger-color:               #eee !default;
+$button-danger-bg:                  $brand-danger !default;
+$button-danger-border:              darken($button-danger-bg, 5%) !default;
+
+
+/**
+ * Typography
+ */
+$font-family-sans-serif:	'Lato', sans-serif !default;
+$font-family-serif:			Georgia, "Times New Roman", serif !default;
+$font-family-monospace:		Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base:			$font-family-sans-serif !default;
+
+$font-size-base:			16px !default;
+$font-size-small:			0.8em !default;
+$font-size-medium:			1.2em !default;
+$font-size-large:			1.5em !default;
+
+$font-weight-thin: 			100 !default;
+$font-weight-light:			300 !default;
+$font-weight-base:			400 !default;
+$font-weight-bold:			700 !default;
+
+
+/**
+ * Viewports
+ */
+$break-phone: 			480px;
+$break-tablet: 			768px;
+$break-desktop: 		992px;
+$break-lg-desktop: 		1200px;

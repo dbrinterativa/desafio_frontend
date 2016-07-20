@@ -1,0 +1,23 @@
+@media all and (max-width: $break-desktop) {
+	.looking-for {
+		&__content {
+			font-size: $font-size-large * 2.5;
+		}
+	}
+}
+
+@media all and (max-width: $break-tablet) {
+	.looking-for {
+		&__content {
+			font-size: $font-size-large * 1.5;
+		}
+	}
+}
+
+@media all and (max-width: $break-phone) {
+	.looking-for {
+		&__content {
+			font-size: $font-size-large;
+		}
+	}
+}

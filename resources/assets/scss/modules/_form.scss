@@ -1,0 +1,48 @@
+.contact {
+	&__form-container {
+		width: 100%;
+		max-width: 700px;
+		margin: 2.5em auto;
+	}
+
+	&__form-field {
+		margin: 0 1em;
+	}
+
+	label {
+		font-size: $font-size-large;
+		color: darken($color-contact-text, 20%);
+		margin-bottom: .3em;
+	}
+
+	input[type='text'],
+	input[type='radio'],
+	textarea {
+		font-size: $font-size-medium;
+		font-family: $font-family-sans-serif;
+		border: 1px solid darken($color-contact-bg, 7%);
+		border-radius: 6px;
+	}
+
+	input[type='text'],
+	textarea {
+		width: 100%;
+		padding: 0 .5em;
+		line-height: 2;
+		display: block;
+		margin-bottom: .5em;
+		outline: none;
+
+		transition: all .5s;
+
+		&:focus {
+			box-shadow: 0 0 5px 0 darken($color-contact-bg, 15%);
+		}
+	}
+
+	textarea {
+		padding-top: .5em;
+		padding-bottom: .5em;
+		line-height: 1.2;
+	}
+}
