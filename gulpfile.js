@@ -2,6 +2,7 @@ const   gulp         = require('gulp'),
         del          = require('del'),
         rename       = require('gulp-rename'),
         sass         = require('gulp-sass'),
+        compass      = require('gulp-compass'),
         rucksack     = require('gulp-rucksack'),
         autoprefixer = require('gulp-autoprefixer'),
         browserSync  = require('browser-sync'),
@@ -50,6 +51,10 @@ gulp.task('copy', () => {
 gulp.task('css', () => {
     return gulp.src('./dev/css/main.scss')
             .pipe(sass().on('error', sass.logError))
+            // .pipe(compass({
+            //     sass: 'dev/css',
+            //     image: 'dev/img'
+            // }))
             .pipe(rucksack({'fallbacks': true}))
             .pipe(autoprefixer(AUTOPREFIXER_BROWSERS))
             .pipe(rename('main.min.css'))
@@ -58,6 +63,7 @@ gulp.task('css', () => {
 
 gulp.task('js', () => {
     return gulp.src(['dev/scripts/*.js'])
+            .pipe(rename('main.min.js'))
             .pipe(gulp.dest('build/scripts/'));
 });
 

@@ -47,97 +47,144 @@
     </div>
     <main>
         <header>
-           <a href="#" title="">
-                <img src="" alt="">
-            </a>
-            <h1>
-                front-enders,<br>
-                <strong>procura-se!</strong><br>
-                vaga <span class="color-green">presencial</span><br>
-                São Paulo - Capital
-            </h1> 
+            <div class="content">
+                <a href="#" title="" class="header-link-dbr">
+                    <img src="img/logo-dbr.png" alt="">
+                </a>
+                <h1>
+                    front-enders, </br><strong>procura-se!</strong> </br>vaga <em class="color-green">presencial</em> </br>São Paulo - Capital
+                </h1> 
+            </div>
         </header>            
-        <section>
+        <section class="questions">
             <h2>
                 Você, por acaso...
             </h2>
-            <ul>
-                <li>
-                    tem um bom curriculo?
+            <ul class="content">
+                <li class="question-1">
+                    <span class="question-text">tem um bom </br>curriculo?</span>
                 </li>
-                <li>
-                    já trabalhou em agência?
+                <li class="question-2">
+                    <span class="question-text">já trabalhou </br>em agência?</span>
                 </li>
-                <li>
-                    é formado na área?
+                <li class="question-3">
+                    <span class="question-text">é formado </br>na área?</span>
                 </li>
             </ul>
-            <p>Sim?</p>
-            <p><strong class="color-pink">Isso não importa aqui</strong></p>
+            <div class="m-scooch m-fluid">
+                <ul class="content m-scooch-inner">
+                    <li class="m-item question-1">
+                        <span class="question-text">tem um bom </br>curriculo?</span>
+                    </li>
+                    <li class="m-item question-2">
+                        <span class="question-text">já trabalhou </br>em agência?</span>
+                    </li>
+                    <li class="m-item question-3">
+                        <span class="question-text">é formado </br>na área?</span>
+                    </li>
+                </ul>
+              <div class="m-scooch-controls m-scooch-bulleted">
+                    <a href="#" data-m-slide="1" class="m-active">1</a>
+                    <a href="#" data-m-slide="2">2</a>
+                    <a href="#" data-m-slide="3">3</a>
+              </div>
+            </div>
+            <p>Sim? <strong class="color-pink">Isso não importa aqui!</strong></p>
         </section>
-        <section>
+        <section class="requirements">
             <h2>
                 Sabe o que vale de verdade na DBR.ag?
             </h2>
-            <ul>
-                <li>
-                    Conhecimento em: 
-                    <div class="tecnology tecnology-html5"></div>
-                    <div class="tecnology tecnology-css3"></div>
-                    <div class="tecnology tecnology-js"></div>
-                    <div class="tecnology tecnology-git"></div>
-                    <div class="tecnology tecnology-compass"></div>
-                    <div class="tecnology tecnology-sass"></div>
-                    <div class="tecnology tecnology-less"></div>
-                    <div class="tecnology tecnology-angularjs"></div>
-                    <div class="tecnology tecnology-grunt"></div>
-                    <div class="tecnology tecnology-bower"></div>
-                    <div class="tecnology tecnology-yeoman"></div>
-                    <div class="tecnology tecnology-gulp"></div>
-                </li>
-                <li>
-                    Interesse em aprender
-                </li>
-                <li>
-                    Topar novos desafios
-                </li>
-                <li>
-                    Ótimo humor
-                </li>
-                <li>
-                    Gostar de música 
-                </li>
-                <li>
-                    Gostar de compartilhar conhecimento
-                </li>
-            </ul>
+
+            <div class="requirements-list">
+                <img src="img/connectors.png" alt="" class="img-fluid">
+                <ul>
+                    <li>
+                        <span class="requirements-text requirements-text-1">
+                            Conhecimento em: 
+                        </span>
+                        <div class="tecnology-box">
+                            <div class="tecnology tecnology-html5"></div>
+                            <div class="tecnology tecnology-css3"></div>
+                            <div class="tecnology tecnology-js"></div>
+                            <div class="tecnology tecnology-git"></div>
+                            <div class="tecnology tecnology-compass"></div>
+                            <div class="tecnology tecnology-sass"></div>
+                            <div class="tecnology tecnology-less"></div>
+                            <div class="tecnology tecnology-angularjs"></div>
+                            <div class="tecnology tecnology-grunt"></div>
+                            <div class="tecnology tecnology-bower"></div>
+                            <div class="tecnology tecnology-yeoman"></div>
+                            <div class="tecnology tecnology-gulp"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="requirements-text requirements-text-2">
+                            Interesse em aprender
+                        </span>
+                    </li>
+                    <li>
+                        <span class="requirements-text requirements-text-3">
+                            Topar novos desafios
+                        </span>
+                    </li>
+                    <li>
+                        <span class="requirements-text requirements-text-4">
+                            Ótimo humor
+                        </span>
+                    </li>
+                    <li>
+                        <span class="requirements-text requirements-text-5">
+                            Gostar de música 
+                        </span>
+                    </li>
+                    <li>
+                        <span class="requirements-text requirements-text-6">
+                            Gostar de compartilhar conhecimento
+                        </span>
+                    </li>
+                </ul>
+            </div>
         </section>        
         <footer>
             <h2>
-                Preencha seus dados abaixo<br>
+                Preencha seus dados abaixo</br>
                 e o próximo passo será um desafio DBR!
             </h2>
 
+            <div class="divisor"></div>
+
             <form method="">
-                <input type="text" placeholder="Nome completo">
-                <input type="email" placeholder="Email">
+                <input class="input" type="text" placeholder="Nome completo">
+                <input class="input" type="email" placeholder="Email">
                 <div class="row">
-                    <div class="col-1">
-                        <input type="text" placeholder="Idade">
+                    <div class="col-2">
+                        <input class="input" type="text" placeholder="Idade">
                     </div>
-                    <div class="col-5">
-                        <input type="radio" name="sex" val="M"> Masculino
-                        <input type="radio" name="sex" val="F"> Feminino
+                    <div class="col-6">
+                        <div class="input-genre">
+                            <label for="" class="genre-m">masculino</label>
+                            <label for="" class="genre-f">feminino</label>
+                            <div class="toggle-selector">
+                                <div class="bg"></div>
+                                <div class="selector"></div>
+                                <input type="radio" name="sex" val="M" checked="true">
+                                <input type="radio" name="sex" val="F">
+                            </div>
+                        </div>
                     </div>
                     <div class="col-4">
-                        <input type="text" placeholder="Pretensão salarial">
+                        <input class="input" type="text" placeholder="Pretensão salarial">
                     </div>
                 </div>
-                <input type="phone" placeholder="Telefone">
-                <input type="url" placeholder="facebook.com/">
-                <input type="url" placeholder="twitter.com/">
-                <input type="url" placeholder="github.com/">
-                <textarea name="" id="" placeholder="Fale mais"></textarea>
+                <input class="input" type="phone" placeholder="Telefone">
+                <input class="input" type="url" placeholder="facebook.com/">
+                <input class="input" type="url" placeholder="twitter.com/">
+                <input class="input" type="url" placeholder="github.com/">
+                <textarea class="input" name="" id="" placeholder="Fale mais"></textarea>
+                <button type="submit" class="btn btn-primary">
+                    Enviar
+                </button>
             </form>
 
             <a href="#" alt="">
@@ -146,7 +193,9 @@
         </footer>
     </main>
     
-
+    
+    <script src="scripts/vendor/zepto.min.js"></script>
+    <script src="scripts/vendor/scooch.js"></script>
     <script src="scripts/main.min.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
