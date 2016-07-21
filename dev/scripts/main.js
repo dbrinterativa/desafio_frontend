@@ -28,9 +28,6 @@
             }, Slide.time);
         }
     });
-
-
-
 	   
     var $selector = document.querySelector('.toggle-selector .selector');
 

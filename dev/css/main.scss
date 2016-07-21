@@ -51,7 +51,7 @@ body {
         height: 100%;
         width: 100%;
         overflow: hidden;    
-        background: url('../img/logo-dbr2.png') no-repeat top left;
+        background: #262626 url('../img/logo-dbr2.png') no-repeat top left;
     }
 }
 
@@ -288,11 +288,13 @@ main {
         }
 
         @media (max-width: $mobile) {
+            padding: 40px 20px;
+
             h2, p {
-                font-size: 30px;
+                font-size: 22px;
 
                 strong {
-                    font-size: 30px;
+                    font-size: 22px;
                     margin-top: 20px;
                 }
             }
@@ -521,6 +523,69 @@ main {
                         }
                     }
                 }
+
+                .tecnology {
+
+                    &-html5 {
+                        top: 12%;
+                        left: 63%;
+                    }
+
+                    &-css3 {
+                        top: 12%;
+                        left: 74.5%;
+                    }
+
+                    &-js {
+                        top: 12%;
+                        left: 86%;
+                    }
+
+                    &-git {
+                        top: 35%;
+                        left: 61.8%;
+                    }
+
+                    &-compass {
+                        top: 36%;
+                        left: 67.1%;
+                    }
+
+                    &-sass {
+                        top: 35.6%;
+                        left: 70.2%;
+                    }
+
+                    &-less {
+                        top: 36.3%;
+                        left: 74.9%;
+                    }
+
+                    &-angularjs {
+                        top: 35%;
+                        left: 79.9%;
+                    }
+
+                    &-grunt {
+                        top: 35%;
+                        left: 84.5%;
+                    }
+
+                    &-bower {
+                        top: 35.5%;
+                        left: 88.3%;
+                    }
+
+                    &-yeoman {
+                        top: 35%;
+                        left: 93.1%;
+                    }
+                    
+                    &-gulp {
+                        top: 35%;
+                        left: 97.8%;
+                    }
+                }
             }
         }
 
@@ -550,6 +615,10 @@ main {
                         position: relative;
                         margin-top: 20px;
                         display: block;
+
+                        .requirements-text {
+                            font-size: 20px;
+                        }
 
                         &:before {
                             position: absolute;
@@ -611,20 +680,31 @@ main {
                         }
                     }
                 }
-            }
-            
+            }            
         }
 
         @media (max-width: $mobile) {
+            padding: 40px 20px;
+
             h2 {
-                font-size: 30px;
+                font-size: 22px;
+            }
+
+            .requirements-list {
+                ul {
+                    li {
+                        .requirements-text {
+                            font-size: 18px;
+                        }
+                    }
+                }
             }
         }
     }
 
     footer {
         clear: fix-legacy;
-        padding: 220px 0;
+        padding: 75px 0;
         text-align: center;
         background-color: $bgcolor-primary;
         color: $color-third;
@@ -680,7 +760,7 @@ main {
                     bottom: 0;
                     left: 50%;
                     transform: translateX(-50%);
-                    width: 70px;
+                    width: 60px;
                     border-radius: 50px;
                     background-color: $color-six;
                     overflow: hidden;
@@ -747,6 +827,11 @@ main {
             }
         }
 
+        .footer-link-dbr {
+            display: block;
+            margin-top: 60px;
+        }
+
         @media (max-width: $desktop) {
             h2 {
                 font-size: 40px;
@@ -771,8 +856,10 @@ main {
         }
 
         @media (max-width: $mobile) {
+            padding: 40px 20px;
+
             h2 {
-                font-size: 30px;
+                font-size: 22px;
             }
 
             [class|="col"] {
