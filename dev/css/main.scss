@@ -98,7 +98,8 @@ body {
 }
 
 main {
-    
+    overflow: hidden;
+
     header {
         position: relative;
         background-color: $bgcolor-default;
@@ -165,6 +166,16 @@ main {
         text-align: center;
         background: url('../img/bg-questions.jpg') no-repeat top center;
         clear: fix-legacy;
+        position: relative;
+
+        .smoke {
+            position: absolute;
+            top: -90%;
+            left: 50%;
+            background: url(../img/smoke.png) no-repeat top left;
+            width: 927px;
+            height: 2019px;
+        }
 
         h2 {
             @extend %title;
@@ -249,6 +260,11 @@ main {
         }
 
         @media (max-width: $desktop) {
+
+            .smoke {
+                top: -94%;
+            }
+
             h2, p {
                 font-size: 40px;
 
@@ -268,10 +284,13 @@ main {
         @media (max-width: $tablet) {
             padding: 90px 20px;
 
+            .smoke {
+                top: -119%;
+            }
+
             p {
                 margin-top: 60px
             }
-
 
             .content {
                 margin-top: 40px;
@@ -730,6 +749,40 @@ main {
 
             .input {
                 @extend %input;
+                box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+                transition: box-shadow .2s ease-out-expo;
+
+                &:focus {
+                    box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+                }
+
+                &.input-textarea {
+                    height: 75px;
+                    border-radius: 10px;
+                }
+
+                &.input-fb,
+                &.input-tt,
+                &.input-gh,
+                &.input-textarea {
+                    padding-left: 40px;
+                    background-image: url('../img/icon-sprite.png');
+                    background-repeat: no-repeat;
+                    background-position: 7px 7px;
+                }
+
+                &.input-tt {
+                    background-position: 7px -52px;
+                }
+
+                &.input-gh {
+                    background-position: 7px -110px;
+                }
+
+                &.input-textarea {
+                    background-position: 7px -169px;
+                }
+
             }
 
             .input-genre {
@@ -817,10 +870,12 @@ main {
                 border-radius: 15px;
                 font: 22px/0.8em $bold;
                 text-transform: lowercase;
+                box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
                 transition: all .2s;
 
                 @media (min-width: 1024px) {
                     &:hover {
+                        box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
                         background-color: $color-primary;
                     }
                 }

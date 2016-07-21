@@ -15,7 +15,7 @@
     Slide.run();
 
     $('.m-scooch').on('afterSlide', function(prev, newIdx) {
-        var $itens  = [].slice.call(prev.target.querySelectorAll('.m-item')),
+        var $itens  = Array.prototype.slice.call(prev.target.querySelectorAll('.m-item')),
             $active = prev.target.querySelector('.m-active');
 
         var idx = $itens.indexOf($active);
@@ -33,7 +33,7 @@
 
     $selector.addEventListener('click', function(e) {
         var $parent = this.parentNode,
-            $radios = [].slice.call($parent.querySelectorAll('input[type="radio"]'));;
+            $radios = Array.prototype.slice.call($parent.querySelectorAll('input[type="radio"]'));;
 
         $parent.classList.toggle('toggled');
         $radios.forEach(function($el){
