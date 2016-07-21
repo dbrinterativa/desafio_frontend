@@ -397,6 +397,338 @@ button {
 *:after {
   box-sizing: border-box; }
 
+/*  Classes  on  outer  slideshow  wrapper:
+    either  NONE  or  'fraction'  or  'fraction'  +  one  of  'fraction1'...'fraction10'.
+        fraction  sets  box-sizing:  border-box,  so  that  padding  on  the  element  is  taken  out  ;
+    either  NONE  or  'center'  or  'right'
+
+*/
+.m-scooch {
+  position: relative;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased; }
+
+.m-scooch.m-left {
+  text-align: left; }
+
+.m-scooch.m-center {
+  text-align: center; }
+
+.m-scooch.m-fluid > .m-scooch-inner > * {
+  width: 100%; }
+
+.m-scooch.m-fluid.m-center > .m-scooch-inner > *:first-child {
+  margin-left: 0%; }
+
+.m-scooch.m-fluid-2 > .m-scooch-inner > * {
+  width: 50%; }
+
+.m-scooch.m-fluid-2.m-center > .m-scooch-inner > *:first-child {
+  margin-left: 25%; }
+
+.m-scooch.m-fluid-3 > .m-scooch-inner > * {
+  width: 33.333%; }
+
+.m-scooch.m-fluid-3.m-center > .m-scooch-inner > *:first-child {
+  margin-left: 33.333%; }
+
+.m-scooch.m-fluid-4 > .m-scooch-inner > * {
+  width: 25%; }
+
+.m-scooch.m-fluid-4.m-center > .m-scooch-inner > *:first-child {
+  margin-left: 37.5%; }
+
+.m-scooch.m-fluid-5 > .m-scooch-inner > * {
+  width: 20%; }
+
+.m-scooch.m-fluid-5.m-center > .m-scooch-inner > *:first-child {
+  margin-left: 40%; }
+
+.m-scooch.m-fluid-6 > .m-scooch-inner > * {
+  width: 16.667%; }
+
+.m-scooch.m-fluid-6.m-center > .m-scooch-inner > *:first-child {
+  margin-left: 41.667%; }
+
+.m-scooch img {
+  -ms-interpolation-mode: bicubic; }
+
+/* https://github.com/mobify/scooch/issues/23 */
+.m-scooch .m-item {
+  -webkit-transform: translate(0);
+  -ms-transform: translate(0);
+      transform: translate(0); }
+
+.m-scooch-inner {
+  position: relative;
+  white-space: nowrap;
+  text-align: left;
+  /*  Removes  inline-block  gaps  due  to  whitespace  */
+  font-size: 0;
+  /*  Configure  animations  */
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  /*  iOS  like  slide  timings  */
+  -webkit-transition-timing-function: cubic-bezier(0.33, 0.66, 0.66, 1);
+  transition-timing-function: cubic-bezier(0.33, 0.66, 0.66, 1);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s; }
+
+.m-scooch-inner > * {
+  display: inline-block;
+  vertical-align: top;
+  white-space: normal;
+  /*  We  must  reset  the  font-size  here  */
+  font-size: 16px; }
+
+.m-fluid > .m-scooch-inner > * {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+/* https://github.com/mobify/scooch/issues/32 */
+/* Styles for non-fluid, centered carousel */
+.m-center:not(.m-fluid) .m-item:first-child {
+  margin-left: 50%; }
+
+.m-center:not(.m-fluid) .m-item {
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%); }
+
+/* 
+  Carousel control base styling 
+*/
+.m-scooch-controls {
+  padding-top: 10px;
+  text-align: center; }
+
+.m-scooch-controls a {
+  padding: 5px;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+      user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-drag: -moz-none;
+  user-drag: none; }
+
+/* Carousel controls: Bulleted */
+.m-scooch-bulleted a {
+  line-height: 0;
+  text-decoration: none;
+  text-indent: -999px;
+  overflow: hidden;
+  display: inline-block;
+  padding: 6px;
+  width: 0;
+  height: 0;
+  margin: 0 3px;
+  color: #333;
+  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-transition: background-color 0.1s ease-in;
+  transition: background-color 0.1s ease-in;
+  box-shadow: inset rgba(0, 0, 0, 0.25) 0 1px 2px;
+  border-radius: 6px; }
+
+.m-scooch-bulleted a:hover, .m-scooch-bulleted a:focus {
+  text-decoration: none;
+  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.6); }
+
+.m-scooch-bulleted a.m-active {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 1px 2px; }
+
+/* Carousel controls: Pagination */
+.m-scooch-pagination {
+  padding-top: 10px; }
+
+.m-scooch-pagination a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 3px 10px;
+  margin: 1px 0;
+  color: #333;
+  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-transition: background-color 0.1s ease-in;
+  transition: background-color 0.1s ease-in;
+  border-radius: 2px; }
+
+.m-scooch-pagination a:hover, .m-scooch-pagination a:focus {
+  text-decoration: none;
+  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.6); }
+
+.m-scooch-pagination a.m-active {
+  background-color: white; }
+
+/* Carousel controls: HUD */
+.m-scooch-hud {
+  padding-top: 0; }
+
+.m-scooch-hud a {
+  z-index: 2;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  margin: -25px 0 0 0;
+  padding: 0;
+  text-decoration: none;
+  text-indent: -999px;
+  overflow: hidden;
+  color: #ffffff;
+  color: rgba(255, 255, 255, 0.8);
+  background: #000000;
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-transition: opacity 0.1s ease-in;
+  transition: opacity 0.1s ease-in;
+  border-radius: 25px; }
+
+.m-scooch:hover .m-scooch-hud a {
+  opacity: 0.3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)"; }
+
+.m-scooch .m-scooch-hud a:hover, .m-scooch .m-scooch-hud a:focus {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; }
+
+.m-scooch-hud a:after {
+  color: #ffffff;
+  color: rgba(255, 255, 255, 0.85);
+  content: "\25c0";
+  font-size: 25px;
+  font-weight: bold;
+  text-indent: 0;
+  text-align: center;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 47px;
+  height: 50px;
+  z-index: 9; }
+
+.m-scooch-hud .m-scooch-prev {
+  left: 10px; }
+
+.m-scooch-hud .m-scooch-next {
+  right: 10px; }
+
+.m-scooch-hud .m-scooch-next:after {
+  left: auto;
+  right: 0;
+  content: "\25b6"; }
+
+/* extra bits */
+/* captions */
+.m-caption {
+  margin: 0;
+  padding: 10px;
+  height: auto;
+  text-align: center; }
+
+/* scaled slides */
+.m-scaled .m-item {
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: scale(0.75);
+  -ms-transform: scale(0.75);
+  transform: scale(0.75);
+  /* Configure animations */
+  /* (0.5s would match the transition length between each, 
+      but fast swiping on a phone can result in odd timing. 
+      Half-length durations for each transform is a reasonable 
+      middle ground.) */
+  -webkit-transition: -webkit-transform cubic-bezier(0.33, 0.66, 0.66, 1) 0.25s, opacity ease-out 0.25s;
+  -webkit-transition-timing-function: transform cubic-bezier(0.33, 0.66, 0.66, 1) 0.25s, opacity ease-out 0.25s;
+          transition-timing-function: transform cubic-bezier(0.33, 0.66, 0.66, 1) 0.25s, opacity ease-out 0.25s; }
+
+.m-scaled .m-active {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1); }
+
+/* Default Themes/Sytles for Slider */
+.m-fluid .m-item {
+  margin-right: 20px; }
+
+/* https://github.com/mobify/scooch/issues/32 */
+/* Styles for non-fluid, centered carousel */
+.m-center.m-scaled:not(.m-fluid) .m-item {
+  -webkit-transform: translate(-50%) scale(0.75);
+  -ms-transform: translate(-50%) scale(0.75);
+  transform: translate(-50%) scale(0.75); }
+
+.m-center.m-scaled:not(.m-fluid) .m-item.m-active {
+  -webkit-transform: scale(1) translate(-50%);
+  -ms-transform: scale(1) translate(-50%);
+  transform: scale(1) translate(-50%); }
+
+/* Fluid Width Photo Carousel
+ * .m-scooch.m-fluid.m-scooch-photos
+ */
+.m-scooch-photos {
+  margin: 0 -10px;
+  padding: 0 10px; }
+
+.m-scooch-photos .m-item > img {
+  margin: 0;
+  padding: 0;
+  max-width: none;
+  width: 100%;
+  height: auto;
+  -o-box-shadow: rgba(0, 0, 0, 0.5) 0 5px 10px;
+  -ms-box-shadow: rgba(0, 0, 0, 0.5) 0 5px 10px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 5px 10px; }
+
+.m-scooch-photos .m-caption {
+  background: #000000;
+  background: rgba(0, 0, 0, 0.7);
+  bottom: 0;
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+  box-sizing: border-box; }
+
+/* Inner Cards for Carousel */
+.m-card-dark, .m-card-light {
+  padding: 20px;
+  border-radius: 6px;
+  -o-box-shadow: rgba(0, 0, 0, 0.5) 0 5px 10px;
+  -ms-box-shadow: rgba(0, 0, 0, 0.5) 0 5px 10px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 5px 10px; }
+
+.m-card-dark {
+  background: #000000;
+  background: rgba(0, 0, 0, 0.5);
+  color: #FFF; }
+
+.m-card-light {
+  background: #ffffff;
+  background: rgba(255, 255, 255, 0.9);
+  color: #000; }
+
+.m-card-dark .m-caption, .m-card-light .m-caption {
+  margin: 0;
+  padding: 10px 0 0 0; }
+
+.m-fade-out {
+  -webkit-mask-image: -webkit-linear-gradient(left, transparent 0%, black 5%, black 95%, transparent 100%); }
+
 /* 
 	Font Mixin by Rucksack - http://simplaio.github.io/rucksack/
  */
@@ -430,6 +762,704 @@ button {
   font-weight: normal;
   font-style: normal; }
 
-/*
-    Your code here
- */
+@font-face {
+  font-family: 'avenir-lightoblique';
+  src: url("../font/avenir-lightoblique.eot");
+  src: url("../font/avenir-lightoblique.eot?#iefix") format('embedded-opentype'),
+       url("../font/avenir-lightoblique.woff") format('woff'),
+       url("../font/avenir-lightoblique.ttf") format('truetype'),
+       url("../font/avenir-lightoblique.svg") format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+.row:before,
+.row:after {
+  content: ' ';
+  display: table; }
+
+.row:after {
+  clear: both; }
+
+.row {
+  margin: 0 -5px;
+  zoom: 1; }
+
+[class|="col"] {
+  float: left;
+  padding: 0 5px; }
+
+.col-1 {
+  width: 8.3333%; }
+
+.col-2 {
+  width: 16.6666%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.3333%; }
+
+.col-5 {
+  width: 41.6666%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.3333%; }
+
+.col-8 {
+  width: 66.6666%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.3333%; }
+
+.col-11 {
+  width: 91.6666%; }
+
+.col-12 {
+  width: 100%; }
+
+main header h1, main .questions h2, main .questions p, main .requirements h2, main footer h2 {
+  font: 55px "gotham-thin"; }
+
+main footer form .input, main footer form .input-genre {
+  margin-top: 35px;
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 20px;
+  background-color: #fff;
+  font: 16px/1.1em "avenir-lightoblique"; }
+
+hmtl,
+body {
+  width: 100%;
+  height: 100%;
+  color: #fff; }
+  hmtl strong,
+  body strong {
+    font-family: "gotham-bold"; }
+  hmtl em,
+  body em {
+    font-style: normal; }
+
+[data-ani-type] {
+  visibility: hidden; }
+  [data-ani-type][data-animated] {
+    visibility: visible; }
+  @media (max-width: 1023px) {
+    [data-ani-type] {
+      visibility: visible; } }
+
+.d-inline-block {
+  display: inline-block; }
+
+.preloader {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background: #262626;
+  z-index: 10; }
+  .preloader .loader {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 144px;
+    height: 39px;
+    margin: -20px 0 0 -72px;
+    background: url("../img/logo-dbr.png") no-repeat top left; }
+  .preloader .loader-progress {
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    background: #262626 url("../img/logo-dbr2.png") no-repeat bottom left;
+    -webkit-transition: all .1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition: all .1s cubic-bezier(0.445, 0.05, 0.55, 0.95); }
+
+.color-green {
+  color: #55e574; }
+
+.color-pink {
+  color: #bf305f; }
+
+.divisor {
+  position: relative;
+  max-width: 1070px;
+  height: 34px;
+  padding: 0 20px;
+  margin: 0 auto; }
+  .divisor:before, .divisor:after {
+    position: absolute;
+    content: ''; }
+  .divisor:before {
+    top: 50%;
+    left: 20px;
+    right: 20px;
+    height: 1px;
+    background-color: #807c61;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  .divisor:after {
+    left: 50%;
+    width: 86px;
+    height: 34px;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    background: #cccbc4 url("../img/brain.png") no-repeat center; }
+
+main {
+  overflow: hidden; }
+  main header {
+    position: relative;
+    background-color: #262626;
+    height: 1080px;
+    text-align: center; }
+    main header .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      width: 100%; }
+    main header .header-link-dbr {
+      position: relative;
+      top: -26px;
+      display: inline-block; }
+    main header h1 strong {
+      font-size: 75px; }
+    @media (max-width: 1279px) {
+      main header h1 {
+        font-size: 40px; }
+        main header h1 strong {
+          font-size: 55px; } }
+    @media (max-width: 959px) {
+      main header {
+        height: 800px; }
+        main header h1 {
+          font-size: 40px; }
+          main header h1 strong {
+            font-size: 55px; } }
+    @media (max-width: 639px) {
+      main header h1 {
+        font-size: 28px; }
+        main header h1 strong {
+          font-size: 40px; } }
+  main .questions:before,
+main .questions:after {
+  content: ' ';
+  display: table; }
+  main .questions:after {
+  clear: both; }
+  main .questions {
+    padding: 220px 20px 185px;
+    text-align: center;
+    background: url("../img/bg-questions.jpg") no-repeat top center;
+    position: relative;
+    zoom: 1; }
+    main .questions .smoke {
+      position: absolute;
+      top: -90%;
+      left: 53%;
+      background: url(../img/smoke.png) no-repeat top left;
+      width: 927px;
+      height: 2019px; }
+    main .questions .content {
+      margin-top: 80px;
+      font: 35px "gotham-book";
+      display: inline-block; }
+      main .questions .content li {
+        position: relative;
+        float: left;
+        width: 292px;
+        padding: 257px 35px 0; }
+        main .questions .content li:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 35px;
+          width: 222px;
+          height: 222px;
+          border-radius: 50%;
+          border: 2px solid #fff; }
+        main .questions .content li.question-1:before {
+          background: url("../img/sheets.png") no-repeat center; }
+        main .questions .content li.question-2:before {
+          background: url("../img/mug.png") no-repeat 70px center; }
+        main .questions .content li.question-3:before {
+          background: url("../img/cap.png") no-repeat center; }
+        main .questions .content li .question-text {
+          position: absolute;
+          left: 0;
+          right: 0; }
+    main .questions .m-scooch {
+      display: none;
+      width: 292px;
+      margin: 0 auto; }
+      main .questions .m-scooch .content {
+        text-align: center; }
+        main .questions .m-scooch .content li {
+          float: none;
+          padding: 257px 35px 100px; }
+    main .questions p {
+      margin-top: 134px; }
+      main .questions p strong {
+        display: block; }
+    @media (max-width: 1279px) {
+      main .questions .smoke {
+        top: -94%; }
+      main .questions h2, main .questions p {
+        font-size: 40px; }
+        main .questions h2 strong, main .questions p strong {
+          font-size: 45px; }
+      main .questions .content .question-text {
+        font-size: 25px; } }
+    @media (max-width: 959px) {
+      main .questions {
+        padding: 90px 20px; }
+        main .questions .smoke {
+          top: -119%; }
+        main .questions p {
+          margin-top: 60px; }
+        main .questions .content {
+          margin-top: 40px;
+          display: none; }
+        main .questions .m-scooch {
+          display: block; }
+          main .questions .m-scooch .content {
+            display: block; } }
+    @media (max-width: 639px) {
+      main .questions {
+        padding: 40px 20px; }
+        main .questions h2, main .questions p {
+          font-size: 22px; }
+          main .questions h2 strong, main .questions p strong {
+            font-size: 22px;
+            margin-top: 20px; }
+        main .questions .m-scooch {
+          width: 260px;
+          overflow: hidden; }
+          main .questions .m-scooch .m-fluid .m-item {
+            margin-right: 0;
+            width: 260px;
+            padding-left: 0;
+            padding-right: 0; }
+          main .questions .m-scooch .content {
+            width: 260px; }
+            main .questions .m-scooch .content li:before {
+              left: 50%;
+              -webkit-transform: translateX(-50%);
+                  -ms-transform: translateX(-50%);
+                      transform: translateX(-50%); } }
+  main .requirements:before,
+main .requirements:after {
+  content: ' ';
+  display: table; }
+  main .requirements:after {
+  clear: both; }
+  main .requirements {
+    padding: 220px 0;
+    text-align: center;
+    background: url("../img/bg-requirements.jpg") no-repeat top center fixed;
+    background: url("../img/bg-requirements.jpg") no-repeat top center fixed;
+    zoom: 1; }
+    main .requirements h2 {
+      position: relative;
+      left: -40px; }
+    main .requirements .requirements-list {
+      position: relative;
+      max-width: 1083px;
+      margin: -42px auto 0;
+      padding: 0 20px;
+      height: auto; }
+      main .requirements .requirements-list img {
+        display: block;
+        width: 100%; }
+      main .requirements .requirements-list ul {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        font: 25px "gotham-book"; }
+        main .requirements .requirements-list ul .requirements-text {
+          position: absolute; }
+          main .requirements .requirements-list ul .requirements-text-1 {
+            top: 15%;
+            left: 40.5%; }
+          main .requirements .requirements-list ul .requirements-text-2 {
+            top: 23.6%;
+            left: 4.5%; }
+          main .requirements .requirements-list ul .requirements-text-3 {
+            top: 43.3%;
+            left: 37.5%; }
+          main .requirements .requirements-list ul .requirements-text-4 {
+            top: 57.8%;
+            left: 76.5%; }
+          main .requirements .requirements-list ul .requirements-text-5 {
+            top: 74%;
+            left: 13%; }
+          main .requirements .requirements-list ul .requirements-text-6 {
+            top: 96.4%;
+            left: 33.2%; }
+      main .requirements .requirements-list .tecnology {
+        position: absolute;
+        background-image: url("../img/technologies.png");
+        background-repeat: no-repeat; }
+        main .requirements .requirements-list .tecnology-html5 {
+          top: 12%;
+          left: 66%;
+          width: 78px;
+          height: 110px;
+          background-position: 0 0; }
+        main .requirements .requirements-list .tecnology-css3 {
+          top: 12%;
+          left: 74.5%;
+          width: 78px;
+          height: 110px;
+          background-position: -93px 0; }
+        main .requirements .requirements-list .tecnology-js {
+          top: 12%;
+          left: 83%;
+          width: 110px;
+          height: 110px;
+          background-position: -186px 0; }
+        main .requirements .requirements-list .tecnology-git {
+          top: 29%;
+          left: 66%;
+          background-position: 0 -121px;
+          width: 36px;
+          height: 36px; }
+        main .requirements .requirements-list .tecnology-compass {
+          top: 30%;
+          left: 69.9%;
+          background-position: -40px -128px;
+          width: 22px;
+          height: 22px; }
+        main .requirements .requirements-list .tecnology-sass {
+          top: 29.6%;
+          left: 72.3%;
+          background-position: -65px -126px;
+          width: 35px;
+          height: 26px; }
+        main .requirements .requirements-list .tecnology-less {
+          top: 30.3%;
+          left: 75.8%;
+          background-position: -104px -131px;
+          width: 39px;
+          height: 17px; }
+        main .requirements .requirements-list .tecnology-angularjs {
+          top: 29%;
+          left: 79.3%;
+          background-position: -145px -123px;
+          width: 32px;
+          height: 34px; }
+        main .requirements .requirements-list .tecnology-grunt {
+          top: 29%;
+          left: 82.6%;
+          background-position: -180px -122px;
+          width: 27px;
+          height: 36px; }
+        main .requirements .requirements-list .tecnology-bower {
+          top: 29.5%;
+          left: 85.2%;
+          background-position: -209px -124px;
+          width: 35px;
+          height: 31px; }
+        main .requirements .requirements-list .tecnology-yeoman {
+          top: 29%;
+          left: 88.6%;
+          background-position: -247px -121px;
+          width: 33px;
+          height: 36px; }
+        main .requirements .requirements-list .tecnology-gulp {
+          top: 29%;
+          left: 91.8%;
+          background-position: -282px -121px;
+          width: 20px;
+          height: 36px; }
+    @media (max-width: 1279px) {
+      main .requirements h2 {
+        font-size: 40px; }
+      main .requirements .requirements-list {
+        margin-top: -20px;
+        max-width: 768px; }
+        main .requirements .requirements-list ul {
+          font-size: 18px; }
+          main .requirements .requirements-list ul .requirements-text-2 {
+            left: 5.3%; }
+          main .requirements .requirements-list ul .requirements-text-4 {
+            left: 76%; }
+          main .requirements .requirements-list ul .requirements-text-5 {
+            top: 73.8%;
+            left: 13.7%; }
+        main .requirements .requirements-list .tecnology-html5 {
+          top: 12%;
+          left: 63%; }
+        main .requirements .requirements-list .tecnology-css3 {
+          top: 12%;
+          left: 74.5%; }
+        main .requirements .requirements-list .tecnology-js {
+          top: 12%;
+          left: 86%; }
+        main .requirements .requirements-list .tecnology-git {
+          top: 35%;
+          left: 61.8%; }
+        main .requirements .requirements-list .tecnology-compass {
+          top: 36%;
+          left: 67.1%; }
+        main .requirements .requirements-list .tecnology-sass {
+          top: 35.6%;
+          left: 70.2%; }
+        main .requirements .requirements-list .tecnology-less {
+          top: 36.3%;
+          left: 74.9%; }
+        main .requirements .requirements-list .tecnology-angularjs {
+          top: 35%;
+          left: 79.9%; }
+        main .requirements .requirements-list .tecnology-grunt {
+          top: 35%;
+          left: 84.5%; }
+        main .requirements .requirements-list .tecnology-bower {
+          top: 35.5%;
+          left: 88.3%; }
+        main .requirements .requirements-list .tecnology-yeoman {
+          top: 35%;
+          left: 93.1%; }
+        main .requirements .requirements-list .tecnology-gulp {
+          top: 35%;
+          left: 97.8%; } }
+    @media (max-width: 959px) {
+      main .requirements {
+        padding: 90px 20px; }
+        main .requirements h2 {
+          font-size: 40px;
+          left: 0; }
+        main .requirements .requirements-list {
+          margin-top: 0;
+          padding: 0; }
+          main .requirements .requirements-list img {
+            display: none; }
+          main .requirements .requirements-list ul {
+            position: static;
+            text-align: left;
+            max-width: 640px;
+            margin: 30px auto 0; }
+            main .requirements .requirements-list ul li {
+              position: relative;
+              margin-top: 20px;
+              display: block; }
+              main .requirements .requirements-list ul li .requirements-text {
+                font-size: 20px; }
+              main .requirements .requirements-list ul li:before {
+                position: absolute;
+                top: 50%;
+                margin-top: -9px;
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background: #fff; }
+              main .requirements .requirements-list ul li:first-child {
+                margin-top: 0; }
+                main .requirements .requirements-list ul li:first-child:before {
+                  top: 0;
+                  margin-top: 3px; }
+                main .requirements .requirements-list ul li:first-child .tecnology-box {
+                  margin-top: 25px; }
+                main .requirements .requirements-list ul li:first-child .tecnology {
+                  position: static;
+                  display: inline-block; }
+                  main .requirements .requirements-list ul li:first-child .tecnology.tecnology-html5 {
+                    width: 26px;
+                    height: 36px;
+                    background-image: url("../img/technologies-mobile.png");
+                    background-position: 0 0; }
+                  main .requirements .requirements-list ul li:first-child .tecnology.tecnology-css3 {
+                    width: 27px;
+                    height: 36px;
+                    background-image: url("../img/technologies-mobile.png");
+                    background-position: -30px 0; }
+                  main .requirements .requirements-list ul li:first-child .tecnology.tecnology-js {
+                    width: 36px;
+                    height: 36px;
+                    background-image: url("../img/technologies-mobile.png");
+                    background-position: -62px 0; }
+              main .requirements .requirements-list ul li .requirements-text {
+                position: static;
+                display: inline-block;
+                vertical-align: middle;
+                padding-left: 30px; } }
+    @media (max-width: 639px) {
+      main .requirements {
+        padding: 40px 20px; }
+        main .requirements h2 {
+          font-size: 22px; }
+        main .requirements .requirements-list ul li .requirements-text {
+          font-size: 18px; } }
+  main footer:before,
+main footer:after {
+  content: ' ';
+  display: table; }
+  main footer:after {
+  clear: both; }
+  main footer {
+    padding: 75px 0;
+    text-align: center;
+    background-color: #cccbc4;
+    color: #807c61;
+    zoom: 1; }
+    main footer h2 {
+      position: relative; }
+      main footer h2 + .divisor {
+        margin-top: 70px; }
+    main footer form:before,
+main footer form:after {
+  content: ' ';
+  display: table; }
+    main footer form:after {
+  clear: both; }
+    main footer form {
+      max-width: 605px;
+      padding: 0 20px;
+      margin: 70px auto 0;
+      zoom: 1; }
+      main footer form > *:first-child {
+        margin-top: 0; }
+      main footer form .input {
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        -webkit-transition: box-shadow .2s cubic-bezier(0.19, 1, 0.22, 1);
+        transition: box-shadow .2s cubic-bezier(0.19, 1, 0.22, 1); }
+        main footer form .input:focus {
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); }
+        main footer form .input.input-textarea {
+          height: 75px;
+          border-radius: 10px; }
+        main footer form .input.input-fb, main footer form .input.input-tt, main footer form .input.input-gh, main footer form .input.input-textarea {
+          padding-left: 40px;
+          background-image: url("../img/icon-sprite.png");
+          background-repeat: no-repeat;
+          background-position: 7px 7px; }
+        main footer form .input.input-tt {
+          background-position: 7px -52px; }
+        main footer form .input.input-gh {
+          background-position: 7px -110px; }
+        main footer form .input.input-textarea {
+          background-position: 7px -169px; }
+      main footer form .input-genre {
+        position: relative;
+        height: 38px; }
+        main footer form .input-genre input {
+          opacity: 0;
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
+        main footer form .input-genre [class|="genre"] {
+          position: absolute;
+          color: #b8b8b8; }
+          main footer form .input-genre [class|="genre"].genre-m {
+            left: 15px; }
+          main footer form .input-genre [class|="genre"].genre-f {
+            right: 15px; }
+        main footer form .input-genre .toggle-selector {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+              -ms-transform: translateX(-50%);
+                  transform: translateX(-50%);
+          width: 60px;
+          border-radius: 50px;
+          background-color: #3bc4f1;
+          overflow: hidden; }
+          main footer form .input-genre .toggle-selector .bg {
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            right: -1px;
+            bottom: -1px;
+            z-index: 1;
+            border-radius: 50px;
+            background-color: #f13be6;
+            -webkit-transition: all .6s cubic-bezier(0.19, 1, 0.22, 1);
+            transition: all .6s cubic-bezier(0.19, 1, 0.22, 1);
+            -webkit-transform: scale(0);
+                -ms-transform: scale(0);
+                    transform: scale(0); }
+          main footer form .input-genre .toggle-selector .selector {
+            position: absolute;
+            z-index: 2;
+            top: 50%;
+            left: 100%;
+            margin: -18px 0 0 -36px;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: #fff;
+            box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
+            -webkit-transition: all .3s cubic-bezier(0.19, 1, 0.22, 1);
+            transition: all .3s cubic-bezier(0.19, 1, 0.22, 1);
+            cursor: pointer; }
+          main footer form .input-genre .toggle-selector.toggled .selector {
+            left: 0%;
+            margin-left: 0px; }
+          main footer form .input-genre .toggle-selector.toggled .bg {
+            -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                    transform: scale(1); }
+      main footer form button {
+        margin-top: 35px;
+        float: right;
+        padding: 13px 60px 16px;
+        color: #fff;
+        background-color: #8bdf9f;
+        border-radius: 15px;
+        font: 22px/0.8em "gotham-bold";
+        text-transform: lowercase;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        -webkit-transition: all .2s;
+        transition: all .2s; }
+        @media (min-width: 1024px) {
+          main footer form button:hover {
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+            background-color: #55e574; } }
+    main footer .footer-link-dbr {
+      display: block;
+      margin-top: 60px; }
+    @media (max-width: 1279px) {
+      main footer h2 {
+        font-size: 40px; } }
+    @media (max-width: 959px) {
+      main footer {
+        padding: 90px 0; }
+        main footer h2 + .divisor {
+          margin-top: 40px; }
+        main footer form {
+          margin-top: 40px; } }
+    @media (max-width: 639px) {
+      main footer {
+        padding: 40px 20px; }
+        main footer h2 {
+          font-size: 22px; }
+        main footer [class|="col"] {
+          width: 100%; }
+        main footer form button {
+          display: block;
+          float: none;
+          width: 100%;
+          background-color: #55e574; } }

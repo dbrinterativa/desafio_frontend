@@ -31,8 +31,10 @@
     <meta itemprop="image" content="">
 
     <!-- Compatibility scripts -->
-    <script src="js/vendor/modernizr.min.js"></script>
-    <script src="js/vendor/respond.js"></script>
+    <!-- <script src="scripts/vendor/modernizr.js"></script> -->
+    <!-- <script src="scripts/vendor/respond.js"></script> -->
+
+    <script src="scripts/vendor/pace.min.js"></script>
 
 
     <link rel="stylesheet" href="css/main.min.css">
@@ -40,16 +42,171 @@
 </head>
 <body>
 
-    <header>
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-progress"></div>
+        </div>
+    </div>
 
-    </header>
     <main>
+        <header>
+            <div class="content">
+                <a href="http://dbr.ag/" title="" class="header-link-dbr" data-ani-type="zoom" data-ani-delay=".6">
+                    <img src="img/logo-dbr.png" alt="">
+                </a>
+                <h1>
+                    <span data-ani-type="zoom" data-ani-delay=".2" class="d-inline-block">front-enders,</span> </br>
+                    <strong data-ani-type="zoom" data-ani-delay=".2" class="d-inline-block">procura-se!</strong> </br>
+                    <span data-ani-type="zoom" data-ani-delay=".2" class="d-inline-block">vaga <em class="color-green">presencial</em></span> </br>
+                    <span data-ani-type="zoom" data-ani-delay=".2" class="d-inline-block">São Paulo - Capital</span>
+                </h1> 
+            </div>
+        </header>            
+        <section class="questions">
+            <div class="smoke" data-ani-type="fade" data-ani-delay=".2"></div>
+            <h2 data-ani-type="fade-top" data-ani-delay=".2">
+                Você, por acaso...
+            </h2>
+            <ul class="content">
+                <li class="question-1" data-ani-type="fade-top" data-ani-delay=".2">
+                    <span class="question-text">tem um bom </br>curriculo?</span>
+                </li>
+                <li class="question-2" data-ani-type="fade-top" data-ani-delay=".2">
+                    <span class="question-text">já trabalhou </br>em agência?</span>
+                </li>
+                <li class="question-3" data-ani-type="fade-top" data-ani-delay=".2">
+                    <span class="question-text">é formado </br>na área?</span>
+                </li>
+            </ul>
+            <div class="m-scooch m-fluid">
+                <ul class="content m-scooch-inner">
+                    <li class="m-item question-1">
+                        <span class="question-text">tem um bom </br>curriculo?</span>
+                    </li>
+                    <li class="m-item question-2">
+                        <span class="question-text">já trabalhou </br>em agência?</span>
+                    </li>
+                    <li class="m-item question-3">
+                        <span class="question-text">é formado </br>na área?</span>
+                    </li>
+                </ul>
+              <div class="m-scooch-controls m-scooch-bulleted">
+                    <a href="#" data-m-slide="1" class="m-active">1</a>
+                    <a href="#" data-m-slide="2">2</a>
+                    <a href="#" data-m-slide="3">3</a>
+              </div>
+            </div>
+            <p>
+                <span data-ani-type="fade-top" data-ani-delay=".2" class="d-inline-block">Sim?</span> 
+                <strong class="color-pink" data-ani-type="fade-top" data-ani-delay=".2">Isso não importa aqui!</strong>
+                </p>
+        </section>
+        <section class="requirements">
+            <h2 data-ani-type="fade-top" data-ani-delay=".2">
+                Sabe o que vale de verdade na DBR.ag?
+            </h2>
 
+            <div class="requirements-list" data-ani-type="zoom" data-ani-delay=".2">
+                <img src="img/connectors.png" alt="" class="img-fluid">
+                <ul>
+                    <li>
+                        <span class="requirements-text requirements-text-1" data-ani-type="zoom" data-ani-delay=".3">
+                            Conhecimento em: 
+                        </span>
+                        <div class="tecnology-box">
+                            <div class="tecnology tecnology-html5"  data-ani-type="fade-top" data-ani-delay=".2" ></div>
+                            <div class="tecnology tecnology-css3"  data-ani-type="fade-top" data-ani-delay=".2" ></div>
+                            <div class="tecnology tecnology-js"  data-ani-type="fade-top" data-ani-delay=".2" ></div>
+                            <div class="tecnology tecnology-git"  data-ani-type="fade-top" data-ani-delay=".2" ></div>
+                            <div class="tecnology tecnology-compass"  data-ani-type="fade-top" data-ani-delay=".2" ></div>
+                            <div class="tecnology tecnology-sass"  data-ani-type="fade-top" data-ani-delay=".2" ></div>
+                            <div class="tecnology tecnology-less"  data-ani-type="fade-top" data-ani-delay=".2" ></div>
+                            <div class="tecnology tecnology-angularjs"  data-ani-type="fade-top" data-ani-delay=".2" ></div>
+                            <div class="tecnology tecnology-grunt"  data-ani-type="fade-top" data-ani-delay=".2" ></div>
+                            <div class="tecnology tecnology-bower"  data-ani-type="fade-top" data-ani-delay=".2" ></div>
+                            <div class="tecnology tecnology-yeoman"  data-ani-type="fade-top" data-ani-delay=".2" ></div>
+                            <div class="tecnology tecnology-gulp"  data-ani-type="fade-top" data-ani-delay=".2" ></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="requirements-text requirements-text-2" data-ani-type="zoom" data-ani-delay=".2">
+                            Interesse em aprender
+                        </span>
+                    </li>
+                    <li>
+                        <span class="requirements-text requirements-text-3" data-ani-type="zoom" data-ani-delay=".2">
+                            Topar novos desafios
+                        </span>
+                    </li>
+                    <li>
+                        <span class="requirements-text requirements-text-4" data-ani-type="zoom" data-ani-delay=".2">
+                            Ótimo humor
+                        </span>
+                    </li>
+                    <li>
+                        <span class="requirements-text requirements-text-5" data-ani-type="zoom" data-ani-delay=".2">
+                            Gostar de música 
+                        </span>
+                    </li>
+                    <li>
+                        <span class="requirements-text requirements-text-6" data-ani-type="zoom" data-ani-delay=".2">
+                            Gostar de compartilhar conhecimento
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </section>        
+        <footer>
+            <h2  data-ani-type="fade-top" data-ani-delay=".3">
+                Preencha seus dados abaixo</br>
+                e o próximo passo será um desafio DBR!
+            </h2>
+
+            <div class="divisor"  data-ani-type="zoom" data-ani-delay=".3"></div>
+
+            <form method="">
+                <input class="input" type="text" placeholder="Nome completo*"  data-ani-type="fade-top" data-ani-delay=".2">
+                <input class="input" type="email" placeholder="Email*"  data-ani-type="fade-top" data-ani-delay=".2">
+                <div class="row">
+                    <div class="col-2">
+                        <input class="input" type="text" placeholder="Idade" data-ani-type="fade-top" data-ani-delay="0">
+                    </div>
+                    <div class="col-6">
+                        <div class="input-genre" data-ani-type="fade-top" data-ani-delay=".2">
+                            <label for="" class="genre-m">masculino</label>
+                            <label for="" class="genre-f">feminino</label>
+                            <div class="toggle-selector">
+                                <div class="bg"></div>
+                                <div class="selector"></div>
+                                <input type="radio" name="sex" val="M" checked="true">
+                                <input type="radio" name="sex" val="F">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <input class="input" type="text" placeholder="Pretensão salarial" data-ani-type="fade-top" data-ani-delay=".2">
+                    </div>
+                </div>
+                <input class="input" type="phone" placeholder="Telefone"  data-ani-type="fade-top" data-ani-delay=".2">
+                <input class="input input-fb" type="url" placeholder="facebook.com/"  data-ani-type="fade-top" data-ani-delay=".2">
+                <input class="input input-tt" type="url" placeholder="twitter.com/"  data-ani-type="fade-top" data-ani-delay=".2">
+                <input class="input input-gh" type="url" placeholder="github.com/"  data-ani-type="fade-top" data-ani-delay=".2">
+                <textarea class="input input-textarea" name="" id="" placeholder="Fale mais"  data-ani-type="fade-top" data-ani-delay=".2"></textarea>
+                <button type="submit" class="btn btn-primary"  data-ani-type="fade" data-ani-delay=".2" data-ani-show="50">
+                    Enviar
+                </button>
+            </form>
+
+            <a href="http://dbr.ag/" alt="" class="footer-link-dbr" data-ani-type="zoom" data-ani-delay=".2" data-ani-show="50">
+                <img src="img/logo-dbr2.png" alt="">
+             </a>
+        </footer>
     </main>
-    <footer>
-        
-    </footer>
-
+    
+    
+    <script src="scripts/vendor/TweenMax.min.js"></script>
+    <script src="scripts/vendor/zepto.min.js"></script>
+    <script src="scripts/vendor/scooch.js"></script>
     <script src="scripts/main.min.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->

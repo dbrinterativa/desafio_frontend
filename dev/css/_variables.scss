@@ -1,0 +1,30 @@
+
+$book:          'gotham-book';
+$bold:          'gotham-bold';
+$thin:          'gotham-thin';
+$lightoblique:  'avenir-lightoblique';
+
+// color
+
+$color-default: #fff;
+$color-primary: #55e574;
+$color-second:  #8bdf9f;
+$color-third:   #807c61;  
+$color-four:    #bf305f;
+$color-five:    #cccbc4;
+$color-six:     #3bc4f1;
+$color-seven:   #f13be6;
+$color-eight:   #262626;
+$color-nine:    #b8b8b8;
+
+// background
+
+$bgcolor-default:   $color-eight;
+$bgcolor-primary:   $color-five;
+$bgcolor-second:    $color-second;
+$bgcolor-third:     $color-default;
+
+//media queries
+$desktop:   1279px;
+$tablet:    959px;
+$mobile:    639px;
