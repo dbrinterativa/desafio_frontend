@@ -10,7 +10,49 @@
         };
     })();
 
+    // Preloader
+
+    var Preloader = {
+        run: function(cb) {
+            var $pace               = $('.pace'),
+                $paceProgress       = $pace.find('.pace-progress'),
+                $preloader          = $('.preloader'),
+                $loaderProgress     = $preloader.find('.loader-progress'),
+                loaderProgress      = 100,
+                progress            = 0,
+                newProgress         = 0,
+                time                = 100;
+
+            console.log(0);
+            Preloader.intervalId = setInterval(function() {
+                progress = $paceProgress.attr('data-progress-text').replace('%', '');
+                progress = Number(progress);
+
+                newProgress = (loaderProgress - progress);
+                $loaderProgress.attr('style', 'top: '+newProgress+'%');
+
+                if(progress === 100){
+                    clearInterval(Preloader.intervalId);
+                    setTimeout(cb, time);
+                }
+            }, time);
+        }
+    };
+
+    Pace.on('start', function() {
+        $('main').css('opacity', '0');
+
+        Preloader.run(function() {
+            console.log($('.preloader'));
+            TweenLite.to('.preloader', .4, { alpha: 0, onComplete: function() {
+                TweenLite.set('.preloader', { css: { 'display': 'none' }});
+            }});
+            TweenLite.to('main', .4, { alpha: 1});
+        });
+    });   
+
     // Slide Questions
+
     var Slide = {
         time: 4000,
         run: function() {
