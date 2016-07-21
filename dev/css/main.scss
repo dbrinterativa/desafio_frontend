@@ -25,6 +25,22 @@ body {
     }
 }
 
+[data-ani-type] {
+    visibility: hidden;
+
+    &[data-animated] {
+        visibility: visible;
+    }
+
+    @media (max-width: 1023px) {
+        visibility: visible;
+    }
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
 .preload {
     display: none;
     position: fixed;
@@ -171,7 +187,7 @@ main {
         .smoke {
             position: absolute;
             top: -90%;
-            left: 50%;
+            left: 53%;
             background: url(../img/smoke.png) no-repeat top left;
             width: 927px;
             height: 2019px;
