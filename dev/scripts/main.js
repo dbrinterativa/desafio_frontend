@@ -47,7 +47,22 @@
             }});
             TweenLite.to('main', .4, { alpha: 1});
         });
-    });   
+    });
+
+    $(document).on('DOMContentLoaded', function() {
+        Pace.restart();
+    });
+
+    // Background Parallax
+    window.addEventListener('scroll', function(e) {
+        // console.log(e);
+    });
+
+    document.addEventListener('scroll', function(e) {
+        console.log(e);
+    });
+
+    
 
     // Slide Questions
 
