@@ -23,7 +23,6 @@
                 newProgress         = 0,
                 time                = 100;
 
-            console.log(0);
             Preloader.intervalId = setInterval(function() {
                 progress = $paceProgress.attr('data-progress-text').replace('%', '');
                 progress = Number(progress);
@@ -43,7 +42,6 @@
         $('main').css('opacity', '0');
 
         Preloader.run(function() {
-            console.log($('.preloader'));
             TweenLite.to('.preloader', .4, { alpha: 0, onComplete: function() {
                 TweenLite.set('.preloader', { css: { 'display': 'none' }});
             }});
