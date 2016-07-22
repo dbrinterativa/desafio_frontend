@@ -14,6 +14,7 @@ hmtl,
 body {
     width: 100%;
     height: 100%;
+    background: $color-eight;
     color: $color-default;
 
     strong {
@@ -70,7 +71,7 @@ body {
         right: 0;
         overflow: hidden;    
         background: #262626 url('../img/logo-dbr2.png') no-repeat bottom left;
-        transition: all .1s ease-in-out-sine;
+        transition: all .3s ease-in-out-sine;
     }
 }
 
@@ -158,7 +159,6 @@ main {
         }
 
         @media (max-width: $tablet) {
-            height: 800px;
 
             h1 {
                 font-size: 40px;
@@ -761,47 +761,108 @@ main {
             padding: 0 20px;
             margin: 70px auto 0;
             clear: fix-legacy;
+            position: relative;
 
-            > *:first-child {
-                margin-top: 0;
+            .inner-form-box {
+                position: relative;
+                z-index: 2;
+                
+                > *:first-child {
+                    margin-top: 0;
+                }
+            }
+
+            .message-success {
+                position: absolute 0;
+                z-index: 1;
+
+                p {
+                    opacity: 0;
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    right: 0;
+                    transform: translateY(-50%);
+                    font-size: 40px;
+                    font: 50px $thin;
+                    color: $color-third;
+
+                    strong {
+                        font-family: $bold;
+                    }
+                }
             }
 
             .input {
-                @extend %input;
-                box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
-                transition: box-shadow .2s ease-out-expo;
+                position: relative;
 
-                &:focus {
-                    box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+                > input, 
+                  textarea,
+                  .input-genre {
+                    @extend %input;
+                    box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+                    transition: box-shadow .2s ease-out-expo;
+
+                    &:focus {
+                        box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+                    }
+
+                    &.error {
+                        border-color: red;
+                        color: red;
+
+                        &:after {
+                            content: 'Oloco bicho!';
+                        }
+
+                        + .input-message-error {
+                            opacity: 1;
+                            left: 15px;
+                        }
+
+                        &[name="form-old"] + .input-message-error {
+                            width: 250px;
+                        }
+                    }
+
+                    &.input-textarea {
+                        height: 75px;
+                        border-radius: 10px;
+                    }
+
+                    &.input-fb,
+                    &.input-tt,
+                    &.input-gh,
+                    &.input-textarea {
+                        padding-left: 40px;
+                        background-image: url('../img/icon-sprite.png');
+                        background-repeat: no-repeat;
+                        background-position: 7px 7px;
+                    }
+
+                    &.input-tt {
+                        background-position: 7px -52px;
+                    }
+
+                    &.input-gh {
+                        background-position: 7px -110px;
+                    }
+
+                    &.input-textarea {
+                        background-position: 7px -169px;
+                    }
                 }
 
-                &.input-textarea {
-                    height: 75px;
-                    border-radius: 10px;
+                .input-message-error {
+                    position: absolute;
+                    bottom: -27px;
+                    left: 0;
+                    color: red;
+                    font: 15px 'arial';
+                    opacity: 0;
+                    transition: all .3s ease-out-expo;
+                    text-align: left;
                 }
-
-                &.input-fb,
-                &.input-tt,
-                &.input-gh,
-                &.input-textarea {
-                    padding-left: 40px;
-                    background-image: url('../img/icon-sprite.png');
-                    background-repeat: no-repeat;
-                    background-position: 7px 7px;
-                }
-
-                &.input-tt {
-                    background-position: 7px -52px;
-                }
-
-                &.input-gh {
-                    background-position: 7px -110px;
-                }
-
-                &.input-textarea {
-                    background-position: 7px -169px;
-                }
-
             }
 
             .input-genre {

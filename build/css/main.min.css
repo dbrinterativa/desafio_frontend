@@ -827,12 +827,15 @@ button {
 main header h1, main .questions h2, main .questions p, main .requirements h2, main footer h2 {
   font: 55px "gotham-thin"; }
 
-main footer form .input, main footer form .input-genre {
+main footer form .input > input,
+main footer form .input textarea,
+main footer form .input .input-genre, main footer form .input-genre {
   margin-top: 35px;
   display: block;
   width: 100%;
   padding: 10px 15px;
   border-radius: 20px;
+  border: 2px solid transparent;
   background-color: #fff;
   font: 16px/1.1em "avenir-lightoblique"; }
 
@@ -840,6 +843,7 @@ hmtl,
 body {
   width: 100%;
   height: 100%;
+  background: #262626;
   color: #fff; }
   hmtl strong,
   body strong {
@@ -885,8 +889,8 @@ body {
     right: 0;
     overflow: hidden;
     background: #262626 url("../img/logo-dbr2.png") no-repeat bottom left;
-    -webkit-transition: all .1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-    transition: all .1s cubic-bezier(0.445, 0.05, 0.55, 0.95); }
+    -webkit-transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95); }
 
 .color-green {
   color: #55e574; }
@@ -948,12 +952,10 @@ main {
         main header h1 strong {
           font-size: 55px; } }
     @media (max-width: 959px) {
-      main header {
-        height: 800px; }
-        main header h1 {
-          font-size: 40px; }
-          main header h1 strong {
-            font-size: 55px; } }
+      main header h1 {
+        font-size: 40px; }
+        main header h1 strong {
+          font-size: 55px; } }
     @media (max-width: 639px) {
       main header h1 {
         font-size: 28px; }
@@ -1339,29 +1341,107 @@ main footer form:after {
       max-width: 605px;
       padding: 0 20px;
       margin: 70px auto 0;
+      position: relative;
       zoom: 1; }
-      main footer form > *:first-child {
-        margin-top: 0; }
+      main footer form .inner-form-box {
+        position: relative;
+        z-index: 2; }
+        main footer form .inner-form-box > *:first-child {
+          margin-top: 0; }
+      main footer form .message-success {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1; }
+        main footer form .message-success p {
+          opacity: 0;
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+          position: absolute;
+          top: 50%;
+          left: 0;
+          right: 0;
+          -webkit-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+                  transform: translateY(-50%);
+          font-size: 40px;
+          font: 50px "gotham-thin";
+          color: #807c61; }
+          main footer form .message-success p strong {
+            font-family: "gotham-bold"; }
       main footer form .input {
-        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-        -webkit-transition: box-shadow .2s cubic-bezier(0.19, 1, 0.22, 1);
-        transition: box-shadow .2s cubic-bezier(0.19, 1, 0.22, 1); }
-        main footer form .input:focus {
-          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); }
-        main footer form .input.input-textarea {
-          height: 75px;
-          border-radius: 10px; }
-        main footer form .input.input-fb, main footer form .input.input-tt, main footer form .input.input-gh, main footer form .input.input-textarea {
-          padding-left: 40px;
-          background-image: url("../img/icon-sprite.png");
-          background-repeat: no-repeat;
-          background-position: 7px 7px; }
-        main footer form .input.input-tt {
-          background-position: 7px -52px; }
-        main footer form .input.input-gh {
-          background-position: 7px -110px; }
-        main footer form .input.input-textarea {
-          background-position: 7px -169px; }
+        position: relative; }
+        main footer form .input > input,
+        main footer form .input textarea,
+        main footer form .input .input-genre {
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+          -webkit-transition: box-shadow .2s cubic-bezier(0.19, 1, 0.22, 1);
+          transition: box-shadow .2s cubic-bezier(0.19, 1, 0.22, 1); }
+          main footer form .input > input:focus,
+          main footer form .input textarea:focus,
+          main footer form .input .input-genre:focus {
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); }
+          main footer form .input > input.error,
+          main footer form .input textarea.error,
+          main footer form .input .input-genre.error {
+            border-color: red;
+            color: red; }
+            main footer form .input > input.error:after,
+            main footer form .input textarea.error:after,
+            main footer form .input .input-genre.error:after {
+              content: 'Oloco bicho!'; }
+            main footer form .input > input.error + .input-message-error,
+            main footer form .input textarea.error + .input-message-error,
+            main footer form .input .input-genre.error + .input-message-error {
+              opacity: 1;
+              -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+              left: 15px; }
+            main footer form .input > input.error[name="form-old"] + .input-message-error,
+            main footer form .input textarea.error[name="form-old"] + .input-message-error,
+            main footer form .input .input-genre.error[name="form-old"] + .input-message-error {
+              width: 250px; }
+          main footer form .input > input.input-textarea,
+          main footer form .input textarea.input-textarea,
+          main footer form .input .input-genre.input-textarea {
+            height: 75px;
+            border-radius: 10px; }
+          main footer form .input > input.input-fb, main footer form .input > input.input-tt, main footer form .input > input.input-gh, main footer form .input > input.input-textarea,
+          main footer form .input textarea.input-fb,
+          main footer form .input textarea.input-tt,
+          main footer form .input textarea.input-gh,
+          main footer form .input textarea.input-textarea,
+          main footer form .input .input-genre.input-fb,
+          main footer form .input .input-genre.input-tt,
+          main footer form .input .input-genre.input-gh,
+          main footer form .input .input-genre.input-textarea {
+            padding-left: 40px;
+            background-image: url("../img/icon-sprite.png");
+            background-repeat: no-repeat;
+            background-position: 7px 7px; }
+          main footer form .input > input.input-tt,
+          main footer form .input textarea.input-tt,
+          main footer form .input .input-genre.input-tt {
+            background-position: 7px -52px; }
+          main footer form .input > input.input-gh,
+          main footer form .input textarea.input-gh,
+          main footer form .input .input-genre.input-gh {
+            background-position: 7px -110px; }
+          main footer form .input > input.input-textarea,
+          main footer form .input textarea.input-textarea,
+          main footer form .input .input-genre.input-textarea {
+            background-position: 7px -169px; }
+        main footer form .input .input-message-error {
+          position: absolute;
+          bottom: -27px;
+          left: 0;
+          color: red;
+          font: 15px 'arial';
+          opacity: 0;
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+          -webkit-transition: all .3s cubic-bezier(0.19, 1, 0.22, 1);
+          transition: all .3s cubic-bezier(0.19, 1, 0.22, 1);
+          text-align: left; }
       main footer form .input-genre {
         position: relative;
         height: 38px; }
