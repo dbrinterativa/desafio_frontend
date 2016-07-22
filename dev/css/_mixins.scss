@@ -1,0 +1,34 @@
+@mixin center() {
+    margin: 0 auto;
+}
+
+@mixin rmvtxt() {
+    text-indent: -9999px;
+    overflow: hidden;
+    display: block;
+}
+
+@mixin rmvtxt_destroy(){
+    text-indent: 0;
+    overflow: visible;
+    display: block;
+}
+
+@mixin appearance($status: none)  {
+    appearance: $status;
+}
+
+@mixin bg-image($url, $w: inherit, $h: inherit) {
+    @include rmvtxt();
+
+    width: $w;
+    height: $h;
+    background: url(@url) no-repeat;
+}
+
+@mixin bg($url, $size) {
+    background: url($url);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: $size;
+}
