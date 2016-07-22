@@ -135,8 +135,7 @@
         }).trigger('resize');
 
     // Toggle selector Sex Form
-
-    	   
+	   
     var $selector = document.querySelector('.toggle-selector .selector');
 
     $selector.addEventListener('click', function(e) {
