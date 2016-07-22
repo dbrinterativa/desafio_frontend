@@ -43,7 +43,7 @@
 
         Preloader.run(function() {
             TweenLite.to('.preloader', .3, { delay: .2, alpha: 0, onComplete: function() {
-                // TweenLite.set('.preloader', { css: { 'display': 'none' }});
+                TweenLite.set('.preloader', { css: { 'display': 'none' }});
             }});
             TweenLite.to('main', .4, { delay: .2, alpha: 1});
         });
