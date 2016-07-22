@@ -37,6 +37,7 @@
             }, time);
         }
     };
+    
 
     Pace.on('start', function() {
         $('main').css('opacity', '0');
