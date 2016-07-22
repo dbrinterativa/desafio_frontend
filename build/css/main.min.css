@@ -939,7 +939,8 @@ main {
       -webkit-transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%);
-      width: 100%; }
+      width: 100%;
+      z-index: 2; }
     main header .header-link-dbr {
       position: relative;
       top: -26px;
@@ -1444,7 +1445,7 @@ main footer form:after {
           text-align: left; }
       main footer form .input-genre {
         position: relative;
-        height: 38px; }
+        height: 41px; }
         main footer form .input-genre input {
           opacity: 0;
           -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }

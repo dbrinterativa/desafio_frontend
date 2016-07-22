@@ -132,6 +132,7 @@ main {
             left: 50%;
             transform: translate(-50%,-50%);
             width: 100%;
+            z-index: 2;
         }
 
         .header-link-dbr {
@@ -868,7 +869,7 @@ main {
             .input-genre {
                 @extend %input;
                 position: relative;
-                height: 38px;
+                height: 41px;
 
                 input {
                     opacity: 0;
