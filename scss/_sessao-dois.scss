@@ -1,0 +1,28 @@
+#sessao-dois-bg{
+	
+	width: 0 auto;
+	background: url(../images/bg-sessao-dois.png) top; height:1080px;
+	position: relative;
+
+	>.container{
+
+		>.row{
+
+			>.images-sessao-um{
+	
+				>#image-um{
+					
+					margin-top:150px;
+					
+				}
+
+				>#image-dois{
+					
+					position: absolute;
+					right: 200px;
+					top:280px;
+				}
+			}
+		}
+	}
+}

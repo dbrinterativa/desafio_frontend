@@ -1,0 +1,78 @@
+#header-bg{
+	
+	width: 0 auto;
+	background: url(../images/bg-header.png) top; height:1080px;
+	
+	>.container{
+	
+		>.row{
+
+			>.logo{
+
+				@include make-xs-column(12);
+				@include make-sm-column(6);
+				@include make-md-column(6);
+
+				position: absolute;
+				top:328px;
+				left:577px;
+			}
+
+			>.texto{
+				
+				@include make-xs-column(12);
+				@include make-sm-column(6);
+				@include make-md-column(6);
+				
+				color: $font-color;
+				font-family: $font-main;
+				position: absolute;
+				top:420px;
+				left:477px;
+
+
+				>#texto1{
+					
+					display: block;
+					font-size: 3.75em;
+					color:#ccc;
+				}
+
+				>#texto2{
+					
+					display: block;
+					font-size: 6em;
+					font-weight: bold;
+					margin-left: -50px;
+				}
+
+				>#texto3{
+					
+					font-size: 4.5em;
+					color:#ccc;
+					margin-right: 5px;
+					margin-left: -50px;
+
+				}
+
+				>#texto4{
+					
+					font-size: 4.5em;
+					color: #3b874b;
+
+				}
+
+				>#texto5{
+					
+					display: block;
+					color:#ccc;
+					font-size:4.5em;
+					margin-left: -80px;
+				}
+			}
+		}
+
+	}
+}
+
+
