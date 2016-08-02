@@ -1,0 +1,67 @@
+#sessao-um-bg{
+	
+	width: 0 auto;
+	background: url(../images/bg-sessao-um.png) top; height:1080px;
+
+	>.container{
+
+		>.row{
+
+			>.container-sessao-um{
+				
+				margin-top:217px;
+				margin-left:350px;
+					
+				> span{
+					
+					color:#fff;
+					font-size:4em;
+				}
+			}
+
+			>.itens-sessao-um{
+				
+				margin-top:45px;
+				margin-left:130px;
+				list-style: none;
+
+				>li{
+					
+					display: inline-block;
+					margin-right: 72px;
+					width:224px;
+
+					>span{
+
+						font-size:2.65em;
+						color: $font-color;
+						text-align:center;
+						display: block;
+						margin-top:30px;
+						margin-bottom: 0px;
+					}
+				}
+			}
+
+			>#texto6{
+				
+				color:#fff;
+				font-size: 4em;
+				text-align:center;
+				display: block;
+				margin-top:50px;
+			}
+
+			>#texto7{
+	
+				color:#bf305f;
+				font-weight:bold;
+				font-size: 4em;
+				text-align:center;
+				display: block;
+			}
+		}
+
+	}
+
+}
