@@ -1,21 +1,18 @@
 @import "custom-css-toggle.less";
+@import "mixins.less";
 
+/**
+ * colors
+ */
 @logo-color: #C7D82C;
 @pink-color: #BF305F;
 @bege-bg: #CCCBC4;
+@bg-color: #323232;
 @light-blue: #3baada;
 @light-green: #8BDF9F;
-@bg-color: #323232;
 
 @light-gray: lighten(rgb(red(@bg-color), green(@bg-color), blue(@bg-color)), 70%);
-
 @dark-gray: darken(rgb(red(@bg-color), green(@bg-color), blue(@bg-color)), 90%);
-
-.border-radius (@radius: 5px) {
-	-webkit-border-radius: @radius;
-	-moz-border-radius:    @radius;
-	border-radius:         @radius;
-}
 
 body, textarea, input {
 	font-family: Gotham,"Helvetica Neue",Helvetica,Arial,sans-serif;
