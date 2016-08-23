@@ -1,0 +1,37 @@
+{
+  "name": "desafio-dbr",
+  "description": "Desafio DBR.ag",
+  "main": "index.js",
+  "devDependencies": {
+    "bower": "latest",
+    "less": "latest",
+    "less-plugin-clean-css":"latest",
+    "watch": "latest"
+  },
+  "scripts": {
+    "start": "mkdir -p dist && npm run build:cpfiles && npm install && bower install && npm run dev",
+
+    "build:cpfiles": "cp -R src/public/images dist/images && cp src/public/index.html dist/index.html && cp -R src/public/js dist/js",
+
+    "build:css": "lessc src/less/index.less --clean-css dist/css/index.css",
+
+    "build:watch": "watch 'npm run build' .",
+
+    "build": "npm run build:css",
+
+    "dev": "npm run build:watch"
+  },
+  "keywords": [
+    "desafio",
+    "dbr",
+    "less",
+    "css3",
+    "html5",
+    "js",
+    "jquery",
+    "fullpage.js",
+    "fontawesome"
+  ],
+  "author": "Rodrigo Nascimento <rodrigocesarnascimento@gmail.com>",
+  "license": "ISC"
+}

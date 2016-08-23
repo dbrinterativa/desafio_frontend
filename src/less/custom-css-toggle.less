@@ -1,0 +1,72 @@
+
+/* 
+	custom Theme
+*/
+  .switch-custom.switch-light span span {
+    color: white; }
+  .switch-custom.switch-light a {
+    left: 0;
+    top: 0;
+    width: 2em;
+    height: 2em;
+    background-color: #fff;
+    border-radius: 100%;
+    border: 0.25em solid @pink-color;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    transition: all .2s ease-out; }
+  .switch-custom.switch-light > span {
+    display: block;
+    width: 100%;
+    height: 2em;
+    background-color: @pink-color;
+    border-radius: 1.75em;
+    -webkit-transition: all .4s ease-out;
+    -moz-transition: all .4s ease-out;
+    transition: all .4s ease-out; }
+  .switch-custom.switch-light > span span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    line-height: 1.875em;
+    vertical-align: middle;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    transition: all .2s ease-out; }
+    .switch-custom.switch-light > span span:first-of-type {
+      opacity: 1;
+      padding-left: 1.875em; }
+    .switch-custom.switch-light > span span:last-of-type {
+      padding-right: 1.875em; }
+  .switch-custom.switch-light input:checked ~ span a {
+    left: 100%;
+    border-color: @light-blue;
+    margin-left: -2em; }
+  .switch-custom.switch-light input:checked ~ span {
+    border-color: @light-blue;
+    box-shadow: inset 0 0 0 30px @light-blue; }
+  .switch-custom.switch-light input:checked ~ span span:first-of-type {
+    opacity: 0; }
+  .switch-custom.switch-light input:checked ~ span span:last-of-type {
+    opacity: 1;
+    color: #fff; }
+  .switch-custom.switch-toggle {
+    background-color: @pink-color;
+    border-radius: 30px;
+    box-shadow: inset rgba(0, 0, 0, 0.1) 0 1px 0; }
+    .switch-custom.switch-toggle a {
+      background-color: @light-blue;
+      border: 0.125em solid @pink-color;
+      border-radius: 1.75em;
+      -webkit-transition: all 0.12s ease-out;
+      -moz-transition: all 0.12s ease-out;
+      transition: all 0.12s ease-out; }
+    .switch-custom.switch-toggle label {
+      height: 2em;
+      color: white;
+      line-height: 2em;
+      vertical-align: middle; }
+  .switch-custom input:checked + label {
+    color: white; }

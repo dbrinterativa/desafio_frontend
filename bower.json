@@ -1,0 +1,13 @@
+{
+  "name": "dbr",
+  "version": "0.0.1",
+  "dependencies": {
+    "fullpage": "latest",
+    "jquery": "latest",
+    "fontawesome": "latest",
+    "animate.css": "^3.5.2",
+    "css-toggle-switch": "^4.0.2",
+    "parsleyjs": "^2.4.4"
+  },
+  "private": true
+}
