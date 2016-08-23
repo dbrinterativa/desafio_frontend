@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Desafio DBR AG</title>
+	<link rel="stylesheet" href="vendors/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="vendors/animate.css/animate.min.css">
+	<link rel="stylesheet" href="vendors/css-toggle-switch/dist/toggle-switch.css">
+	<link rel="stylesheet" href="vendors/fullpage/dist/jquery.fullpage.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+</head>
+<body>
+	<div id="fullpage">
+
+		<div class="section " id="section0">
+			<div class="encontrado-dbr">
+				<img src="images/dbr.png" alt="Logo DBR" class="logo">
+				<p class="encontrado-dbr-subtitle">estavam procurando um frontender?</p>
+				<h2 class="encontrado-dbr-title">vocês encontraram!</h2>
+				<p class="encontrado-dbr-intro">
+					<span>Sou um cara dedicado, gosto muito do que faço e estou entrando de cabeça no mundo FrontEnd.</span>
+				</p>
+				<p class="encontrado-dbr-intro">
+					<span>Tenho 30 anos, moro no Butantã, gosto de rpg, leitura sci-fi, séries de tv e programar <3</span>
+				</p>
+			</div>
+		</div>
+
+		<div class="section" id="section1">
+			<div class="my-skills">	
+				<h2 class="my-skills-title">Você, por acaso...</h2>
+				<ul class="my-skills-list">
+					<li>
+						<span class="fa-stack fa-lg fa-8x">
+							<i class="fa fa-circle-thin fa-stack-2x"></i>
+							<i class="fa fa-wpforms fa-stack-1x"></i>
+						</span>
+						<h2 class="ask-skill">tem um bom currículo?</h2>
+						<h5 class="answer-skill ninja"><span>Oh, claro! Much courses, very applyed.</span></h5>
+					</li>
+					<li>
+						<span class="fa-stack fa-lg fa-8x">
+							<i class="fa fa-circle-thin fa-stack-2x"></i>
+							<i class="fa fa-coffee fa-stack-1x"></i>
+						</span>
+						<h2 class="ask-skill">já trabalhou em algum agência?</h2>
+						<h5 class="answer-skill ninja"><span>Já sim. Sei como é o clima :)</span></h5>
+					</li>
+					<li>
+						<span class="fa-stack fa-lg fa-8x">
+							<i class="fa fa-circle-thin fa-stack-2x"></i>
+							<i class="fa fa-graduation-cap fa-stack-1x"></i>
+						</span>
+						<h2 class="ask-skill">é formado na área?</h2>
+						<h5 class="answer-skill ninja"><span>Sim, tenho até pós.</span></h5>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="section" id="section2">
+			<div class="who-cares">
+				<h1 class="who-cares-title ninja">Legal, mas isso não importa!</h1>
+				<img src="images/nobody-cares.jpg" class="ninja" alt="who cares anyway?">
+			</div>
+		</div>
+
+		<div class="section" id="section3">
+
+			<div class="speaking-serious">
+				<div class="speaking-serious-valores-content">
+					
+					<h3 class="speaking-serious-title">Agora falando sério; Eu possuo algumas qualidades que vocês valorizam.</h3>
+
+					<ul class="speaking-serious-list">
+						<li class="speaking-serious-item">
+							<img src="images/valores-tecnologias.png" alt="">
+							<p>Já fiz alguns experimentos com algumas dessas tecnologias.</p>
+						</li>
+						<li class="speaking-serious-item">
+							<p class="speaking-serious-sublist-title">Tenho lido muito sobre</p>
+							<ul class="speaking-serious-sublist">
+								<li class="speaking-serious-subitem">Frontend: UX, UI, CSS3, HTML5</li>
+								<li class="speaking-serious-subitem">TaskRunners</li>
+								<li class="speaking-serious-subitem">Rest</li>								
+								<li class="speaking-serious-subitem">NodeJS</li>
+								<li class="speaking-serious-subitem">Facebook Bots e Open Graph</li>
+								<li class="speaking-serious-subitem">PHP7, CakePHP, Laravel</li>
+							</ul>
+						</li>
+						<li class="speaking-serious-item">
+							Depois de um bom tempo como programador backend, estou me dedicando exclusivamente ao frontend. Desafios estão na minha rotina :)
+						</li>
+						<li class="speaking-serious-item">
+							<iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3A12142756545%3Aplaylist%3A0AvolYODD5ieONi5CQV9N0" width="300" height="115" frameborder="0" allowtransparency="true"></iframe>
+						</li>
+						<li class="speaking-serious-item">
+							<iframe width="400" height="auto" src="https://www.youtube.com/embed/XylrnUN3guY" frameborder="0" allowfullscreen></iframe>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+
+		<div class="section" id="section4">
+			
+			<div class="form-dados-cadastro">
+
+				<h1 class="form-dados-title">
+					<span>Preencha seus dados abaixo </span>
+					<br />
+					<span>e o próximo passo será um desafio DBR! </span>
+				</h1>
+
+				<form class="form"  data-parsley-validate="" method="POST" action="#" accept-charset="UTF-8">
+					<div class="form-input">
+						<input type="text" required="" data-parsley-required-message="Precisa informar o seu nome :)" id="nome" class="input" placeholder="nome completo">
+					</div>
+
+					<div class="form-input">
+						<input id="email" data-parsley-required-message="Precisa informar o seu email @" data-parsley-type-message="O seu email precisa ser válido" placeholder="email" data-parsley-trigger="change" required="" type="email">
+					</div>
+
+					<div class="form-group">
+						<div class="input input-idade">
+							<input type="text" name="idade" placeholder="idade">
+						</div>
+						<div class="radio">
+							<label class="switch-light switch-custom" style="" onclick="">
+								<input type="checkbox" name="choice" />
+								<span>
+									<span>feminino</span>
+									<span>masculino</span>
+									<a></a>
+								</span>
+							</label>
+						</div>
+						<div class="input input-pretensao">
+							<input type="text" name="pretensao" placeholder="pretensão salarial" required="" data-parsley-required-message="Precisa informar um $">
+						</div>
+					</div>
+					
+					<div class="form-input">
+						<input type="text" name="telefone" required="" data-parsley-required-message="Precisa informar o seu telefone ;)" placeholder="telefone">
+					</div>
+
+					<div class="form-input">
+						<i class="fa fa-facebook"></i>
+						<input type="text" class="icon-padding" name="facebook_url" placeholder="facebook.com/">
+					</div>
+
+					<div class="form-input">
+						<i class="fa fa-twitter"></i>
+						<input type="text" class="icon-padding" name="twitter_url" placeholder="twitter.com/">
+					</div>
+
+					<div class="form-input">
+						<i class="fa fa-github"></i>
+						<input type="text" class="icon-padding" name="github_url" placeholder="github.com/">
+					</div>
+
+					<div class="form-input">
+						<i class="fa fa-bullhorn"></i>
+						<textarea name="about" class="textarea"></textarea>
+					</div>
+
+					<div class="form-input-button">
+						<button class="button" type="submit">enviar</button>
+					</div>
+
+					<div class="form-footer">
+						<img src="images/dbr-footer.png" alt="">
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+	
+	<script src="vendors/jquery/dist/jquery.js" type="text/javascript"></script>
+	<script src="https://rawgit.com/alvarotrigo/fullPage.js/master/vendors/scrolloverflow.min.js" type="text/javascript"></script>
+	<script src="vendors/parsleyjs/dist/parsley.min.js" type="text/javascript"></script>
+	<script src="vendors/fullpage/dist/jquery.fullpage.js" type="text/javascript"></script>
+	<script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>
